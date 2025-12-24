@@ -26,11 +26,15 @@ body {
   background-color: var(--cream);
   color: var(--ink);
   min-height: 100vh;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .page {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   isolation: isolate;
 }
 
@@ -39,6 +43,7 @@ body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  transform: translateY(60px);
 }
 
 .bg-shapes .shape {
@@ -54,24 +59,17 @@ body {
   left: -140px;
   top: 120px;
   background-image:
-    linear-gradient(
-      135deg,
+    radial-gradient(
+      circle at 30% 30%,
       rgba(255, 255, 255, 0.45),
-      rgba(255, 255, 255, 0)
-    ),
-    repeating-linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.35) 0,
-      rgba(255, 255, 255, 0.35) 1px,
-      transparent 1px,
-      transparent 12px
+      rgba(255, 255, 255, 0) 60%
     ),
     linear-gradient(
-      135deg,
-      #f9d45d,
-      #f1b228
+      145deg,
+      #ffd565,
+      #f5b316
     );
-  background-blend-mode: screen, soft-light, normal;
+  background-blend-mode: screen, normal;
 }
 
 .shape-sky {
@@ -80,24 +78,17 @@ body {
   right: -120px;
   top: 70px;
   background-image:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.45),
-      rgba(255, 255, 255, 0)
-    ),
-    repeating-linear-gradient(
-      35deg,
-      rgba(255, 255, 255, 0.3) 0,
-      rgba(255, 255, 255, 0.3) 1px,
-      transparent 1px,
-      transparent 14px
+    radial-gradient(
+      circle at 70% 25%,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0) 58%
     ),
     linear-gradient(
-      135deg,
-      #c0d3e8,
-      #9eb8d5
+      150deg,
+      #c7dcf2,
+      #8fb2d9
     );
-  background-blend-mode: screen, soft-light, normal;
+  background-blend-mode: screen, normal;
 }
 
 .shape-sand {
@@ -106,24 +97,17 @@ body {
   right: -150px;
   top: 360px;
   background-image:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0)
-    ),
-    repeating-linear-gradient(
-      40deg,
-      rgba(255, 255, 255, 0.28) 0,
-      rgba(255, 255, 255, 0.28) 1px,
-      transparent 1px,
-      transparent 14px
+    radial-gradient(
+      circle at 30% 25%,
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0) 60%
     ),
     linear-gradient(
-      135deg,
-      #f4eadc,
-      #e5d5c2
+      150deg,
+      #f6eadb,
+      #e0cbb2
     );
-  background-blend-mode: screen, soft-light, normal;
+  background-blend-mode: screen, normal;
 }
 
 .shape-slate {
@@ -132,29 +116,24 @@ body {
   right: -180px;
   bottom: -80px;
   background-image:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0)
-    ),
-    repeating-linear-gradient(
-      50deg,
-      rgba(255, 255, 255, 0.22) 0,
-      rgba(255, 255, 255, 0.22) 1px,
-      transparent 1px,
-      transparent 16px
+    radial-gradient(
+      circle at 65% 35%,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0) 60%
     ),
     linear-gradient(
-      135deg,
-      #a1a7b3,
-      #7a818f
+      150deg,
+      #b0b8c5,
+      #7f8898
     );
-  background-blend-mode: screen, soft-light, normal;
+  background-blend-mode: screen, normal;
 }
 
 img {
   max-width: 100%;
   display: block;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 a {
@@ -166,6 +145,7 @@ section {
   padding: 96px 24px;
   position: relative;
   z-index: 1;
+  scroll-margin-top: 96px;
 }
 
 .section-header {
@@ -198,13 +178,27 @@ section {
 .header {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 28px 24px 0;
+  padding: 18px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   position: relative;
   z-index: 1;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: var(--cream);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  left: 0;
+}
+
+.page {
+  padding-top: 76px;
 }
 
 .logo {
@@ -223,6 +217,20 @@ section {
 .nav a {
   padding: 8px 0;
   position: relative;
+}
+
+.lang-toggle {
+  border: 1px solid rgba(94, 84, 72, 0.2);
+  background-color: var(--cloud);
+  color: var(--ink);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  background-color: var(--sand);
 }
 
 .nav a::after {
