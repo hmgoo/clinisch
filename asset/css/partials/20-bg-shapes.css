@@ -1,0 +1,359 @@
+﻿
+
+
+.bg-shapes {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  transform: translateY(60px);
+  --shape-radius: 8px;
+}
+
+
+.bg-shapes .shape {
+  position: absolute;
+  
+  border-radius: var(--shape-radius, 10px);
+  opacity: 0.95;
+  animation: none;
+  transition:
+    
+    
+    border-radius 3000ms var(--motion-ease-out) var(--shape-delay, 0ms),
+    transform 3000ms linear var(--shape-delay, 0ms);
+}
+
+
+.bg-shapes .shape.arrived {
+  
+  animation: float 16s ease-in-out infinite;
+  animation-delay: 1.3s;
+  
+  animation: float 16s ease-in-out infinite;
+  animation-delay: 1.3s;
+}
+
+
+.shape-wrap {
+  position: absolute;
+  display: block;
+  will-change: transform;
+  transition:
+    left 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    top 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    width 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    height 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    transform 3000ms var(--motion-ease) var(--shape-delay, 0ms);
+}
+
+.shape-wrap-left {
+  transform: translateX(-60vw);
+}
+
+.shape-wrap-right {
+  transform: translateX(60vw);
+}
+
+.bg-shapes.animate .shape-wrap {
+  transform: translateX(0);
+  
+  transition:
+    left 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    top 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    width 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    height 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    transform 3000ms cubic-bezier(.2, .9, .2, 1) var(--shape-delay, 0ms);
+}
+
+.bg-shapes.animate-shapes {
+  animation: shapeMove 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+
+@keyframes shapeMove {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateY(-30px) scale(0.95);
+  }
+}
+
+
+.shape-wrap-sun {
+  --shape-delay: 200ms;
+  width: 420px;
+  height: 320px;
+  left: -140px;
+  top: 120px;
+}
+
+.shape-sun {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--shape-radius-sun, var(--shape-radius));
+  background-image:
+    radial-gradient(circle at 30% 30%,
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0) 60%),
+    linear-gradient(145deg,
+      #ffd565,
+      #f5b316);
+  background-blend-mode: screen, normal;
+}
+
+.shape-wrap-sky {
+  --shape-delay: 300ms;
+  width: 360px;
+  height: 260px;
+  right: -120px;
+  top: 70px;
+}
+
+.shape-sky {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--shape-radius-sky, var(--shape-radius));
+  background-image:
+    radial-gradient(circle at 70% 25%,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0) 58%),
+    linear-gradient(150deg,
+      #c7dcf2,
+      #8fb2d9);
+  background-blend-mode: screen, normal;
+}
+
+.shape-wrap-sand {
+  --shape-delay: 400ms;
+  width: 420px;
+  height: 300px;
+  right: -150px;
+  top: 360px;
+}
+
+.shape-sand {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--shape-radius-sand, var(--shape-radius));
+  background-image:
+    radial-gradient(circle at 30% 25%,
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0) 60%),
+    linear-gradient(150deg,
+      #f6eadb,
+      #e0cbb2);
+  background-blend-mode: screen, normal;
+}
+
+.shape-wrap-slate {
+  --shape-delay: 500ms;
+  width: 460px;
+  height: 320px;
+  
+  left: -140px;
+  top: 500px;
+}
+
+.shape-slate {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--shape-radius-slate, var(--shape-radius));
+  background-image:
+    radial-gradient(circle at 65% 35%,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0) 60%),
+    linear-gradient(150deg,
+      #b0b8c5,
+      #7f8898);
+  background-blend-mode: screen, normal;
+}
+
+
+.bg-shapes[data-bg-state="home"] .shape-wrap-sun {
+  width: 420px;
+  height: 320px;
+  left: -140px;
+  top: 120px;
+}
+
+.bg-shapes[data-bg-state="home"] .shape-wrap-sky {
+  width: 360px;
+  height: 260px;
+  right: -120px;
+  top: 70px;
+}
+
+.bg-shapes[data-bg-state="home"] .shape-wrap-sand {
+  width: 420px;
+  height: 300px;
+  right: -150px;
+  top: 360px;
+}
+
+.bg-shapes[data-bg-state="home"] .shape-wrap-slate {
+  width: 460px;
+  height: 320px;
+  left: -140px;
+  top: 500px;
+}
+
+.bg-shapes[data-bg-state="about"] .shape-wrap-sun {
+  width: 390px;
+  height: 300px;
+  left: -130px;
+  top: 130px;
+}
+
+.bg-shapes[data-bg-state="about"] .shape-wrap-sky {
+  width: 300px;
+  height: 220px;
+  right: -110px;
+  top: 60px;
+}
+
+.bg-shapes[data-bg-state="about"] .shape-wrap-sand {
+  width: 400px;
+  height: 300px;
+  right: -160px;
+  top: 350px;
+}
+
+.bg-shapes[data-bg-state="about"] .shape-wrap-slate {
+  width: 400px;
+  height: 280px;
+  left: -150px;
+  top: 510px;
+}
+
+.bg-shapes[data-bg-state="services"] .shape-wrap-sun {
+  width: 340px;
+  height: 240px;
+  left: -150px;
+  top: 110px;
+}
+
+.bg-shapes[data-bg-state="services"] .shape-wrap-sky {
+  width: 440px;
+  height: 320px;
+  right: -130px;
+  top: 90px;
+}
+
+.bg-shapes[data-bg-state="services"] .shape-wrap-sand {
+  width: 360px;
+  height: 260px;
+  right: -140px;
+  top: 380px;
+}
+
+.bg-shapes[data-bg-state="services"] .shape-wrap-slate {
+  width: 400px;
+  height: 300px;
+  left: -120px;
+  top: 520px;
+}
+
+.bg-shapes[data-bg-state="approach"] .shape-wrap-sun {
+  width: 320px;
+  height: 230px;
+  left: -130px;
+  top: 100px;
+}
+
+.bg-shapes[data-bg-state="approach"] .shape-wrap-sky {
+  width: 340px;
+  height: 240px;
+  right: -110px;
+  top: 80px;
+}
+
+.bg-shapes[data-bg-state="approach"] .shape-wrap-sand {
+  width: 400px;
+  height: 280px;
+  right: -155px;
+  top: 370px;
+}
+
+.bg-shapes[data-bg-state="approach"] .shape-wrap-slate {
+  width: 480px;
+  height: 360px;
+  left: -160px;
+  top: 490px;
+}
+
+.bg-shapes[data-bg-state="contact"] .shape-wrap-sun {
+  width: 300px;
+  height: 220px;
+  left: -150px;
+  top: 140px;
+}
+
+.bg-shapes[data-bg-state="contact"] .shape-wrap-sky {
+  width: 320px;
+  height: 220px;
+  right: -90px;
+  top: 100px;
+}
+
+.bg-shapes[data-bg-state="contact"] .shape-wrap-sand {
+  width: 460px;
+  height: 320px;
+  right: -170px;
+  top: 340px;
+}
+
+.bg-shapes[data-bg-state="contact"] .shape-wrap-slate {
+  width: 400px;
+  height: 300px;
+  left: -130px;
+  top: 520px;
+}
+
+
+.bg-shapes[data-bg-state="home"] {
+  --shape-radius-sun: 56% 44% 54% 46% / 54% 46% 54% 46%;
+  --shape-radius-sky: 46% 54% 52% 48% / 58% 42% 54% 46%;
+  --shape-radius-sand: 58% 42% 50% 50% / 50% 50% 46% 54%;
+  --shape-radius-slate: 48% 52% 56% 44% / 52% 48% 58% 42%;
+}
+
+.bg-shapes[data-bg-state="about"] {
+  --shape-radius-sun: 48% 52% 52% 48% / 56% 44% 52% 48%;
+  --shape-radius-sky: 50% 50% 54% 46% / 46% 54% 50% 50%;
+  --shape-radius-sand: 56% 44% 50% 50% / 50% 50% 56% 44%;
+  --shape-radius-slate: 46% 54% 52% 48% / 56% 44% 50% 50%;
+}
+
+.bg-shapes[data-bg-state="services"] {
+  --shape-radius-sun: 50% 50% 46% 54% / 48% 52% 44% 56%;
+  --shape-radius-sky: 54% 46% 56% 44% / 48% 52% 46% 54%;
+  --shape-radius-sand: 50% 50% 56% 44% / 44% 56% 48% 52%;
+  --shape-radius-slate: 58% 42% 48% 52% / 52% 48% 50% 50%;
+}
+
+.bg-shapes[data-bg-state="approach"] {
+  --shape-radius-sun: 44% 56% 50% 50% / 52% 48% 56% 44%;
+  --shape-radius-sky: 52% 48% 56% 44% / 46% 54% 50% 50%;
+  --shape-radius-sand: 50% 50% 46% 54% / 56% 44% 52% 48%;
+  --shape-radius-slate: 56% 44% 48% 52% / 46% 54% 56% 44%;
+}
+
+.bg-shapes[data-bg-state="contact"] {
+  --shape-radius-sun: 52% 48% 54% 46% / 50% 50% 46% 54%;
+  --shape-radius-sky: 48% 52% 52% 48% / 56% 44% 52% 48%;
+  --shape-radius-sand: 56% 44% 50% 50% / 48% 52% 56% 44%;
+  --shape-radius-slate: 50% 50% 58% 42% / 50% 50% 46% 54%;
+}
+
+
+
+

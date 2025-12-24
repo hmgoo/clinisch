@@ -1,0 +1,60 @@
+﻿
+
+
+:root {
+  color-scheme: light;
+  --family-font: "Noto Sans KR", sans-serif;
+  --ink: #2f2a25;
+  --ink-soft: #5b5147;
+  --accent: #f2c230;
+  --accent-soft: #f8d36a;
+  --cream: #f8f2ea;
+  --cloud: #fdfbf7;
+  --sand: #efe3d3;
+  --blue: #a8bfdc;
+  --slate: #8a8f9b;
+  --shadow: rgba(72, 60, 50, 0.18);
+  --max-width: 1160px;
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  
+  --motion-duration-fast: 150ms;
+  --motion-duration-medium: 320ms;
+  --motion-duration-slow: 900ms;
+  --motion-ease: cubic-bezier(.2, .9, .2, 1);
+  
+  
+  --motion-ease-out: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --motion-ease-decelerate: cubic-bezier(.0, .0, .2, 1);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+
+body {
+  font-family: var(--family-font);
+  background-color: var(--cream);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--header-offset, 0px);
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+
