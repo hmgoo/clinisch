@@ -262,12 +262,22 @@ const renderHeader = () => {
 
   target.innerHTML = `
     <header class="header">
-      <div class="logo">Clinisch &amp; Co.</div>
+      <div class="logo">
+        <img
+          src="public/img/Clinisch_Co_wordmark.svg"
+          alt="Clinisch &amp; Co."
+        />
+      </div>
       <nav class="nav">
         <a href="#about" data-i18n="nav_about">소개</a>
         <a href="#services" data-i18n="nav_services">서비스</a>
         <a href="#approach" data-i18n="nav_approach">어프로치</a>
-        <a href="#contact" class="btn" data-i18n="nav_contact">문의하기</a>
+        <a href="#contact" class="contact-toggle">
+          <span class="contact-icon" aria-hidden="true">
+            <img src="public/img/contact.png" alt="" />
+          </span>
+          <span class="contact-text" data-i18n="nav_contact">문의하기</span>
+        </a>
         <button
           type="button"
           class="lang-toggle"
@@ -275,7 +285,10 @@ const renderHeader = () => {
           data-i18n="lang_toggle_aria"
           data-i18n-attr="aria-label"
         >
-          EN
+          <span class="lang-icon" aria-hidden="true">
+            <img src="public/img/language.png" alt="" />
+          </span>
+          <span class="lang-text">EN</span>
         </button>
       </nav>
     </header>
@@ -363,7 +376,15 @@ const updateToggleLabel = (lang) => {
     return;
   }
 
-  toggle.textContent = lang === "ko" ? "EN" : "KO";
+  const label = lang === "ko" ? "EN" : "KO";
+  const text = toggle.querySelector(".lang-text");
+
+  if (text) {
+    text.textContent = label;
+    return;
+  }
+
+  toggle.textContent = label;
 };
 
 const applyLanguage = (lang) => {

@@ -1,5 +1,6 @@
 ﻿:root {
   color-scheme: light;
+  --family-font: "Noto Sans KR", sans-serif;
   --ink: #2f2a25;
   --ink-soft: #5b5147;
   --accent: #f2c230;
@@ -21,11 +22,17 @@
   padding: 0;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
-  font-family: "Jost", "Noto Sans KR", sans-serif;
+  font-family: var(--family-font);
   background-color: var(--cream);
   color: var(--ink);
   min-height: 100vh;
+  overflow-x: hidden;
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -36,6 +43,7 @@ body {
   position: relative;
   overflow: visible;
   isolation: isolate;
+  width: 100%;
 }
 
 .bg-shapes {
@@ -155,7 +163,7 @@ section {
 }
 
 .section-header h2 {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: var(--family-font);
   font-size: clamp(2.1rem, 4vw, 3rem);
   margin: 12px 0 16px;
   color: var(--ink);
@@ -177,11 +185,12 @@ section {
 
 .header {
   max-width: var(--max-width);
+  width: 100%;
   margin: 0 auto;
   padding: 18px 24px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 24px;
   position: relative;
   z-index: 1;
@@ -202,7 +211,7 @@ section {
 }
 
 .logo {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: var(--family-font);
   font-size: 1.55rem;
   font-weight: 600;
 }
@@ -211,7 +220,8 @@ section {
   display: flex;
   gap: 20px;
   align-items: center;
-  font-size: 0.95rem;
+  font-size: 16px;
+  justify-self: end;
 }
 
 .nav a {
@@ -220,17 +230,92 @@ section {
 }
 
 .lang-toggle {
-  border: 1px solid rgba(94, 84, 72, 0.2);
-  background-color: var(--cloud);
+  border: none;
+  background-color: transparent;
   color: var(--ink);
-  padding: 8px 14px;
-  border-radius: 999px;
+  padding: 6px;
+  border-radius: 0;
   font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
+  min-width: 44px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  line-height: 1;
 }
 
 .lang-toggle:hover {
-  background-color: var(--sand);
+  background-color: transparent;
+}
+
+.lang-toggle img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.lang-icon,
+.lang-text {
+  grid-area: 1 / 1;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.lang-text {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.lang-toggle:hover .lang-text {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.lang-toggle:hover .lang-icon {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.contact-toggle {
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  min-width: 44px;
+  padding: 6px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: inherit;
+}
+
+.contact-toggle img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.contact-icon,
+.contact-text {
+  grid-area: 1 / 1;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.contact-text {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.contact-toggle:hover .contact-text {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contact-toggle:hover .contact-icon {
+  opacity: 0;
+  transform: scale(0.6);
 }
 
 .nav a::after {
@@ -278,7 +363,7 @@ section {
 }
 
 .hero h1 {
-  font-family: "Jost", "Noto Sans KR", sans-serif;
+  font-family: var(--family-font);
   font-size: clamp(2.6rem, 6vw, 4.2rem);
   line-height: 1.08;
   margin: 16px 0;
@@ -551,7 +636,7 @@ section {
 }
 
 .cta-card h2 {
-  font-family: "Jost", "Noto Sans KR", sans-serif;
+  font-family: var(--family-font);
   font-size: clamp(2rem, 4vw, 2.8rem);
   margin: 12px 0 16px;
 }
@@ -614,6 +699,7 @@ section {
 }
 
 .footer {
+  width: 100%;
   padding: 32px 24px 60px;
   text-align: center;
   font-weight: 500;
@@ -670,13 +756,17 @@ section {
 
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 12px 16px;
+    gap: 12px;
   }
 
   .nav {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 12px;
+    justify-self: center;
   }
 
   .hero {
