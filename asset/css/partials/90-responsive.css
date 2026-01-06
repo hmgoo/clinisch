@@ -65,6 +65,26 @@
   .footer-logo {
     width: 180px;
   }
+
+  .cta-card {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-experience {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-contact-top {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-contact-details {
+    margin-top: 0;
+  }
 }
 
 
@@ -86,7 +106,7 @@
   
   .panel-card,
   .service-card,
-  .hero-copy,
+  .hero .section-header,
   .hero-panel {
     animation: none !important;
     transition: none !important;

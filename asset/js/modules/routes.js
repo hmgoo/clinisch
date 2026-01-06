@@ -4,7 +4,7 @@ const ROUTES = [
   { key: "home", path: "/", order: 0 },
   { key: "about", path: "/about/", order: 1 },
   { key: "services", path: "/services/", order: 2 },
-  { key: "approach", path: "/approach/", order: 3 },
+  { key: "approach", path: "/skills/", order: 3 },
   { key: "contact", path: "/contact/", order: 4 }
 ];
 

@@ -17,6 +17,7 @@
 }
 
 
+
 .footer-inner {
   display: grid;
   gap: 24px;
@@ -77,18 +78,20 @@
 .footer-link {
   border: none;
   background: transparent;
-  color: var(--ink-soft);
+  color: var(--footer-muted);
   font-size: 16px;
   cursor: pointer;
   padding: 0;
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 8px;
+  text-align: left;
 }
 
 .footer-link:hover,
 .footer-link:focus-visible {
-  color: var(--ink);
+  color: var(--footer-muted);
 }
 
 .footer-divider {
@@ -99,10 +102,15 @@
 
 .footer-bottom {
   font-size: 12px;
-  color: #b6b0a8;
+  color: var(--footer-muted);
   font-weight: 400;
   text-align: right;
   justify-self: end;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: var(--footer-muted);
 }
 
 
@@ -142,7 +150,7 @@
 }
 
 .footer-modal-card h3 {
-  font-size: 16px;
+  font-size: 20px;
   color: var(--ink);
 }
 

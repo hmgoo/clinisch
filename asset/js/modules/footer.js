@@ -13,7 +13,7 @@ const renderFooter = () => {
         <div class="footer-brand">
           <div class="footer-brand-row">
             <img
-              src="asset/img/Clinisch_Co_wordmark.svg"
+              src="asset/img/logo/logo.svg"
               alt="Clinisch &amp; Co."
               class="footer-logo"
             />
@@ -24,14 +24,14 @@ const renderFooter = () => {
           <p data-i18n="footer_address_line1">
             인천광역시 연수구 인천타워대로 323 (송도동, 송도센트로드)
           </p>
-          <p data-i18n="footer_address_line2">22007</p>
+          <p data-i18n="footer_address_line2">(우) 22007</p>
         </div>
         <div class="footer-meta">
           <p class="footer-company" data-i18n="footer_company">
             사업자번호: 696-86-03587
           </p>
           <p>
-            <span data-i18n="label_tel">전화</span>: +82 70 8285 0056
+            <span data-i18n="label_tel">전화</span>: +82 70-8285-0056
           </p>
           <p>
             <span data-i18n="label_email">이메일</span>: Support@clinisch.com
@@ -48,7 +48,7 @@ const renderFooter = () => {
       </div>
       <div class="footer-divider"></div>
       <div class="footer-bottom">
-        <p>ⓒ <span data-footer-year></span> Clinisch &amp; Co. All rights reserved.</p>
+        <p>ⓒ <span data-footer-year></span> Clinisch &amp; Co., LLC. All rights reserved.</p>
       </div>
     </footer>
     <div class="footer-modal" data-footer-modal-panel="privacy" aria-hidden="true">
@@ -63,7 +63,7 @@ const renderFooter = () => {
           분석/광고 스크립트를 사용하지 않습니다.
         </p>
         <p data-i18n="footer_modal_privacy_body_line2">
-          방문 기록 (IP 등 기술적 로그)은 호스팅 제공자 (GitHub Pages)의 정책에
+          방문 기록(IP 등 기술적 로그)은 호스팅 제공자(GitHub Pages)의 정책에
           따라 처리될 수 있습니다.
         </p>
       </div>
@@ -96,7 +96,6 @@ const updateFooterYear = () => {
 
   target.textContent = String(new Date().getFullYear());
 };
-
 const setupFooterModals = () => {
   const panels = document.querySelectorAll("[data-footer-modal-panel]");
   const openers = document.querySelectorAll("[data-footer-modal]");

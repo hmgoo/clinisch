@@ -14,8 +14,22 @@
   --blue: #a8bfdc;
   --slate: #8a8f9b;
   --clinisch-purple: #39135C;
+  --footer-muted: #b6b0a8;
+  --white: #ffffff;
+  --panel-tile-bg: #fffaf3;
+  --service-icon-bg: #fff5e1;
+  --cta-grad-start: #fff4dc;
+  --cta-grad-end: #f7e1b6;
+  --shape-sun-start: #ffd565;
+  --shape-sun-end: #f5b316;
+  --shape-sky-start: #c7dcf2;
+  --shape-sky-end: #8fb2d9;
+  --shape-sand-start: #f6eadb;
+  --shape-sand-end: #e0cbb2;
+  --shape-slate-start: #b0b8c5;
+  --shape-slate-end: #7f8898;
   --shadow: rgba(72, 60, 50, 0.18);
-  --max-width: 1160px;
+  --max-width: 1080px;
   --radius-lg: 28px;
   --radius-md: 20px;
   

@@ -14,6 +14,16 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: var(--ink-soft);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
 
 section {
   padding: 96px 24px;
@@ -51,31 +61,37 @@ section.section-enter {
 
 
 .section-header {
-  max-width: 760px;
+  max-width: 1080px;
   margin: 0 auto 48px;
   text-align: center;
 }
 
 .section-header h2 {
   font-family: var(--family-font);
-  font-size: clamp(2.1rem, 4vw, 3rem);
-  margin: 12px 0 16px;
+  font-size: 42px;
+  margin: 16px 0;
   color: var(--ink);
 }
 
-.section-header p {
+.section-header p:not(.eyebrow),
+.hero .lead {
   color: var(--ink-soft);
   line-height: 1.7;
-  font-size: 1.05rem;
+  font-size: 16px;
+}
+
+.hero .lead {
+  margin-bottom: 16px;
 }
 
 
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.28em;
-  font-size: 0.72rem;
+  font-size: 16px;
   color: var(--slate);
   font-weight: 600;
+  line-height: 1.2;
 }
 
 

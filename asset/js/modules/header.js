@@ -11,7 +11,7 @@ const renderHeader = () => {
     <header class="header">
       <a href="/" class="logo" data-route-link data-route-key="home">
         <img
-          src="asset/img/Clinisch_Co_wordmark.svg"
+          src="asset/img/logo/logo.svg"
           alt="Clinisch &amp; Co."
         />
       </a>
@@ -19,7 +19,7 @@ const renderHeader = () => {
         <a href="/" data-route-link data-route-key="home" data-i18n-text="TOP">TOP</a>
         <a href="/about/" data-route-link data-route-key="about" data-i18n="nav_about">소개</a>
         <a href="/services/" data-route-link data-route-key="services" data-i18n="nav_services">서비스</a>
-        <a href="/approach/" data-route-link data-route-key="approach" data-i18n="nav_approach">어프로치</a>
+        <a href="/skills/" data-route-link data-route-key="approach" data-i18n="nav_approach">핵심역량</a>
         <a href="/contact/" data-route-link data-route-key="contact" class="nav-link-underline" data-i18n="nav_contact">문의하기</a>
         <button
           type="button"
@@ -29,7 +29,7 @@ const renderHeader = () => {
           data-i18n-attr="aria-label"
         >
           <span class="lang-icon" aria-hidden="true">
-            <img src="asset/img/language.png" alt="" />
+            <img src="asset/img/icon/language.png" alt="" />
           </span>
           <span class="lang-text">EN</span>
         </button>
@@ -54,7 +54,7 @@ const renderHeader = () => {
           <a href="/" data-route-link data-route-key="home" data-i18n-text="TOP">TOP</a>
           <a href="/about/" data-route-link data-route-key="about" data-i18n="nav_about">소개</a>
           <a href="/services/" data-route-link data-route-key="services" data-i18n="nav_services">서비스</a>
-          <a href="/approach/" data-route-link data-route-key="approach" data-i18n="nav_approach">어프로치</a>
+          <a href="/skills/" data-route-link data-route-key="approach" data-i18n="nav_approach">핵심역량</a>
           <a href="/contact/" data-route-link data-route-key="contact" data-i18n="nav_contact">문의하기</a>
           <button
             type="button"

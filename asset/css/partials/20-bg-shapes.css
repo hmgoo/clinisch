@@ -102,8 +102,8 @@
       rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0) 60%),
     linear-gradient(145deg,
-      #ffd565,
-      #f5b316);
+      var(--shape-sun-start),
+      var(--shape-sun-end));
   background-blend-mode: screen, normal;
 }
 
@@ -125,8 +125,8 @@
       rgba(255, 255, 255, 0.4),
       rgba(255, 255, 255, 0) 58%),
     linear-gradient(150deg,
-      #c7dcf2,
-      #8fb2d9);
+      var(--shape-sky-start),
+      var(--shape-sky-end));
   background-blend-mode: screen, normal;
 }
 
@@ -148,8 +148,8 @@
       rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0) 60%),
     linear-gradient(150deg,
-      #f6eadb,
-      #e0cbb2);
+      var(--shape-sand-start),
+      var(--shape-sand-end));
   background-blend-mode: screen, normal;
 }
 
@@ -172,8 +172,8 @@
       rgba(255, 255, 255, 0.35),
       rgba(255, 255, 255, 0) 60%),
     linear-gradient(150deg,
-      #b0b8c5,
-      #7f8898);
+      var(--shape-slate-start),
+      var(--shape-slate-end));
   background-blend-mode: screen, normal;
 }
 

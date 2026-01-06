@@ -12,6 +12,10 @@
   flex: 1;
 }
 
+.page > main {
+  min-height: calc(100vh - var(--header-offset, 0px));
+}
+
 
 [data-route-stage] {
   position: relative;

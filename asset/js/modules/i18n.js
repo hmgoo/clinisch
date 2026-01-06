@@ -2,10 +2,10 @@
 
 const translations = {
   ko: {
-    title: "Clinisch & Co. | 부티크 임상 서비스",
+    title: "Clinisch & Co.",
     nav_about: "소개",
     nav_services: "서비스",
-    nav_approach: "어프로치",
+    nav_approach: "핵심역량",
     nav_contact: "문의하기",
     lang_toggle_aria: "언어 전환",
     hero_eyebrow: "부티크 임상 서비스 기업",
@@ -113,22 +113,23 @@ const translations = {
     why_card3: "임상 운영에 자연스럽게 통합된 데이터 사이언스 & AI",
     why_card4: "민첩하고 린한 운영 구조",
     why_card5: "명확한 커뮤니케이션과 빠른 온보딩",
-    cta_eyebrow: "콜 투 액션",
-    cta_title: "대형 CRO의 부담 없이 유연한 임상 지원이 필요하신가요?",
-    cta_body:
-      "시니어 주도, 데이터 기반 접근으로 귀사의 임상시험을 어떻게 지원할지 " +
-      "함께 논의해 보세요.",
-    cta_role: "구연의 | 대표 & 매니징 멤버",
+    cta_eyebrow: "문의하기",
+    cta_title: "대형 CRO는 부담스럽고, 유연한 임상 지원이 필요하신가요?",
+    cta_body: "귀사의 임상시험에 어떤 방식이 적합할지 함께 논의해 보세요.",
+    cta_role_line1: "구연의",
+    cta_role_line2: "대표이사",
+    cta_role_line3: "관리책임자",
+    cta_exp1: "글로벌 제약, 바이오텍, 의료기기, CRO 분야에서 20년 이상 경력.",
+    cta_exp2: "독립 임상 프로젝트 컨설턴트로 6년 이상 활동.",
     label_email: "이메일",
     label_support: "지원",
     label_tel: "전화",
     label_mobile: "모바일",
-    cta_location: "대한민국 인천",
     footer_company_name: "(유) 클리니쉬앤코",
     footer_company: "사업자번호: 696-86-03587",
     footer_address_line1:
       "인천광역시 연수구 인천타워대로 323 (송도동, 송도센트로드)",
-    footer_address_line2: "22007",
+    footer_address_line2: "(우) 22007",
     footer_link_privacy: "개인정보 미수집 안내",
     footer_link_email: "이메일 무단수집 거부",
     footer_modal_privacy_title: "개인정보 미수집 안내",
@@ -136,7 +137,7 @@ const translations = {
       "본 웹사이트는 별도의 개인정보 입력 기능을 제공하지 않으며, " +
       "분석/광고 스크립트를 사용하지 않습니다.",
     footer_modal_privacy_body_line2:
-      "방문 기록 (IP 등 기술적 로그)은 호스팅 제공자 (GitHub Pages)의 " +
+      "방문 기록(IP 등 기술적 로그)은 호스팅 제공자(GitHub Pages)의 " +
       "정책에 따라 처리될 수 있습니다.",
     footer_modal_email_title: "이메일 무단수집 거부",
     footer_modal_email_body:
@@ -150,7 +151,7 @@ const translations = {
     title: "Clinisch & Co. | Boutique Clinical Services",
     nav_about: "About",
     nav_services: "Services",
-    nav_approach: "Approach",
+    nav_approach: "Key Skills",
     nav_contact: "Contact",
     lang_toggle_aria: "Language toggle",
     hero_eyebrow: "A Boutique Clinical Services Company",
@@ -264,21 +265,24 @@ const translations = {
     why_card3: "Data science & AI with global clinical operations experience",
     why_card4: "Agile, lean operating structure",
     why_card5: "Clear communication and fast pace",
-    cta_eyebrow: "Call to Action",
+    cta_eyebrow: "Contact Us",
     cta_title: "Need flexible clinical support without a large CRO?",
-    cta_body:
-      "Let’s discuss the right approach for your clinical trial.",
-    cta_role: "Yeon-Eui Goo | CEO & Managing Member",
+    cta_body: "Let’s discuss the right approach for your clinical trial.",
+    cta_role_line1: "Yeon-Eui Goo",
+    cta_role_line2: "CEO",
+    cta_role_line3: "Managing Member",
+    cta_exp1:
+      "20+ years of experience across global pharmaceuticals, biotech, medical devices, and CROs.",
+    cta_exp2: "6+ years as an independent clinical project consultant.",
     label_email: "E-mail",
     label_support: "Support",
     label_tel: "Tel",
     label_mobile: "Mobile",
-    cta_location: "Incheon, South Korea",
-    footer_company_name: "Clinisch & Co. Ltd.",
+    footer_company_name: "Clinisch & Co., LLC.",
     footer_company: "Business Reg. No.: 696-86-03587",
     footer_address_line1:
       "323 Incheon Tower-daero, Yeonsu-gu, Incheon, 22007",
-    footer_address_line2: "Republic of Korea",
+    footer_address_line2: "South Korea",
     footer_link_privacy: "Privacy Notice",
     footer_link_email: "No Unsolicited E-mail Collection",
     footer_modal_privacy_title: "Privacy Notice",
@@ -286,8 +290,8 @@ const translations = {
       "This website does not provide a personal data input function and " +
       "does not use analytics or advertising scripts.",
     footer_modal_privacy_body_line2:
-      "Access logs (such as IP addresses) may be processed under the " +
-      "policies of the hosting provider (GitHub Pages).",
+      "Access logs(such as IP addresses) may be processed under the " +
+      "policies of the hosting provider(GitHub Pages).",
     footer_modal_email_title: "No Unsolicited E-mail Collection",
     footer_modal_email_body:
       "We refuse unauthorized collection of e-mail addresses posted on " +
