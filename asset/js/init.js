@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   syncHeaderOffset();
   setupSmoothScroll();
   setupMobileNav();
+  if (typeof setupRoadmap === "function") {
+    setupRoadmap();
+  }
 
   const initialLanguage = getInitialLanguage();
   applyLanguage(initialLanguage);

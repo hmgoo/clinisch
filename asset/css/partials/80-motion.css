@@ -4,6 +4,50 @@
 
 
 
+.delay-0 {
+  --delay: 0s;
+}
+
+.delay-005 {
+  --delay: 0.05s;
+}
+
+.delay-006 {
+  --delay: 0.06s;
+}
+
+.delay-008 {
+  --delay: 0.08s;
+}
+
+.delay-01 {
+  --delay: 0.1s;
+}
+
+.delay-012 {
+  --delay: 0.12s;
+}
+
+.delay-015 {
+  --delay: 0.15s;
+}
+
+.delay-018 {
+  --delay: 0.18s;
+}
+
+.delay-02 {
+  --delay: 0.2s;
+}
+
+.delay-024 {
+  --delay: 0.24s;
+}
+
+.delay-03 {
+  --delay: 0.3s;
+}
+
 .service-card {
   animation: reveal calc(var(--motion-duration-medium) * 1.3) var(--motion-ease-out) both;
   animation-delay: var(--delay, 0s);

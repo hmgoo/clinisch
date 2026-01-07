@@ -27,7 +27,7 @@
 
 .footer-brand {
   display: grid;
-  gap: 12px;
+  gap: 0;
 }
 
 .footer-brand-row {
@@ -35,6 +35,11 @@
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.footer-brand p:first-of-type {
+  margin-bottom: 0;
 }
 
 .footer-logo {

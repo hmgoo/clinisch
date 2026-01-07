@@ -30,6 +30,10 @@
   border: 1px solid rgba(94, 84, 72, 0.12);
 }
 
+.hero-panel p {
+  font-size: var(--body-text-size);
+}
+
 
 .panel-card {
   background-color: var(--sand);
@@ -44,7 +48,6 @@
 }
 
 .panel-text {
-  font-size: 14px;
   line-height: inherit;
   color: inherit;
 }
@@ -70,7 +73,6 @@
 
 .panel-tile p {
   color: inherit;
-  font-size: 14px;
   line-height: inherit;
 }
 

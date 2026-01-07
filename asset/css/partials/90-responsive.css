@@ -1,7 +1,7 @@
 ﻿
 
 
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
   .shape-wrap-sun {
     width: 320px;
     height: 240px;
@@ -21,8 +21,18 @@
     width: 340px;
     height: 240px;
   }
-}
 
+  .roadmap-track {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .roadmap-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: none;
+    width: 100%;
+  }
+}
 
 @media (max-width: 768px) {
   .header {
@@ -70,20 +80,49 @@
     grid-template-columns: 1fr;
   }
 
-  .cta-experience {
-    grid-template-columns: 1fr;
-  }
-
   .cta-footer {
     grid-template-columns: 1fr;
   }
 
-  .cta-contact-top {
+  .cta-contact-grid {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "role1"
+      "role2"
+      "detail1"
+      "detail2"
+      "detail3";
   }
 
-  .cta-contact-details {
-    margin-top: 0;
+  .roadmap-track {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap-track {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .roadmap-card {
+    width: 100%;
+    flex: 1 1 auto;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cta-contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "role1"
+      "role2"
+      "detail1"
+      "detail2"
+      "detail3";
+    min-width: 225px;
   }
 }
 
@@ -109,6 +148,12 @@
   .hero .section-header,
   .hero-panel {
     animation: none !important;
+    transition: none !important;
+  }
+
+  .roadmap-card {
+    opacity: 1;
+    transform: none;
     transition: none !important;
   }
 }
