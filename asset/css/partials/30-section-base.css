@@ -62,7 +62,7 @@ section.section-enter {
 
 .section-header {
   max-width: 1080px;
-  margin: 0 auto 48px;
+  margin: 0 auto 80px;
   text-align: center;
 }
 
@@ -81,7 +81,7 @@ section.section-enter {
 }
 
 .hero .lead {
-  margin-bottom: 16px;
+  margin-bottom: 80px;
 }
 
 

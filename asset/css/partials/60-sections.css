@@ -179,6 +179,9 @@
   line-height: 1.7;
   color: var(--ink-soft);
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -190,13 +193,16 @@
 
 .why-card {
   background-color: var(--cloud);
-  padding: 18px 20px;
+  padding: 16px;
   border-radius: 16px;
   border: 1px solid rgba(94, 84, 72, 0.12);
   font-size: 16px;
   line-height: 1.7;
   color: var(--ink-soft);
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
