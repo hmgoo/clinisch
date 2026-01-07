@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   .header {
     grid-template-columns: 1fr auto;
     justify-items: stretch;
@@ -108,13 +108,17 @@
       "detail3";
   }
 
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
   .roadmap-track {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   .approach-grid {
     grid-template-columns: 1fr;
   }

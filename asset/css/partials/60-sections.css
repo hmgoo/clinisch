@@ -73,51 +73,59 @@
   box-shadow: 0 16px 30px var(--shadow);
   border: 1px solid rgba(94, 84, 72, 0.08);
   display: grid;
-  grid-template-columns: 56px 1fr;
-  column-gap: 16px;
-  row-gap: 10px;
+  grid-template-columns: 1fr;
+  row-gap: 14px;
   align-items: start;
+}
+
+.service-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 16px;
+  align-items: center;
+  justify-self: stretch;
 }
 
 
 .service-icon {
-  width: 56px;
-  height: 56px;
-  background-color: var(--service-icon-bg);
+  width: 60px;
+  height: 60px;
   border-radius: 16px;
   display: grid;
   place-items: center;
+  justify-self: end;
 }
 
 .service-icon img {
-  width: 34px;
-  height: 34px;
+  width: 60px;
+  height: 60px;
 }
 
 .service-card h3 {
   margin: 0;
-  align-self: center;
 }
 
 .service-card ul {
-  grid-column: 2;
   list-style: none;
   display: grid;
   gap: 10px;
   color: var(--ink-soft);
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 
 .service-card li::before {
   content: "\00B7";
-  color: var(--accent);
+  color: inherit;
   margin-right: 8px;
 }
 
 .outcome {
-  grid-column: 2;
   font-weight: 600;
   color: var(--ink);
+}
+
+.outcome::before {
+  content: "▸ ";
 }
 
 
