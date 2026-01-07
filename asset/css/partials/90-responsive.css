@@ -64,6 +64,10 @@
     padding-top: 90px;
   }
 
+  .section-header h2 {
+    font-size: 30px;
+  }
+
   section {
     padding: 72px 20px;
   }
