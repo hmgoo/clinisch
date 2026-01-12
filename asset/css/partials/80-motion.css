@@ -75,6 +75,20 @@
   animation-delay: var(--delay, 0s);
 }
 
+[data-route-stage].route-transition .reveal,
+[data-route-stage][data-route-reveal="off"] .reveal {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+[data-route-stage].route-transition .service-card,
+[data-route-stage].route-transition .slide-card,
+[data-route-stage][data-route-reveal="off"] .service-card,
+[data-route-stage][data-route-reveal="off"] .slide-card {
+  animation: none;
+}
+
 
 
 @keyframes reveal {

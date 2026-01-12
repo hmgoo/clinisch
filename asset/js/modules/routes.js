@@ -283,12 +283,14 @@ const changeRoute = (nextRoute, pushHistory = false) => {
   }
 
   const direction = getDirection(currentRouteKey, nextRoute.key);
+  routeStage.dataset.routeReveal = "off";
   if (currentPanel) {
     setStageHeight(currentPanel);
   }
   nextPanel.style.display = "block";
   setStageHeight(nextPanel);
   scheduleHeightReset();
+  routeStage.classList.add("route-transition");
   showPanel(nextPanel, direction);
 
   if (currentPanel) {
@@ -304,6 +306,11 @@ const changeRoute = (nextRoute, pushHistory = false) => {
       { once: true }
     );
   }
+  const onEnterEnd = () => {
+    routeStage.classList.remove("route-transition");
+  };
+  nextPanel.addEventListener("transitionend", onEnterEnd, { once: true });
+  setTimeout(onEnterEnd, HEIGHT_TRANSITION_MS + 200);
 
   if (pushHistory) {
     const targetPath = getRouteUrl(nextRoute);
@@ -392,6 +399,9 @@ const setupMobileNav = () => {
 const setupRouter = () => {
   basePrefix = getBasePrefix();
   buildRoutePanels();
+  if (routeStage) {
+    routeStage.dataset.routeReveal = "on";
+  }
   const bg = document.querySelector(".bg-shapes");
   if (bg) {
     bg.dataset.bgReady = "0";
