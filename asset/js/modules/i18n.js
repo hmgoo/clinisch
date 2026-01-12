@@ -319,6 +319,8 @@ const translations = {
   }
 };
 
+const STORAGE_KEY = "siteLangV2";
+
 const updateToggleLabel = (lang) => {
   const label = lang === "ko" ? "EN" : "KO";
   const toggles = document.querySelectorAll("[data-lang-toggle]");
@@ -336,7 +338,7 @@ const updateToggleLabel = (lang) => {
 };
 
 const applyLanguage = (lang) => {
-  const current = translations[lang] || translations.ko;
+  const current = translations[lang] || translations.en;
 
   document.documentElement.lang = lang;
 
@@ -363,7 +365,7 @@ const applyLanguage = (lang) => {
     const panel = routePanels.get(currentRouteKey);
     setStageHeight(panel);
   }
-  localStorage.setItem("siteLang", lang);
+  localStorage.setItem(STORAGE_KEY, lang);
 };
 
 const setupLanguageToggle = () => {
@@ -375,7 +377,7 @@ const setupLanguageToggle = () => {
 
   toggles.forEach((toggle) => {
     toggle.addEventListener("click", () => {
-      const currentLang = document.documentElement.lang || "ko";
+      const currentLang = document.documentElement.lang || "en";
       const nextLang = currentLang === "ko" ? "en" : "ko";
       applyLanguage(nextLang);
     });
@@ -383,13 +385,13 @@ const setupLanguageToggle = () => {
 };
 
 const getInitialLanguage = () => {
-  const saved = localStorage.getItem("siteLang");
+  const saved = localStorage.getItem(STORAGE_KEY);
 
   if (saved && translations[saved]) {
     return saved;
   }
 
-  return "ko";
+  return "en";
 };
 
 
