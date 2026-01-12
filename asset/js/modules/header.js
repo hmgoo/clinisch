@@ -16,7 +16,7 @@ const renderHeader = () => {
         />
       </a>
       <nav class="nav">
-        <a href="/" data-route-link data-route-key="home" data-i18n-text="TOP">TOP</a>
+        <a href="/" data-route-link data-route-key="home" data-i18n-text="Top">Top</a>
         <a href="/about/" data-route-link data-route-key="about" data-i18n="nav_about">소개</a>
         <a href="/services/" data-route-link data-route-key="services" data-i18n="nav_services">서비스</a>
         <a href="/skills/" data-route-link data-route-key="approach" data-i18n="nav_approach">핵심역량</a>
@@ -51,7 +51,7 @@ const renderHeader = () => {
       <div class="mobile-panel-header"></div>
       <div class="mobile-panel-body">
         <nav class="mobile-nav">
-          <a href="/" data-route-link data-route-key="home" data-i18n-text="TOP">TOP</a>
+          <a href="/" data-route-link data-route-key="home" data-i18n-text="Top">Top</a>
           <a href="/about/" data-route-link data-route-key="about" data-i18n="nav_about">소개</a>
           <a href="/services/" data-route-link data-route-key="services" data-i18n="nav_services">서비스</a>
           <a href="/skills/" data-route-link data-route-key="approach" data-i18n="nav_approach">핵심역량</a>

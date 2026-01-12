@@ -50,12 +50,6 @@
 .slide-card,
 .cta-panel,
 .hero-panel,
-.hero-badges span {
-  background-color: var(--cloud);
-  border: 1px solid rgba(94, 84, 72, 0.12);
-  box-shadow: 0 14px 28px var(--shadow);
-}
-
 
 .service-grid {
   display: grid;

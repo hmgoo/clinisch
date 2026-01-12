@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   blockUserActions();
   syncHeaderOffset();
   setupSmoothScroll();
+  setupTypingEffect();
+  syncHeroVisualHeight();
   setupMobileNav();
   if (typeof setupRoadmap === "function") {
     setupRoadmap();

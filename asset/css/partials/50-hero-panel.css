@@ -1,24 +1,6 @@
 ﻿
 
 
-.hero-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.hero-badges span {
-  background-color: var(--cloud);
-  color: var(--ink-soft);
-  padding: 8px 14px;
-  border-radius: 999px;
-  min-width: 160px;
-  font-size: 14px;
-  font-weight: 500;
-  border: 1px solid rgba(94, 84, 72, 0.12);
-}
-
 
 .hero-panel {
   background-color: var(--cloud);

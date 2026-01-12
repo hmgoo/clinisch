@@ -7,10 +7,6 @@
   <base href="../" />
   <title data-i18n="title"></title>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="asset/css/base.css" />
 </head>
 
@@ -25,17 +21,38 @@
     <div id="site-header" class="site-header"></div>
 
     <main data-route-stage>
-      <section class="hero" id="top" data-route="home">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="hero_eyebrow"></p>
-          <h2 data-i18n="hero_title"></h2>
-          <p class="lead" data-i18n="hero_lead"></p>
-          <div class="hero-badges">
-            <span data-i18n="hero_badge1"></span>
-            <span data-i18n="hero_badge2"></span>
-            <span data-i18n="hero_badge3"></span>
+    <div class="hero-visual" data-route="home">
+      <img src="asset/img/picture/0101_top.png" alt="" aria-hidden="true" />
+      <div class="hero-visual-copy">
+        <h1>
+          <span data-i18n="hero_visual_title_line1"></span>
+          <span data-i18n="hero_visual_title_line2"></span>
+        </h1>
+        <p data-i18n="hero_visual_subtitle"></p>
+        <div class="hero-visual-tags">
+          <span class="hero-visual-tag" data-i18n="hero_badge1"></span>
+          <span class="hero-visual-tag" data-i18n="hero_badge2"></span>
+          <span class="hero-visual-tag" data-i18n="hero_badge3"></span>
+        </div>
+      </div>
+      <div class="hero-visual-typing-wrap">
+        <p class="hero-visual-typing" data-typing data-i18n="hero_visual_typing"></p>
+      </div>
+    </div>
+
+      <section class="section hero-placeholder" data-route="home">
+        <div class="panel-card hero-placeholder-card">
+          <div class="hero-placeholder-grid">
+            <div class="hero-placeholder-media">
+              <img src="asset/img/picture/0102_synthesis.png" alt="" aria-hidden="true" />
+            </div>
+            <h2 class="panel-title eyebrow hero-placeholder-title" data-i18n="synthesis_title"></h2>
+            <p class="panel-text hero-placeholder-text" data-i18n="synthesis_body"></p>
           </div>
         </div>
+      </section>
+
+      <section class="hero" id="top" data-route="home">
         <div class="hero-panel reveal delay-012">
           <div class="panel-card">
             <p class="panel-title eyebrow" data-i18n="panel_title"></p>

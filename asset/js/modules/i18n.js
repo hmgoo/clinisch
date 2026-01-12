@@ -8,13 +8,12 @@ const translations = {
     nav_approach: "핵심역량",
     nav_contact: "문의하기",
     lang_toggle_aria: "언어 전환",
-    hero_eyebrow: "부티크 임상 서비스 기업",
-    hero_title: "임상 리더십과 데이터 사이언스 & AI가 만나는 곳",
-    hero_lead:
-      "숙련된 임상 리더십을 기반으로 실행력과 데이터 기반 인사이트를 결합해 " +
-      "현대적인 임상시험을 민첩하고 효율적으로 지원합니다.",
-    hero_cta_primary: "미팅 요청",
-    hero_cta_secondary: "서비스 보기",
+    hero_visual_title_line1: "부티크 임상 서비스 기업",
+    hero_visual_title_line2: "",
+    hero_visual_subtitle: "임상 리더십과 데이터 사이언스 & AI가 만나는 곳",
+    hero_visual_typing:
+      "숙련된 임상 리더십과 데이터 기반 인사이트를 결합해\n" +
+      "민첩하고 효율적인 부티크 임상시험을 지원합니다.",
     hero_badge1: "임상 리더십",
     hero_badge2: "린(Lean) 운영",
     hero_badge3: "AI 기반 인사이트",
@@ -28,6 +27,11 @@ const translations = {
     panel_tile2_text: "주니어 핸드오프 없는 실행",
     panel_tile3_title: "유연한 계약",
     panel_tile3_text: "월·프로젝트·리테이너 모델",
+    synthesis_title: "리더십과\n기술의 결합",
+    synthesis_body:
+      "임상 리더십과 실행을 중심으로\n" +
+      "데이터 사이언스와 AI를 접목해\n" +
+      "부티크 임상 서비스를 제공합니다.",
     about_eyebrow: "회사 소개",
     about_title: "시니어가 직접 이끄는 실행 중심 임상 지원",
     about_body:
@@ -163,13 +167,12 @@ const translations = {
     nav_approach: "Key Skills",
     nav_contact: "Contact",
     lang_toggle_aria: "Language toggle",
-    hero_eyebrow: "A Boutique Clinical Services Company",
-    hero_title: "Where Clinical Leadership Meets Data Science & AI",
-    hero_lead:
+    hero_visual_title_line1: "Boutique Clinical",
+    hero_visual_title_line2: "Services Company",
+    hero_visual_subtitle: "Where Clinical Leadership Meets Data Science & AI",
+    hero_visual_typing:
       "We combine seasoned clinical leadership with data-driven insight to " +
       "support boutique clinical trials with agility and efficiency.",
-    hero_cta_primary: "Request a Meeting",
-    hero_cta_secondary: "View Services",
     hero_badge1: "Clinical Leadership",
     hero_badge2: "Lean Operations",
     hero_badge3: "AI-Powered Insights",
@@ -183,6 +186,11 @@ const translations = {
     panel_tile2_text: "Quick deployment when needed",
     panel_tile3_title: "Flexible Contracting",
     panel_tile3_text: "Modular, scalable operating model",
+    synthesis_title: "Synthesis of\nLeadership & Tech",
+    synthesis_body:
+      "A boutique clinical services company centered\n" +
+      "on clinical leadership and execution, enhanced\n" +
+      "by data science and AI.",
     about_eyebrow: "About Us",
     about_title: "Senior-led, execution-first clinical support",
     about_body:
@@ -361,6 +369,9 @@ const applyLanguage = (lang) => {
   });
 
   updateToggleLabel(lang);
+  if (typeof setupTypingEffect === "function") {
+    setupTypingEffect();
+  }
   if (currentRouteKey) {
     const panel = routePanels.get(currentRouteKey);
     setStageHeight(panel);
