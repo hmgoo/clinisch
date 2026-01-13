@@ -92,10 +92,10 @@ document.addEventListener("DOMContentLoaded", () => {
     applyStagger('.hero', '.reveal', { base: 0, step: 0.06 });
 
     applyStagger('.service-grid', '.service-card', { base: 0.04, step: 0.06 });
-    applyStagger('.slides-grid', '.slide-card', { base: 0.05, step: 0.06 });
 
     applyStagger('.panel-grid', '.panel-tile', { base: 0.08, step: 0.05 });
   }
+
 });
 
 

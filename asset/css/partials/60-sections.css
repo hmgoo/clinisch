@@ -47,9 +47,7 @@
 .work-card,
 .tag-grid span,
 .why-card,
-.slide-card,
 .cta-panel,
-.hero-panel,
 
 .service-grid {
   display: grid;
@@ -377,56 +375,6 @@
   margin-bottom: 6px;
 }
 
-
-.slides {
-  padding-top: 72px;
-}
-
-
-.slides-grid {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-
-.slide-card {
-  background-color: var(--cloud);
-  border-radius: 26px;
-  overflow: hidden;
-  box-shadow: 0 16px 32px var(--shadow);
-  border: 1px solid rgba(94, 84, 72, 0.1);
-}
-
-.slide-image {
-  height: 180px;
-  background-size: cover;
-  background-position: center;
-}
-
-.slide-image-1 {
-  background-image: url("../../img/icon/image1.jpeg");
-}
-
-.slide-image.light {
-  background-position: center top;
-}
-
-.slide-body {
-  padding: 20px 22px 24px;
-}
-
-.slide-body h3 {
-  margin-bottom: 8px;
-}
-
-.slide-body p {
-  color: inherit;
-  line-height: inherit;
-  font-size: 14px;
-}
 
 .roadmap {
   padding-bottom: 96px;

@@ -48,15 +48,6 @@ const translations = {
       "시니어 주도의 유연한 임상 서비스를 제공하며, 글로벌 스터디에서 신뢰받는 " +
       "부티크 파트너로서 스몰 팀과 대형 CRO 사이의 운영 격차를 메우는 것이 " +
       "목표입니다.",
-    slides_eyebrow: "슬라이드 하이라이트",
-    slides_title: "핵심 메시지 스냅샷",
-    slides_body: "핵심 슬라이드 메시지를 압축해 소개합니다.",
-    slide1_title: "Clinisch & Co.",
-    slide1_text: "임상 리더십과 데이터 사이언스 & AI가 만나는 곳",
-    slide2_title: "Why Clinisch & Co.",
-    slide2_text: "시니어 주도, 유연한 모델, 기술 기반 가시성",
-    slide3_title: "How We Work",
-    slide3_text: "명확한 커뮤니케이션과 빠른 실행",
     services_eyebrow: "서비스",
     services_title: "임상시험 전주기 맞춤 지원",
     services_body: "필요와 단계에 맞춰 유연하게 설계합니다.",
@@ -206,15 +197,6 @@ const translations = {
     about_card2_text:
       "Our goal is to deliver senior-led clinical services and bridge the " +
       "operational gap with large CROs as a boutique partner.",
-    slides_eyebrow: "Slide Highlights",
-    slides_title: "Key Message Snapshot",
-    slides_body: "Selected highlights from the meeting deck.",
-    slide1_title: "Clinisch & Co.",
-    slide1_text: "Where Clinical Leadership Meets Data Science & AI",
-    slide2_title: "Why Clinisch?",
-    slide2_text: "Senior-led model, flexibility, and tech-enabled visibility.",
-    slide3_title: "How We Work",
-    slide3_text: "Clear communication and fast execution.",
     services_eyebrow: "Our Services",
     services_title: "End-to-end clinical trial support",
     services_body: "Designed flexibly to fit your needs and phase.",
