@@ -152,7 +152,7 @@ const translations = {
     footer_modal_date: "게시일: 2026년 1월 1일"
   },
   en: {
-    title: "Clinisch & Co. | Boutique Clinical Services",
+    title: "Clinisch & Co.",
     nav_about: "About",
     nav_services: "Services",
     nav_approach: "Key Skills",
