@@ -1,20 +1,12 @@
-﻿.about-grid,
-.service-grid,
+﻿.service-grid,
 .approach-grid,
 .work-grid,
 .tag-grid,
-.why-grid,
 .korean-grid {
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
-
-.about-grid {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
 
 
 .about-card {
@@ -46,7 +38,6 @@
 .approach-card,
 .work-card,
 .tag-grid span,
-.why-card,
 .cta-panel,
 
 .service-grid {
@@ -105,19 +96,50 @@
   margin-bottom: 0;
 }
 
-.service-card li::before {
-  content: "\00B7";
-  color: inherit;
-  margin-right: 8px;
+.service-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+  padding-left: 0;
+}
+
+.service-card ul,
+.service-list {
+  list-style-position: outside;
+  list-style-type: "\2022  ";
+  padding-left: 1.1em;
+}
+
+.service-card li,
+.service-list li {
+  line-height: 1.6;
 }
 
 .outcome {
   font-weight: 600;
   color: var(--ink);
+  display: grid;
+  grid-template-columns: 1.1em 1fr;
+  column-gap: 0;
+  align-items: start;
+  padding-left: 0;
+  min-height: 53.2px;
 }
 
 .outcome::before {
-  content: "▸ ";
+  content: none;
+}
+
+.outcome-marker {
+  display: inline-block;
+  line-height: 1.6;
+  justify-self: end;
+}
+
+.outcome-text {
+  line-height: 1.6;
 }
 
 
@@ -184,26 +206,6 @@
   justify-content: center;
 }
 
-
-.why-grid {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.why-card {
-  background-color: var(--cloud);
-  padding: 16px;
-  border-radius: 16px;
-  border: 1px solid rgba(94, 84, 72, 0.12);
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--ink-soft);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 .cta {
@@ -473,3 +475,8 @@
   transform: translateY(8px);
   transition: opacity 200ms ease, transform 200ms ease, max-height 220ms ease;
 }
+
+
+
+
+

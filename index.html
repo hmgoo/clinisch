@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="stylesheet" href="asset/css/base.css" />
   <style>
-    /* 디버그용 점선 테두리: index.html 전용 */
+    /* 레이아웃 디버그용 테두리 */
     body * {
       border: 1px dashed #8e8e8e;
     }
@@ -70,8 +70,37 @@
         <p class="hero-visual-typing" data-typing data-i18n="hero_visual_typing"></p>
       </div>
     </div>
-
-      <section class="section hero-placeholder" data-route="home">
+    <div class="hero-visual" data-route="about">
+      <img src="asset/img/picture/0201_about.png" alt="" aria-hidden="true" />
+      <div class="hero-visual-copy">
+        <h1>
+          <span data-i18n="about_hero_title"></span>
+        </h1>
+        <p data-i18n="about_hero_subtitle"></p>
+      </div>
+    </div>
+    <div class="hero-visual" data-route="services">
+      <img src="asset/img/picture/0301_service.png" alt="" aria-hidden="true" />
+      <div class="hero-visual-copy">
+        <h1>
+          <span data-i18n="services_hero_title"></span>
+        </h1>
+        <p data-i18n="services_hero_subtitle"></p>
+      </div>
+      <div class="hero-visual-typing-wrap">
+        <p class="hero-visual-typing" data-typing data-i18n="services_hero_typing"></p>
+      </div>
+    </div>
+    <div class="hero-visual" data-route="approach">
+      <img src="asset/img/picture/0401_key.png" alt="" aria-hidden="true" />
+      <div class="hero-visual-copy">
+        <h1>
+          <span data-i18n="approach_eyebrow"></span>
+        </h1>
+        <p data-i18n="approach_title"></p>
+      </div>
+    </div>
+    <section class="section hero-placeholder section-reveal" data-route="home">
         <div class="panel-card hero-placeholder-card">
           <div class="hero-placeholder-grid">
             <div class="hero-placeholder-media">
@@ -100,105 +129,105 @@
         </div>
       </section>
 
-      <section class="section about" id="about" data-route="about">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="about_eyebrow"></p>
-          <h2 data-i18n="about_title"></h2>
-          <p data-i18n="about_body"></p>
+      <section class="section about section-reveal" id="about" data-route="about">
+        <div class="panel-card hero-placeholder-card">
+          <div class="hero-placeholder-grid">
+            <div class="hero-placeholder-media">
+              <img src="asset/img/picture/0201_about.png" alt="" aria-hidden="true" />
+            </div>
+            <h2 class="panel-title eyebrow hero-placeholder-title" data-i18n="about_section_title"></h2>
+            <p class="panel-text hero-placeholder-text" data-i18n="about_section_body"></p>
+          </div>
         </div>
-        <div class="about-grid reveal delay-012">
-          <div class="about-card">
+        <div class="panel-grid about-panels reveal delay-012">
+          <div class="panel-tile">
             <h3 data-i18n="about_card1_title"></h3>
             <p data-i18n="about_card1_text"></p>
+            <img src="asset/img/picture/0202_what.png" alt="" aria-hidden="true" />
           </div>
-          <div class="about-card">
+          <div class="panel-tile">
             <h3 data-i18n="about_card2_title"></h3>
             <p data-i18n="about_card2_text"></p>
+            <img src="asset/img/picture/0203_mission.png" alt="" aria-hidden="true" />
           </div>
         </div>
       </section>
 
-      <section class="section why" data-route="about">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="why_eyebrow"></p>
-          <h2 data-i18n="why_title"></h2>
+      <section class="section why section-reveal" data-route="about">
+        <div class="panel-card hero-placeholder-card">
+          <div class="hero-placeholder-grid">
+            <div class="hero-placeholder-media">
+              <img src="asset/img/picture/0204_why.png" alt="" aria-hidden="true" />
+            </div>
+            <h2 class="panel-title eyebrow hero-placeholder-title" data-i18n="why_eyebrow"></h2>
+            <p class="panel-text hero-placeholder-text" data-i18n="why_title"></p>
+          </div>
         </div>
-        <div class="why-grid">
-          <div class="why-card reveal delay-006" data-i18n="why_card1"></div>
-          <div class="why-card reveal delay-012" data-i18n="why_card2"></div>
-          <div class="why-card reveal delay-018" data-i18n="why_card3"></div>
-          <div class="why-card reveal delay-024" data-i18n="why_card4"></div>
-          <div class="why-card reveal delay-03" data-i18n="why_card5"></div>
+        <div class="panel-grid why-panels reveal delay-012">
+          <div class="panel-tile">
+            <p data-i18n="why_card1"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="why_card2"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="why_card3"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="why_card4"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="why_card5"></p>
+          </div>
         </div>
       </section>
 
-      <section class="section services" id="services" data-route="services">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="services_eyebrow"></p>
-          <h2 data-i18n="services_title"></h2>
-          <p data-i18n="services_body"></p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card reveal delay-005">
-            <div class="service-head">
-              <h3 data-i18n="service1_title"></h3>
-              <div class="service-icon">
-                <img src="asset/img/icon/11_inspect.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <ul>
+            <section class="section services" id="services" data-route="services">
+        <div class="panel-grid services-panels reveal delay-012">
+          <div class="panel-tile">
+            <h3 data-i18n="service1_title"></h3>
+            <ul class="service-list">
               <li data-i18n="service1_item1"></li>
               <li data-i18n="service1_item2"></li>
               <li data-i18n="service1_item3"></li>
               <li data-i18n="service1_item4"></li>
             </ul>
-            <p class="outcome" data-i18n="service1_outcome"></p>
-          </article>
-          <article class="service-card reveal delay-01">
-            <div class="service-head">
-              <h3 data-i18n="service2_title"></h3>
-              <div class="service-icon">
-                <img src="asset/img/icon/12_rocket.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <ul>
+            <p class="outcome"><span class="outcome-marker" aria-hidden="true">&#9656;</span><span class="outcome-text" data-i18n="service1_outcome"></span></p>
+            <img src="asset/img/picture/0302_clinical.png" alt="" aria-hidden="true" />
+          </div>
+          <div class="panel-tile">
+            <h3 data-i18n="service2_title"></h3>
+            <ul class="service-list">
               <li data-i18n="service2_item1"></li>
               <li data-i18n="service2_item2"></li>
               <li data-i18n="service2_item3"></li>
               <li data-i18n="service2_item4"></li>
             </ul>
-            <p class="outcome" data-i18n="service2_outcome"></p>
-          </article>
-          <article class="service-card reveal delay-015">
-            <div class="service-head">
-              <h3 data-i18n="service3_title"></h3>
-              <div class="service-icon">
-                <img src="asset/img/icon/13_manage.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <ul>
+            <p class="outcome"><span class="outcome-marker" aria-hidden="true">&#9656;</span><span class="outcome-text" data-i18n="service2_outcome"></span></p>
+            <img src="asset/img/picture/0303_start.png" alt="" aria-hidden="true" />
+          </div>
+          <div class="panel-tile">
+            <h3 data-i18n="service3_title"></h3>
+            <ul class="service-list">
               <li data-i18n="service3_item1"></li>
               <li data-i18n="service3_item2"></li>
               <li data-i18n="service3_item3"></li>
               <li data-i18n="service3_item4"></li>
             </ul>
-            <p class="outcome" data-i18n="service3_outcome"></p>
-          </article>
-          <article class="service-card reveal delay-02">
-            <div class="service-head">
-              <h3 data-i18n="service4_title"></h3>
-              <div class="service-icon">
-                <img src="asset/img/icon/14_data.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <ul>
+            <p class="outcome"><span class="outcome-marker" aria-hidden="true">&#9656;</span><span class="outcome-text" data-i18n="service3_outcome"></span></p>
+            <img src="asset/img/picture/0304_study.png" alt="" aria-hidden="true" />
+          </div>
+          <div class="panel-tile">
+            <h3 data-i18n="service4_title"></h3>
+            <ul class="service-list">
               <li data-i18n="service4_item1"></li>
               <li data-i18n="service4_item2"></li>
               <li data-i18n="service4_item3"></li>
               <li data-i18n="service4_item4"></li>
             </ul>
-            <p class="outcome" data-i18n="service4_outcome"></p>
-          </article>
+            <p class="outcome"><span class="outcome-marker" aria-hidden="true">&#9656;</span><span class="outcome-text" data-i18n="service4_outcome"></span></p>
+            <img src="asset/img/picture/0305_data.png" alt="" aria-hidden="true" />
+          </div>
         </div>
       </section>
 
@@ -371,3 +400,13 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+

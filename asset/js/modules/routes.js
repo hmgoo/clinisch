@@ -238,6 +238,7 @@ const showPanel = (panel, direction) => {
 
   panel.style.display = "block";
   panel.setAttribute("aria-hidden", "false");
+  panel.dataset.enterDirection = direction;
   panel.classList.remove("exit-to-left", "exit-to-right");
   panel.classList.remove("enter-active");
   panel.classList.remove("enter-from-left", "enter-from-right");

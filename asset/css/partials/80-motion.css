@@ -69,6 +69,13 @@
   animation-delay: var(--delay, 0s);
 }
 
+.section-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: reveal calc(var(--motion-duration-medium) * 1.3) var(--motion-ease-out) forwards;
+  animation-delay: var(--delay, 0s);
+}
+
 [data-route-stage].route-transition .reveal,
 [data-route-stage][data-route-reveal="off"] .reveal {
   opacity: 1;

@@ -11,6 +11,11 @@ const translations = {
     hero_visual_title_line1: "부티크 임상 서비스 기업",
     hero_visual_title_line2: "",
     hero_visual_subtitle: "임상 리더십과 데이터 사이언스 & AI가 만나는 곳",
+    services_hero_title: "서비스 안내",
+    services_hero_subtitle: "임상시험 전주기 맞춤 지원",
+    services_hero_typing: "필요와 단계에 맞춰 유연하게 설계합니다.",
+    about_hero_title: "회사 소개",
+    about_hero_subtitle: "시니어 주도, 실행 중심 임상 지원",
     hero_visual_typing:
       "숙련된 임상 리더십과 데이터 기반 인사이트를 결합해\n" +
       "민첩하고 효율적인 부티크 임상시험을 지원합니다.",
@@ -39,6 +44,12 @@ const translations = {
       "부티크 임상 서비스 기업입니다. 풍부한 경험의 시니어 임상 리더가 직접 " +
       "프로젝트를 이끌고, 데이터 사이언스와 AI 기반 도구로 의사결정의 명확성을 " +
       "높이며 일정 최적화와 운영 리스크 최소화를 지원합니다.",
+    about_section_title: "시니어 주도, 실행 중심 임상 지원",
+    about_section_body:
+      "다양한 환경에서 임상시험 전 주기를 아우르는 부티크 임상 서비스를 " +
+      "제공합니다. 시니어 임상 리더가 프로젝트를 직접 이끌며, 데이터 사이언스와 " +
+      "AI 도구를 활용해 의사결정을 명확히 하고 일정 최적화와 운영 리스크를 " +
+      "낮춥니다.",
     about_card1_title: "차별화 포인트",
     about_card1_text:
       "전통적인 CRO 모델과 달리, 소수 정예의 린(Lean) 팀과 직접적인 " +
@@ -58,28 +69,28 @@ const translations = {
     service1_item3: "유관 부서 및 벤더 조율",
     service1_item4: "리스크 선제 식별 및 이슈 해결",
     service1_outcome:
-      "기대 효과: 명확한 책임 구조 · 예측 가능한 일정 · 이해관계자 정렬",
+      "명확한 책임 구조 · 예측 가능한 일정 · 이해관계자 정렬",
     service1_icon: "임상 프로젝트 관리 아이콘",
     service2_title: "스타트업 및 시험 실행",
     service2_item1: "규제 및 IRB/IEC 제출 지원",
     service2_item2: "시험 개시 및 준비 지원",
     service2_item3: "임상시험 실행 및 운영 지원",
     service2_item4: "주요 단계 실무 중심 코디네이션",
-    service2_outcome: "기대 효과: 빠른 시험 개시 · 안정적 운영 · 운영상 마찰 최소화",
+    service2_outcome: "빠른 시험 개시 · 안정적 운영 · 운영상 마찰 최소화",
     service2_icon: "시험 실행 아이콘",
     service3_title: "스터디 구조 개선 및 운영 감독",
     service3_item1: "지연·중단 위기 임상시험 정상화",
     service3_item2: "임시 임상/운영 리더십 제공",
     service3_item3: "원인 분석 및 시정·예방 조치 수립",
     service3_item4: "지속적 운영 관리 및 안정화",
-    service3_outcome: "기대 효과: 통제력 회복 · 일정 안정화 · 스폰서 신뢰 회복",
+    service3_outcome: "통제력 회복 · 일정 안정화 · 스폰서 신뢰 회복",
     service3_icon: "스터디 구조 개선 아이콘",
     service4_title: "임상 시스템 및 데이터 활성화",
     service4_item1: "임상 시스템 전략 수립 및 최적화",
     service4_item2: "데이터 기반 운영 대시보드 구축",
     service4_item3: "효율성과 일관성을 높이는 AI 도구 적용",
     service4_item4: "프로세스 자동화 및 데이터 통합 지원",
-    service4_outcome: "기대 효과: 가시성 향상 · 더 나은 의사결정 · 운영 효율성 증대",
+    service4_outcome: "가시성 향상 · 더 나은 의사결정 · 운영 효율성 증대",
     service4_icon: "임상 시스템 및 데이터 활성화 아이콘",
     approach_eyebrow: "핵심 역량",
     approach_title: "기술은 결정을 돕고, 경험은 방향을 이끕니다.",
@@ -102,10 +113,10 @@ const translations = {
     client_tag3: "내부 임상 조직을 슬림하게 운영하는 스폰서",
     client_tag4: "단기 또는 특정 영역 리더십이 필요한 조직",
     why_eyebrow: "왜 Clinisch 인가?",
-    why_title: "불필요한 오버헤드 없이, 시니어 주도 실행",
+    why_title: "불필요한 오버헤드 없이 시니어 주도 실행",
     why_card1: "시니어 중심의 부티크 임상 서비스 모델",
     why_card2: "실행에 집중한 실무형 지원",
-    why_card3: "임상 운영에 자연스럽게 통합된 데이터 사이언스 & AI",
+    why_card3: "임상 운영에 자연스럽게 통합된 데이터\n사이언스 & AI",
     why_card4: "민첩하고 린한 운영 구조",
     why_card5: "명확한 커뮤니케이션과 빠른 온보딩",
     cta_eyebrow: "문의하기",
@@ -161,6 +172,11 @@ const translations = {
     hero_visual_title_line1: "Boutique Clinical",
     hero_visual_title_line2: "Services Company",
     hero_visual_subtitle: "Where Clinical Leadership Meets Data Science & AI",
+    services_hero_title: "Our Services",
+    services_hero_subtitle: "End-to-end clinical trial support",
+    services_hero_typing: "Designed flexibly to fit your needs and phase.",
+    about_hero_title: "About Us",
+    about_hero_subtitle: "Senior-led, execution-first clinical support",
     hero_visual_typing:
       "We combine seasoned clinical leadership with data-driven insight to " +
       "support boutique clinical trials with agility and efficiency.",
@@ -189,6 +205,12 @@ const translations = {
       "lifecycle in diverse environments. Senior clinical leaders guide " +
       "projects directly, leveraging data science and AI tools to clarify " +
       "decisions, optimize timelines, and reduce operational risk.",
+    about_section_title: "Senior-led, execution-first clinical support",
+    about_section_body:
+      "We provide boutique clinical services across the full clinical trial " +
+      "lifecycle in diverse environments. Senior clinical leaders guide " +
+      "projects directly, leveraging data science and AI tools to clarify " +
+      "decisions, optimize timelines, and reduce operational risk.",
     about_card1_title: "What Sets Us Apart",
     about_card1_text:
       "Unlike traditional CRO models, we operate lean teams with direct " +
@@ -207,8 +229,7 @@ const translations = {
     service1_item3: "Internal team and vendor coordination",
     service1_item4: "Proactive risk identification and issue resolution",
     service1_outcome:
-      "Expected outcome: clear accountability · predictable timelines " +
-      "· aligned stakeholders",
+      "Clear accountability · predictable timelines · aligned stakeholders",
     service1_icon: "Clinical project management icon",
     service2_title: "Start-Up & Trial Execution",
     service2_item1: "Regulatory and IRB/EC submission support",
@@ -216,7 +237,7 @@ const translations = {
     service2_item3: "Trial execution and operations support",
     service2_item4: "Site-focused coordination",
     service2_outcome:
-      "Expected outcome: faster start-up · stable operations · reduced risk",
+      "Faster start-up · stable operations · reduced risk",
     service2_icon: "Trial execution icon",
     service3_title: "Study Rescue & Operational Oversight",
     service3_item1: "Recovery of delayed or at-risk trials",
@@ -224,8 +245,7 @@ const translations = {
     service3_item3: "Root-cause analysis and CAPA planning",
     service3_item4: "Ongoing operational management and quality improvement",
     service3_outcome:
-      "Expected outcome: regained control · normalized timelines " +
-      "· restored confidence",
+      "Regained control · normalized timelines · restored confidence",
     service3_icon: "Study rescue icon",
     service4_title: "Clinical Systems & Data Enablement",
     service4_item1: "Clinical system mapping and optimization",
@@ -233,8 +253,7 @@ const translations = {
     service4_item3: "AI tools to improve efficiency and quality",
     service4_item4: "Process automation and data integration support",
     service4_outcome:
-      "Expected outcome: improved visibility · faster decisions " +
-      "· operational efficiency",
+      "Improved visibility · faster decisions · operational efficiency",
     service4_icon: "Clinical systems and data enablement icon",
     approach_eyebrow: "Key Skills",
     approach_title: "Technology strengthens decisions, experience sets direction",
@@ -336,7 +355,7 @@ const applyLanguage = (lang) => {
     const key = element.dataset.i18n;
     const value = current[key];
 
-    if (!value) {
+    if (value === undefined || value === null) {
       return;
     }
 
