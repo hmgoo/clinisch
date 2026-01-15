@@ -35,6 +35,10 @@ section {
   margin: 0 auto;
 }
 
+section.has-hero-visual {
+  padding-top: 0;
+}
+
 .hero-visual {
   width: 100%;
   position: relative;
@@ -63,7 +67,7 @@ section {
   top: 50%;
   right: 6%;
   transform: translateY(-50%);
-  max-width: 600px;
+  max-width: 560px;
   text-align: right;
   color: #ffffff;
   z-index: 2;
@@ -72,16 +76,20 @@ section {
   transform: translateY(-50%) translateX(6%);
   animation: heroCopyFadeIn 1.8s var(--motion-ease) both;
   animation-delay: 1.8s;
+  display: grid;
+  gap: 12px;
+  justify-items: end;
 }
 
-.hero-visual-copy h1 {
+.hero-visual-title {
   font-size: 60px;
   line-height: 1.15;
-  margin: 0 0 12px;
+  margin: 0;
   font-weight: 700;
+  color: #ffffff;
 }
 
-.hero-visual-copy h1 span {
+.hero-visual-title span {
   display: block;
 }
 
@@ -92,9 +100,16 @@ section {
   line-height: 1.5;
 }
 
+.hero-visual-copy p[data-i18n="approach_title"] {
+  white-space: pre-line;
+}
+
+.hero-visual-copy p[data-i18n="roadmap_title"] {
+  white-space: pre-line;
+}
+
+
 .hero-visual-tags {
-  margin-top: 32px;
-  margin-bottom: 32px;
   display: grid;
   gap: 8px;
   grid-template-columns: max-content;
@@ -114,23 +129,9 @@ section {
   white-space: nowrap;
 }
 
-.hero-visual-typing-wrap {
-  position: absolute;
-  top: calc(50% + 186px);
-  right: 6%;
-  z-index: 2;
-  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
-  text-align: right;
-  max-width: 600px;
-  opacity: 0;
-  transform: translateX(6%);
-  animation: heroTypingFadeIn 1.8s var(--motion-ease) both;
-  animation-delay: 1.8s;
-}
-
-.hero-visual-typing {
-  margin-top: 0;
-  font-size: 14px;
+.hero-visual-copy .hero-visual-typing {
+  margin: 0;
+  font-size: 16px;
   color: #ffffff;
   line-height: 1.4;
   text-align: right;
@@ -156,6 +157,89 @@ section {
   animation-delay: 1.8s;
   mask-image: linear-gradient(to left, #000 50%, transparent);
   -webkit-mask-image: linear-gradient(to left, #000 50%, transparent);
+}
+
+.work-hero-visual,
+.clients-hero-visual {
+  width: 100vw;
+  max-width: none;
+  height: 80vh;
+  max-height: 900px;
+  margin-bottom: 40px;
+  border-radius: 0;
+  margin-left: calc(50% - 50vw);
+  transform: translateX(20%);
+  animation: none;
+  opacity: 0;
+}
+
+.roadmap-hero-visual {
+  animation: none;
+  opacity: 0;
+  transform: translateX(20%);
+}
+
+.roadmap-hero-visual::after {
+  animation: none;
+  opacity: 0;
+  transform: translateX(12%);
+}
+
+.roadmap-hero-visual .hero-visual-copy {
+  animation: none;
+  opacity: 0;
+  transform: translateY(-50%) translateX(6%);
+}
+
+.roadmap-hero-visual.is-visible {
+  animation: heroVisualSlideIn 1.8s var(--motion-ease) both;
+}
+
+.roadmap-hero-visual.is-visible::after {
+  animation: heroBlurSlideIn 1.8s var(--motion-ease) both;
+  animation-delay: 1.8s;
+}
+
+.roadmap-hero-visual.is-visible .hero-visual-copy {
+  animation: heroCopyFadeIn 1.8s var(--motion-ease) both;
+  animation-delay: 1.8s;
+}
+
+.work-hero-visual img,
+.clients-hero-visual img {
+  border-radius: 0;
+}
+
+.work-hero-visual::after,
+.clients-hero-visual::after {
+  border-radius: 0;
+  animation: none;
+  opacity: 0;
+  transform: translateX(12%);
+}
+
+.work-hero-visual .hero-visual-copy,
+.clients-hero-visual .hero-visual-copy {
+  animation: none;
+  opacity: 0;
+  transform: translateY(-50%) translateX(6%);
+}
+
+.work-hero-visual.is-visible,
+.clients-hero-visual.is-visible {
+  animation: heroVisualSlideIn 1.8s var(--motion-ease) both;
+}
+
+.work-hero-visual.is-visible::after,
+.clients-hero-visual.is-visible::after {
+  animation: heroBlurSlideIn 1.8s var(--motion-ease) both;
+  animation-delay: 1.8s;
+}
+
+.work-hero-visual.is-visible .hero-visual-copy,
+.clients-hero-visual.is-visible .hero-visual-copy {
+  animation: heroCopyFadeIn 1.8s var(--motion-ease) both;
+  animation-delay: 1.8s;
 }
 
 @keyframes heroVisualSlideIn {

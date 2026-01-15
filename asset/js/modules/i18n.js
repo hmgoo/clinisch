@@ -8,8 +8,8 @@ const translations = {
     nav_approach: "핵심역량",
     nav_contact: "문의하기",
     lang_toggle_aria: "언어 전환",
-    hero_visual_title_line1: "부티크 임상 서비스 기업",
-    hero_visual_title_line2: "",
+    hero_visual_title_line1: "부티크 임상 서비스",
+    hero_visual_title_line2: "기업",
     hero_visual_subtitle: "임상 리더십과 데이터 사이언스 & AI가 만나는 곳",
     services_hero_title: "서비스 안내",
     services_hero_subtitle: "임상시험 전주기 맞춤 지원",
@@ -106,6 +106,8 @@ const translations = {
     work_card1_text: "시간 단위 지원 · FTE 기반 지원 · 프로젝트 단위 패키지",
     work_card2_title: "확장 가능한 지원",
     work_card2_text: "임상시험 단계와 필요에 따라 유연하게 확장·축소합니다.",
+    work_card3_title: "맞춤 실행",
+    work_card3_text: "프로젝트 목적에 맞게 팀과 프로세스를 정교하게 설계합니다.",
     clients_eyebrow: "대상 고객",
     clients_title: "속도와 품질의 실행을 중시하는 파트너",
     client_tag1: "바이오 및 의료기기 스폰서",
@@ -127,11 +129,8 @@ const translations = {
     cta_role_line3: "관리책임자",
     cta_exp1: "글로벌 제약, 바이오텍, 의료기기, CRO 분야에서 20년 이상 경력",
     cta_exp2: "독립 임상 프로젝트 컨설턴트로 6년 이상 활동",
-    roadmap_eyebrow: "서비스 프로세스 로드맵",
-    roadmap_title: "서비스 프로세스를 한눈에",
-    roadmap_body:
-      "상담부터 결과 보고까지, Clinisch가 제공하는 전체 흐름을 단계별로 " +
-      "정리했습니다.",
+    roadmap_eyebrow: "프로세스 로드맵",
+    roadmap_title: "상담부터 결과 보고까지\nClinisch가 제공하는 단계별 Flow",
     roadmap_step1_title: "상담 및 전략 수립",
     roadmap_step2_title: "임상 설계",
     roadmap_step3_title: "실행 및 운영",
@@ -256,7 +255,7 @@ const translations = {
       "Improved visibility · faster decisions · operational efficiency",
     service4_icon: "Clinical systems and data enablement icon",
     approach_eyebrow: "Key Skills",
-    approach_title: "Technology strengthens decisions, experience sets direction",
+    approach_title: "Technology strengthens decisions,\nexperience sets direction",
     approach_card1_title: "Clinical Leadership",
     approach_card1_text: "Senior leaders drive strategy and execution directly.",
     approach_card2_title: "Data-driven Operations",
@@ -270,6 +269,8 @@ const translations = {
     work_card2_title: "Scalable Support",
     work_card2_text:
       "We scale up or down based on trial phase and needs.",
+    work_card3_title: "Tailored Delivery",
+    work_card3_text: "We align the team and process to your study needs.",
     clients_eyebrow: "Who We Work With",
     clients_title: "Partners focused on speed and quality of execution",
     client_tag1: "Biotech & medical device startups",
@@ -292,11 +293,9 @@ const translations = {
     cta_exp1:
       "20+ years of experience across global pharmaceuticals, biotech, medical devices, and CROs.",
     cta_exp2: "6+ years as an independent clinical project consultant.",
-    roadmap_eyebrow: "Service Process Roadmap",
-    roadmap_title: "See the service process at a glance",
-    roadmap_body:
-      "From consultation to results reporting, we outline the full flow " +
-      "step by step.",
+    roadmap_eyebrow: "Process Roadmap",
+    roadmap_title:
+      "From consultation to results reporting,\nClinisch provides a step-by-step flow.",
     roadmap_step1_title: "Consultation & Strategy",
     roadmap_step2_title: "Clinical Design",
     roadmap_step3_title: "Execution & Operations",

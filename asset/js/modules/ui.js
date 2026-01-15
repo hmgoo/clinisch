@@ -104,6 +104,8 @@ const setupTypingEffect = () => {
       return;
     }
 
+    const measuredHeight = element.getBoundingClientRect().height;
+    element.style.minHeight = measuredHeight > 0 ? `${measuredHeight}px` : "";
     element.textContent = "";
     element.classList.remove("is-done");
 

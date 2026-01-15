@@ -30,6 +30,18 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.approach-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.work-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact-panels {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .services-panels {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -47,11 +59,13 @@
   margin-top: auto;
 }
 
-.why-panels {
+.why-panels,
+.clients-panels {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.why-panels .panel-tile {
+.why-panels .panel-tile,
+.clients-panels .panel-tile {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +73,8 @@
   text-align: center;
 }
 
-.why-panels .panel-tile p {
+.why-panels .panel-tile p,
+.clients-panels .panel-tile p {
   margin-bottom: 0;
   white-space: pre-line;
 }
@@ -82,6 +97,14 @@
   margin-bottom: 12px;
 }
 
+.work .panel-tile p {
+  margin-bottom: 0;
+}
+
+.skills-page .approach .panel-tile p {
+  margin-bottom: 0;
+}
+
 .panel-tile img {
   width: 100%;
   border-radius: 18px;
@@ -100,8 +123,9 @@
   flex-direction: column;
 }
 
-.about-panels .panel-tile img {
+.panel-image-wrap {
   margin-top: auto;
+  padding-top: 12px;
 }
 .hero-placeholder-media img {
   transition: transform 0.2s ease-out;

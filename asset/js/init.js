@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (typeof setupRoadmap === "function") {
     setupRoadmap();
   }
+  if (typeof setupWorkHero === "function") {
+    setupWorkHero();
+  }
 
   const initialLanguage = getInitialLanguage();
   applyLanguage(initialLanguage);

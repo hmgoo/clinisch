@@ -280,6 +280,9 @@ const changeRoute = (nextRoute, pushHistory = false) => {
     setStageHeight(nextPanel);
     scheduleHeightReset();
     currentRouteKey = nextRoute.key;
+    if (typeof setupTypingEffect === "function") {
+      setupTypingEffect();
+    }
     return;
   }
 
@@ -322,6 +325,9 @@ const changeRoute = (nextRoute, pushHistory = false) => {
   currentRouteKey = nextRoute.key;
   updateNavState(currentRouteKey);
   updateBgState(currentRouteKey);
+  if (typeof setupTypingEffect === "function") {
+    setupTypingEffect();
+  }
 };
 
 const initRouteFromPath = () => {

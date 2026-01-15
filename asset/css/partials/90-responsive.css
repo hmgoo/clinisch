@@ -20,19 +20,17 @@
   }
 
   .roadmap-track {
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .roadmap-card {
-    flex: 1 1 calc(50% - 20px);
     max-width: none;
     width: 100%;
   }
 }
 
 @media (max-width: 1000px) {
-  .approach-grid {
+  .approach-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -40,12 +38,23 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .why-panels {
+  .why-panels,
+  .clients-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
+  .work-panels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-panels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1023px) {
   .header {
     grid-template-columns: 1fr auto;
     justify-items: stretch;
@@ -115,13 +124,12 @@
   }
 
   .roadmap-track {
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 768px) {
-  .approach-grid {
+@media (max-width: 767px) {
+  .approach-panels {
     grid-template-columns: 1fr;
   }
 
@@ -130,20 +138,62 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+  .contact-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-exp-stack {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-auto-rows: auto;
+    gap: 16px 16px;
+    align-items: center;
+  }
+
+  .cta-exp-group {
+    display: contents;
+  }
+
+  .cta-experience .cta-exp-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cta-experience .panel-image-wrap {
+    grid-column: 1 / -1;
+  }
+
+  .cta-exp-number {
+    align-self: center;
+    justify-self: end;
+  }
+
+  .cta-exp-text {
+    align-self: center;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 767px) {
+  .work-panels {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
   .roadmap-track {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 18px;
   }
 
   .roadmap-card {
     width: 100%;
-    flex: 1 1 auto;
     max-width: none;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .cta-contact-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -197,19 +247,34 @@
     clip-path: none;
     border-right: 0;
   }
+
+  .work-hero-visual,
+  .work-hero-visual::after,
+  .work-hero-visual .hero-visual-copy,
+  .clients-hero-visual,
+  .clients-hero-visual::after,
+  .clients-hero-visual .hero-visual-copy {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 [data-route-stage] {
   min-height: 0;
 }
 
-@media (max-width: 1024px) {
-  .hero-visual-copy h1 {
+@media (max-width: 1023px) {
+  .hero-visual-title {
     font-size: 42px;
   }
 
   .hero-visual-copy p {
     font-size: 16px;
+  }
+
+  .hero-visual-copy .hero-visual-typing {
+    font-size: 14px;
   }
 
   .hero-visual-copy {
@@ -293,6 +358,24 @@
   .services-panels .outcome {
     margin-top: 0;
   }
+
+  .cta-experience {
+    gap: clamp(10px, 1.8vh, 16px);
+    align-self: start;
+  }
+
+  .cta-experience .panel-image-wrap {
+    margin-top: 0;
+    padding-top: clamp(8px, 1.6vh, 12px);
+  }
+
+  .contact-panels {
+    align-items: stretch;
+  }
+
+  .contact-panels .panel-tile {
+    height: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -301,18 +384,24 @@
     max-height: none;
   }
 
+  .work-hero-visual,
+  .clients-hero-visual {
+    height: 50vh;
+    min-height: 240px;
+  }
+
   .hero-visual img {
     object-position: 50% 50%;
   }
 
   .hero-visual-copy {
     right: 6%;
-    width: max-content;
-    max-width: calc(100% - 6%);
-    min-width: 340px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 0;
   }
 
-  .hero-visual-copy h1 {
+  .hero-visual-title {
     font-size: 30px;
   }
 
@@ -320,13 +409,8 @@
     font-size: 12px;
   }
 
-  .hero-visual-typing-wrap {
-    left: 6%;
-    right: 6%;
-    max-width: 400px;
-    width: calc(100% - 12%);
-    margin-left: auto;
-    margin-right: 0;
+  .hero-visual-copy .hero-visual-typing {
+    font-size: 12px;
   }
 
   .hero-placeholder-grid {
@@ -380,7 +464,8 @@
     grid-template-columns: 1fr;
   }
 
-  .why-panels {
+  .why-panels,
+  .clients-panels {
     grid-template-columns: 1fr;
   }
 
