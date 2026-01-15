@@ -504,6 +504,12 @@
     max-width: 100%;
   }
 
+  /* 반응형 조정: why 플레이스홀더 그리드(about 섹션). */
+  .why .hero-placeholder-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
   /* 반응형 조정: 플레이스홀더 카드 오버플로우 방지. */
   .hero-placeholder-card {
     width: 100%;
