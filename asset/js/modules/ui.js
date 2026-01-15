@@ -82,5 +82,83 @@ const setupSmoothScroll = () => {
   });
 };
 
+const setupTypingEffect = () => {
+  const prefersReduced =
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const typingSpeed = 20;
+  const typingDelay = 1800;
+
+  document.querySelectorAll("[data-typing]").forEach((element) => {
+    if (element.__typingTimer) {
+      clearInterval(element.__typingTimer);
+      element.__typingTimer = null;
+    }
+    if (element.__typingStartTimer) {
+      clearTimeout(element.__typingStartTimer);
+      element.__typingStartTimer = null;
+    }
+
+    const text = element.textContent.replace(/^[\s\u00a0]+|[\s\u00a0]+$/g, "");
+    if (!text) {
+      return;
+    }
+
+    const measuredHeight = element.getBoundingClientRect().height;
+    element.style.minHeight = measuredHeight > 0 ? `${measuredHeight}px` : "";
+    element.textContent = "";
+    element.classList.remove("is-done");
+
+    if (prefersReduced) {
+      element.textContent = text;
+      element.classList.add("is-done");
+      return;
+    }
+
+    const chars = Array.from(text);
+    let index = 0;
+
+    element.__typingStartTimer = setTimeout(() => {
+      element.__typingStartTimer = null;
+      element.__typingTimer = setInterval(() => {
+        element.textContent = chars.slice(0, index + 1).join("");
+        index += 1;
+
+        if (index >= chars.length) {
+          clearInterval(element.__typingTimer);
+          element.__typingTimer = null;
+          element.classList.add("is-done");
+        }
+      }, typingSpeed);
+    }, typingDelay);
+  });
+};
+
+const syncHeroVisualHeight = () => {
+  const heroVisual = document.querySelector(".hero-visual");
+
+  if (!heroVisual) {
+    return;
+  }
+
+  const img = heroVisual.querySelector("img");
+  const setHeight = () => {
+    const height = heroVisual.getBoundingClientRect().height;
+    if (height > 0) {
+      document.documentElement.style.setProperty(
+        "--hero-visual-height",
+        `${height}px`
+      );
+    }
+  };
+
+  if (img && !img.complete) {
+    img.addEventListener("load", setHeight, { once: true });
+    return;
+  }
+
+  setHeight();
+};
+
 
 

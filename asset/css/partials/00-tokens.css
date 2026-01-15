@@ -1,9 +1,70 @@
 ﻿
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
 
 :root {
   color-scheme: light;
-  --family-font: "Noto Sans KR", sans-serif;
+  --family-font: "Pretendard", sans-serif;
   --ink: #2f2a25;
   --ink-soft: #5b5147;
   --accent: #f2c230;
@@ -29,7 +90,7 @@
   --shape-slate-start: #b0b8c5;
   --shape-slate-end: #7f8898;
   --shadow: rgba(72, 60, 50, 0.18);
-  --max-width: 1080px;
+  --max-width: 1024px;
   --radius-lg: 28px;
   --radius-md: 20px;
   --body-text-size: 16px;
@@ -56,6 +117,7 @@ html {
   width: 100%;
   overflow-x: hidden;
   height: 100%;
+  min-width: 340px;
 }
 
 
@@ -64,6 +126,7 @@ body {
   background-color: var(--cream);
   color: var(--ink);
   min-height: 100vh;
+  min-width: 340px;
   display: flex;
   flex-direction: column;
   padding-top: var(--header-offset, 0px);

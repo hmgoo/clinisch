@@ -5,7 +5,7 @@
   max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;
-  padding: 24px 24px 12px;
+  padding: 12px 20px 12px;
   font-size: 16px;
   display: grid;
   gap: 12px;
@@ -20,12 +20,17 @@
 
 .footer-inner {
   display: grid;
-  gap: 24px;
+  gap: 12px;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr) minmax(0, 1.2fr);
+  grid-template-areas: "brand meta links";
   align-items: start;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
 }
 
 .footer-brand {
+  grid-area: brand;
   display: grid;
   gap: 0;
 }
@@ -54,6 +59,7 @@
 }
 
 .footer-meta {
+  grid-area: meta;
   display: grid;
   gap: 8px;
   font-size: 16px;
@@ -66,6 +72,7 @@
 
 
 .footer-links {
+  grid-area: links;
   display: grid;
   gap: 10px;
   justify-items: start;

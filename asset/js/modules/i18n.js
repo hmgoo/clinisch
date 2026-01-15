@@ -8,13 +8,17 @@ const translations = {
     nav_approach: "핵심역량",
     nav_contact: "문의하기",
     lang_toggle_aria: "언어 전환",
-    hero_eyebrow: "부티크 임상 서비스 기업",
-    hero_title: "임상 리더십과 데이터 사이언스 & AI가 만나는 곳",
-    hero_lead:
-      "숙련된 임상 리더십을 기반으로 실행력과 데이터 기반 인사이트를 결합해 " +
-      "현대적인 임상시험을 민첩하고 효율적으로 지원합니다.",
-    hero_cta_primary: "미팅 요청",
-    hero_cta_secondary: "서비스 보기",
+    hero_visual_title_line1: "부티크 임상 서비스",
+    hero_visual_title_line2: "기업",
+    hero_visual_subtitle: "임상 리더십과 데이터 사이언스 & AI가 만나는 곳",
+    services_hero_title: "서비스 안내",
+    services_hero_subtitle: "임상시험 전주기 맞춤 지원",
+    services_hero_typing: "필요와 단계에 맞춰 유연하게 설계합니다.",
+    about_hero_title: "회사 소개",
+    about_hero_subtitle: "시니어 주도, 실행 중심 임상 지원",
+    hero_visual_typing:
+      "숙련된 임상 리더십과 데이터 기반 인사이트를 결합해\n" +
+      "민첩하고 효율적인 부티크 임상시험을 지원합니다.",
     hero_badge1: "임상 리더십",
     hero_badge2: "린(Lean) 운영",
     hero_badge3: "AI 기반 인사이트",
@@ -28,6 +32,11 @@ const translations = {
     panel_tile2_text: "주니어 핸드오프 없는 실행",
     panel_tile3_title: "유연한 계약",
     panel_tile3_text: "월·프로젝트·리테이너 모델",
+    synthesis_title: "리더십과\n기술의 결합",
+    synthesis_body:
+      "임상 리더십과 실행을 중심으로\n" +
+      "데이터 사이언스와 AI를 접목해\n" +
+      "부티크 임상 서비스를 제공합니다.",
     about_eyebrow: "회사 소개",
     about_title: "시니어가 직접 이끄는 실행 중심 임상 지원",
     about_body:
@@ -35,6 +44,12 @@ const translations = {
       "부티크 임상 서비스 기업입니다. 풍부한 경험의 시니어 임상 리더가 직접 " +
       "프로젝트를 이끌고, 데이터 사이언스와 AI 기반 도구로 의사결정의 명확성을 " +
       "높이며 일정 최적화와 운영 리스크 최소화를 지원합니다.",
+    about_section_title: "시니어 주도, 실행 중심 임상 지원",
+    about_section_body:
+      "다양한 환경에서 임상시험 전 주기를 아우르는 부티크 임상 서비스를 " +
+      "제공합니다. 시니어 임상 리더가 프로젝트를 직접 이끌며, 데이터 사이언스와 " +
+      "AI 도구를 활용해 의사결정을 명확히 하고 일정 최적화와 운영 리스크를 " +
+      "낮춥니다.",
     about_card1_title: "차별화 포인트",
     about_card1_text:
       "전통적인 CRO 모델과 달리, 소수 정예의 린(Lean) 팀과 직접적인 " +
@@ -44,15 +59,6 @@ const translations = {
       "시니어 주도의 유연한 임상 서비스를 제공하며, 글로벌 스터디에서 신뢰받는 " +
       "부티크 파트너로서 스몰 팀과 대형 CRO 사이의 운영 격차를 메우는 것이 " +
       "목표입니다.",
-    slides_eyebrow: "슬라이드 하이라이트",
-    slides_title: "핵심 메시지 스냅샷",
-    slides_body: "핵심 슬라이드 메시지를 압축해 소개합니다.",
-    slide1_title: "Clinisch & Co.",
-    slide1_text: "임상 리더십과 데이터 사이언스 & AI가 만나는 곳",
-    slide2_title: "Why Clinisch & Co.",
-    slide2_text: "시니어 주도, 유연한 모델, 기술 기반 가시성",
-    slide3_title: "How We Work",
-    slide3_text: "명확한 커뮤니케이션과 빠른 실행",
     services_eyebrow: "서비스",
     services_title: "임상시험 전주기 맞춤 지원",
     services_body: "필요와 단계에 맞춰 유연하게 설계합니다.",
@@ -63,28 +69,28 @@ const translations = {
     service1_item3: "유관 부서 및 벤더 조율",
     service1_item4: "리스크 선제 식별 및 이슈 해결",
     service1_outcome:
-      "기대 효과: 명확한 책임 구조 · 예측 가능한 일정 · 이해관계자 정렬",
+      "명확한 책임 구조 · 예측 가능한 일정 · 이해관계자 정렬",
     service1_icon: "임상 프로젝트 관리 아이콘",
     service2_title: "스타트업 및 시험 실행",
     service2_item1: "규제 및 IRB/IEC 제출 지원",
     service2_item2: "시험 개시 및 준비 지원",
     service2_item3: "임상시험 실행 및 운영 지원",
     service2_item4: "주요 단계 실무 중심 코디네이션",
-    service2_outcome: "기대 효과: 빠른 시험 개시 · 안정적 운영 · 운영상 마찰 최소화",
+    service2_outcome: "빠른 시험 개시 · 안정적 운영 · 운영상 마찰 최소화",
     service2_icon: "시험 실행 아이콘",
     service3_title: "스터디 구조 개선 및 운영 감독",
     service3_item1: "지연·중단 위기 임상시험 정상화",
     service3_item2: "임시 임상/운영 리더십 제공",
     service3_item3: "원인 분석 및 시정·예방 조치 수립",
     service3_item4: "지속적 운영 관리 및 안정화",
-    service3_outcome: "기대 효과: 통제력 회복 · 일정 안정화 · 스폰서 신뢰 회복",
+    service3_outcome: "통제력 회복 · 일정 안정화 · 스폰서 신뢰 회복",
     service3_icon: "스터디 구조 개선 아이콘",
     service4_title: "임상 시스템 및 데이터 활성화",
     service4_item1: "임상 시스템 전략 수립 및 최적화",
     service4_item2: "데이터 기반 운영 대시보드 구축",
     service4_item3: "효율성과 일관성을 높이는 AI 도구 적용",
     service4_item4: "프로세스 자동화 및 데이터 통합 지원",
-    service4_outcome: "기대 효과: 가시성 향상 · 더 나은 의사결정 · 운영 효율성 증대",
+    service4_outcome: "가시성 향상 · 더 나은 의사결정 · 운영 효율성 증대",
     service4_icon: "임상 시스템 및 데이터 활성화 아이콘",
     approach_eyebrow: "핵심 역량",
     approach_title: "기술은 결정을 돕고, 경험은 방향을 이끕니다.",
@@ -100,6 +106,8 @@ const translations = {
     work_card1_text: "시간 단위 지원 · FTE 기반 지원 · 프로젝트 단위 패키지",
     work_card2_title: "확장 가능한 지원",
     work_card2_text: "임상시험 단계와 필요에 따라 유연하게 확장·축소합니다.",
+    work_card3_title: "맞춤 실행",
+    work_card3_text: "프로젝트 목적에 맞게 팀과 프로세스를 정교하게 설계합니다.",
     clients_eyebrow: "대상 고객",
     clients_title: "속도와 품질의 실행을 중시하는 파트너",
     client_tag1: "바이오 및 의료기기 스폰서",
@@ -107,10 +115,10 @@ const translations = {
     client_tag3: "내부 임상 조직을 슬림하게 운영하는 스폰서",
     client_tag4: "단기 또는 특정 영역 리더십이 필요한 조직",
     why_eyebrow: "왜 Clinisch 인가?",
-    why_title: "불필요한 오버헤드 없이, 시니어 주도 실행",
+    why_title: "불필요한 오버헤드 없이 시니어 주도 실행",
     why_card1: "시니어 중심의 부티크 임상 서비스 모델",
     why_card2: "실행에 집중한 실무형 지원",
-    why_card3: "임상 운영에 자연스럽게 통합된 데이터 사이언스 & AI",
+    why_card3: "임상 운영에 자연스럽게 통합된 데이터\n사이언스 & AI",
     why_card4: "민첩하고 린한 운영 구조",
     why_card5: "명확한 커뮤니케이션과 빠른 온보딩",
     cta_eyebrow: "문의하기",
@@ -121,11 +129,8 @@ const translations = {
     cta_role_line3: "관리책임자",
     cta_exp1: "글로벌 제약, 바이오텍, 의료기기, CRO 분야에서 20년 이상 경력",
     cta_exp2: "독립 임상 프로젝트 컨설턴트로 6년 이상 활동",
-    roadmap_eyebrow: "서비스 프로세스 로드맵",
-    roadmap_title: "서비스 프로세스를 한눈에",
-    roadmap_body:
-      "상담부터 결과 보고까지, Clinisch가 제공하는 전체 흐름을 단계별로 " +
-      "정리했습니다.",
+    roadmap_eyebrow: "프로세스 로드맵",
+    roadmap_title: "상담부터 결과 보고까지\nClinisch가 제공하는 단계별 Flow",
     roadmap_step1_title: "상담 및 전략 수립",
     roadmap_step2_title: "임상 설계",
     roadmap_step3_title: "실행 및 운영",
@@ -157,19 +162,23 @@ const translations = {
     footer_modal_date: "게시일: 2026년 1월 1일"
   },
   en: {
-    title: "Clinisch & Co. | Boutique Clinical Services",
+    title: "Clinisch & Co.",
     nav_about: "About",
     nav_services: "Services",
     nav_approach: "Key Skills",
     nav_contact: "Contact",
     lang_toggle_aria: "Language toggle",
-    hero_eyebrow: "A Boutique Clinical Services Company",
-    hero_title: "Where Clinical Leadership Meets Data Science & AI",
-    hero_lead:
+    hero_visual_title_line1: "Boutique Clinical",
+    hero_visual_title_line2: "Services Company",
+    hero_visual_subtitle: "Where Clinical Leadership Meets Data Science & AI",
+    services_hero_title: "Our Services",
+    services_hero_subtitle: "End-to-end clinical trial support",
+    services_hero_typing: "Designed flexibly to fit your needs and phase.",
+    about_hero_title: "About Us",
+    about_hero_subtitle: "Senior-led, execution-first clinical support",
+    hero_visual_typing:
       "We combine seasoned clinical leadership with data-driven insight to " +
       "support boutique clinical trials with agility and efficiency.",
-    hero_cta_primary: "Request a Meeting",
-    hero_cta_secondary: "View Services",
     hero_badge1: "Clinical Leadership",
     hero_badge2: "Lean Operations",
     hero_badge3: "AI-Powered Insights",
@@ -183,9 +192,20 @@ const translations = {
     panel_tile2_text: "Quick deployment when needed",
     panel_tile3_title: "Flexible Contracting",
     panel_tile3_text: "Modular, scalable operating model",
+    synthesis_title: "Synthesis of\nLeadership & Tech",
+    synthesis_body:
+      "A boutique clinical services company centered\n" +
+      "on clinical leadership and execution, enhanced\n" +
+      "by data science and AI.",
     about_eyebrow: "About Us",
     about_title: "Senior-led, execution-first clinical support",
     about_body:
+      "We provide boutique clinical services across the full clinical trial " +
+      "lifecycle in diverse environments. Senior clinical leaders guide " +
+      "projects directly, leveraging data science and AI tools to clarify " +
+      "decisions, optimize timelines, and reduce operational risk.",
+    about_section_title: "Senior-led, execution-first clinical support",
+    about_section_body:
       "We provide boutique clinical services across the full clinical trial " +
       "lifecycle in diverse environments. Senior clinical leaders guide " +
       "projects directly, leveraging data science and AI tools to clarify " +
@@ -198,15 +218,6 @@ const translations = {
     about_card2_text:
       "Our goal is to deliver senior-led clinical services and bridge the " +
       "operational gap with large CROs as a boutique partner.",
-    slides_eyebrow: "Slide Highlights",
-    slides_title: "Key Message Snapshot",
-    slides_body: "Selected highlights from the meeting deck.",
-    slide1_title: "Clinisch & Co.",
-    slide1_text: "Where Clinical Leadership Meets Data Science & AI",
-    slide2_title: "Why Clinisch?",
-    slide2_text: "Senior-led model, flexibility, and tech-enabled visibility.",
-    slide3_title: "How We Work",
-    slide3_text: "Clear communication and fast execution.",
     services_eyebrow: "Our Services",
     services_title: "End-to-end clinical trial support",
     services_body: "Designed flexibly to fit your needs and phase.",
@@ -217,8 +228,7 @@ const translations = {
     service1_item3: "Internal team and vendor coordination",
     service1_item4: "Proactive risk identification and issue resolution",
     service1_outcome:
-      "Expected outcome: clear accountability · predictable timelines " +
-      "· aligned stakeholders",
+      "Clear accountability · predictable timelines · aligned stakeholders",
     service1_icon: "Clinical project management icon",
     service2_title: "Start-Up & Trial Execution",
     service2_item1: "Regulatory and IRB/EC submission support",
@@ -226,7 +236,7 @@ const translations = {
     service2_item3: "Trial execution and operations support",
     service2_item4: "Site-focused coordination",
     service2_outcome:
-      "Expected outcome: faster start-up · stable operations · reduced risk",
+      "Faster start-up · stable operations · reduced risk",
     service2_icon: "Trial execution icon",
     service3_title: "Study Rescue & Operational Oversight",
     service3_item1: "Recovery of delayed or at-risk trials",
@@ -234,8 +244,7 @@ const translations = {
     service3_item3: "Root-cause analysis and CAPA planning",
     service3_item4: "Ongoing operational management and quality improvement",
     service3_outcome:
-      "Expected outcome: regained control · normalized timelines " +
-      "· restored confidence",
+      "Regained control · normalized timelines · restored confidence",
     service3_icon: "Study rescue icon",
     service4_title: "Clinical Systems & Data Enablement",
     service4_item1: "Clinical system mapping and optimization",
@@ -243,11 +252,10 @@ const translations = {
     service4_item3: "AI tools to improve efficiency and quality",
     service4_item4: "Process automation and data integration support",
     service4_outcome:
-      "Expected outcome: improved visibility · faster decisions " +
-      "· operational efficiency",
+      "Improved visibility · faster decisions · operational efficiency",
     service4_icon: "Clinical systems and data enablement icon",
     approach_eyebrow: "Key Skills",
-    approach_title: "Technology strengthens decisions, experience sets direction",
+    approach_title: "Technology strengthens decisions,\nexperience sets direction",
     approach_card1_title: "Clinical Leadership",
     approach_card1_text: "Senior leaders drive strategy and execution directly.",
     approach_card2_title: "Data-driven Operations",
@@ -261,6 +269,8 @@ const translations = {
     work_card2_title: "Scalable Support",
     work_card2_text:
       "We scale up or down based on trial phase and needs.",
+    work_card3_title: "Tailored Delivery",
+    work_card3_text: "We align the team and process to your study needs.",
     clients_eyebrow: "Who We Work With",
     clients_title: "Partners focused on speed and quality of execution",
     client_tag1: "Biotech & medical device startups",
@@ -283,11 +293,9 @@ const translations = {
     cta_exp1:
       "20+ years of experience across global pharmaceuticals, biotech, medical devices, and CROs.",
     cta_exp2: "6+ years as an independent clinical project consultant.",
-    roadmap_eyebrow: "Service Process Roadmap",
-    roadmap_title: "See the service process at a glance",
-    roadmap_body:
-      "From consultation to results reporting, we outline the full flow " +
-      "step by step.",
+    roadmap_eyebrow: "Process Roadmap",
+    roadmap_title:
+      "From consultation to results reporting,\nClinisch provides a step-by-step flow.",
     roadmap_step1_title: "Consultation & Strategy",
     roadmap_step2_title: "Clinical Design",
     roadmap_step3_title: "Execution & Operations",
@@ -346,7 +354,7 @@ const applyLanguage = (lang) => {
     const key = element.dataset.i18n;
     const value = current[key];
 
-    if (!value) {
+    if (value === undefined || value === null) {
       return;
     }
 
@@ -361,6 +369,9 @@ const applyLanguage = (lang) => {
   });
 
   updateToggleLabel(lang);
+  if (typeof setupTypingEffect === "function") {
+    setupTypingEffect();
+  }
   if (currentRouteKey) {
     const panel = routePanels.get(currentRouteKey);
     setStageHeight(panel);

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,12 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <base href="../" />
   <title data-i18n="title"></title>
+  <meta property="og:title" content="Clinisch & Co." />
+  <meta property="og:description" content="Boutique Clinical Services Company" />
+  <meta property="og:image" content="https://clinisch.com/asset/img/picture/0101_top.png" />
+  <meta property="og:url" content="https://clinisch.com" />
+  <meta property="og:type" content="website" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="asset/css/base.css" />
+  <!--
+<style>
+    /* 레이아웃 디버그용 테두리 */
+    body * {
+      border: 1px dashed #8e8e8e;
+    }
+
+    body div {
+      border-color: #ff6b6b;
+    }
+
+    body article {
+      border-color: #4dabf7;
+    }
+
+    body span {
+      border-color: #ffd43b;
+    }
+
+    body section {
+      border-color: #51cf66;
+    }
+
+    body [class*="grid"] {
+      border-color: #845ef7;
+    }
+  </style>
+-->
 </head>
 
 <body>
@@ -25,231 +54,305 @@
     <div id="site-header" class="site-header"></div>
 
     <main data-route-stage>
-      <section class="hero" id="top" data-route="home">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="hero_eyebrow"></p>
-          <h2 data-i18n="hero_title"></h2>
-          <p class="lead" data-i18n="hero_lead"></p>
-          <div class="hero-badges">
-            <span data-i18n="hero_badge1"></span>
-            <span data-i18n="hero_badge2"></span>
-            <span data-i18n="hero_badge3"></span>
+    <div class="hero-visual" data-route="home">
+      <img src="asset/img/picture/0101_top.png" alt="" aria-hidden="true" />
+      <div class="hero-visual-copy">
+        <span class="hero-visual-title">
+          <span data-i18n="hero_visual_title_line1"></span>
+          <span data-i18n="hero_visual_title_line2"></span>
+        </span>
+        <p data-i18n="hero_visual_subtitle"></p>
+        <p class="hero-visual-typing" data-typing data-i18n="hero_visual_typing"></p>
+        <div class="hero-visual-tags">
+          <span class="hero-visual-tag" data-i18n="hero_badge1"></span>
+          <span class="hero-visual-tag" data-i18n="hero_badge2"></span>
+          <span class="hero-visual-tag" data-i18n="hero_badge3"></span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" data-route="about">
+      <img src="asset/img/picture/0201_about.png" alt="" aria-hidden="true" />
+      <div class="hero-visual-copy">
+        <span class="hero-visual-title" data-i18n="about_hero_title"></span>
+        <p data-i18n="about_hero_subtitle"></p>
+      </div>
+    </div>
+    <div class="hero-visual" data-route="services">
+      <img src="asset/img/picture/0301_service.png" alt="" aria-hidden="true" />
+      <div class="hero-visual-copy">
+        <span class="hero-visual-title" data-i18n="services_hero_title"></span>
+        <p data-i18n="services_hero_subtitle"></p>
+        <p class="hero-visual-typing" data-typing data-i18n="services_hero_typing"></p>
+      </div>
+    </div>
+    <div class="hero-visual" data-route="approach">
+      <img src="asset/img/picture/0401_key.png" alt="" aria-hidden="true" />
+      <div class="hero-visual-copy">
+        <span class="hero-visual-title" data-i18n="approach_eyebrow"></span>
+        <p data-i18n="approach_title"></p>
+      </div>
+    </div>
+    <section class="section hero-placeholder section-reveal" data-route="home">
+        <div class="panel-card hero-placeholder-card">
+          <div class="hero-placeholder-grid">
+            <div class="hero-placeholder-media">
+              <img src="asset/img/picture/0102_synthesis.png" alt="" aria-hidden="true" />
+            </div>
+            <h2 class="panel-title eyebrow hero-placeholder-title" data-i18n="synthesis_title"></h2>
+            <p class="panel-text hero-placeholder-text" data-i18n="synthesis_body"></p>
           </div>
         </div>
-        <div class="hero-panel reveal delay-012">
-          <div class="panel-card">
-            <p class="panel-title eyebrow" data-i18n="panel_title"></p>
-            <p class="panel-text" data-i18n="panel_text"></p>
+        <div class="panel-grid hero-placeholder-panels">
+          <div class="panel-tile">
+            <h3 data-i18n="panel_tile1_title"></h3>
+            <p data-i18n="panel_tile1_text"></p>
+            <img src="asset/img/picture/0103_apac.png" alt="" aria-hidden="true" />
           </div>
-          <div class="panel-grid">
-            <div class="panel-tile">
-              <h3 data-i18n="panel_tile1_title"></h3>
-              <p data-i18n="panel_tile1_text"></p>
-            </div>
-            <div class="panel-tile">
-              <h3 data-i18n="panel_tile2_title"></h3>
-              <p data-i18n="panel_tile2_text"></p>
-            </div>
-            <div class="panel-tile">
-              <h3 data-i18n="panel_tile3_title"></h3>
-              <p data-i18n="panel_tile3_text"></p>
-            </div>
+          <div class="panel-tile">
+            <h3 data-i18n="panel_tile2_title"></h3>
+            <p data-i18n="panel_tile2_text"></p>
+            <img src="asset/img/picture/0104_rapid.png" alt="" aria-hidden="true" />
+          </div>
+          <div class="panel-tile">
+            <h3 data-i18n="panel_tile3_title"></h3>
+            <p data-i18n="panel_tile3_text"></p>
+            <img src="asset/img/picture/0105_flexible.png" alt="" aria-hidden="true" />
           </div>
         </div>
       </section>
 
-      <section class="section about" id="about" data-route="about">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="about_eyebrow"></p>
-          <h2 data-i18n="about_title"></h2>
-          <p data-i18n="about_body"></p>
+      <section class="section about section-reveal" id="about" data-route="about">
+        <div class="panel-card hero-placeholder-card">
+          <div class="hero-placeholder-grid">
+            <div class="hero-placeholder-media">
+              <img src="asset/img/picture/0201_about.png" alt="" aria-hidden="true" />
+            </div>
+            <h2 class="panel-title eyebrow hero-placeholder-title" data-i18n="about_section_title"></h2>
+            <p class="panel-text hero-placeholder-text" data-i18n="about_section_body"></p>
+          </div>
         </div>
-        <div class="about-grid reveal delay-012">
-          <div class="about-card">
+        <div class="panel-grid about-panels reveal delay-012">
+          <div class="panel-tile">
             <h3 data-i18n="about_card1_title"></h3>
             <p data-i18n="about_card1_text"></p>
+            <div class="panel-image-wrap">
+              <img class="about-panel-image" src="asset/img/picture/0202_what.png" alt="" aria-hidden="true" />
+            </div>
           </div>
-          <div class="about-card">
+          <div class="panel-tile">
             <h3 data-i18n="about_card2_title"></h3>
             <p data-i18n="about_card2_text"></p>
+            <div class="panel-image-wrap">
+              <img class="about-panel-image" src="asset/img/picture/0203_mission.png" alt="" aria-hidden="true" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section slides" data-route="about">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="slides_eyebrow"></p>
-          <h2 data-i18n="slides_title"></h2>
-          <p data-i18n="slides_body"></p>
+      <section class="section why section-reveal" data-route="about">
+        <div class="panel-card hero-placeholder-card">
+          <div class="hero-placeholder-grid">
+            <div class="hero-placeholder-media">
+              <img src="asset/img/picture/0204_why.png" alt="" aria-hidden="true" />
+            </div>
+            <h2 class="panel-title eyebrow hero-placeholder-title" data-i18n="why_eyebrow"></h2>
+            <p class="panel-text hero-placeholder-text" data-i18n="why_title"></p>
+          </div>
         </div>
-        <div class="slides-grid">
-          <article class="slide-card reveal delay-005">
-            <div class="slide-image slide-image-1"></div>
-            <div class="slide-body">
-              <h3 data-i18n="slide1_title"></h3>
-              <p data-i18n="slide1_text"></p>
-            </div>
-          </article>
-          <article class="slide-card reveal delay-01">
-            <div class="slide-image slide-image-1"></div>
-            <div class="slide-body">
-              <h3 data-i18n="slide2_title"></h3>
-              <p data-i18n="slide2_text"></p>
-            </div>
-          </article>
-          <article class="slide-card reveal delay-015">
-            <div class="slide-image light slide-image-1"></div>
-            <div class="slide-body">
-              <h3 data-i18n="slide3_title"></h3>
-              <p data-i18n="slide3_text"></p>
-            </div>
-          </article>
+        <div class="panel-grid why-panels reveal delay-012">
+          <div class="panel-tile">
+            <p data-i18n="why_card1"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="why_card2"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="why_card3"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="why_card4"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="why_card5"></p>
+          </div>
         </div>
       </section>
 
-      <section class="section services" id="services" data-route="services">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="services_eyebrow"></p>
-          <h2 data-i18n="services_title"></h2>
-          <p data-i18n="services_body"></p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card reveal delay-005">
-            <div class="service-head">
-              <h3 data-i18n="service1_title"></h3>
-              <div class="service-icon">
-                <img src="asset/img/icon/11_inspect.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <ul>
+            <section class="section services" id="services" data-route="services">
+        <div class="panel-grid services-panels reveal delay-012">
+          <div class="panel-tile">
+            <h3 data-i18n="service1_title"></h3>
+            <ul class="service-list">
               <li data-i18n="service1_item1"></li>
               <li data-i18n="service1_item2"></li>
               <li data-i18n="service1_item3"></li>
               <li data-i18n="service1_item4"></li>
             </ul>
-            <p class="outcome" data-i18n="service1_outcome"></p>
-          </article>
-          <article class="service-card reveal delay-01">
-            <div class="service-head">
-              <h3 data-i18n="service2_title"></h3>
-              <div class="service-icon">
-                <img src="asset/img/icon/12_rocket.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <ul>
+            <p class="outcome"><span class="outcome-marker" aria-hidden="true">&#9656;</span><span class="outcome-text" data-i18n="service1_outcome"></span></p>
+            <img src="asset/img/picture/0302_clinical.png" alt="" aria-hidden="true" />
+          </div>
+          <div class="panel-tile">
+            <h3 data-i18n="service2_title"></h3>
+            <ul class="service-list">
               <li data-i18n="service2_item1"></li>
               <li data-i18n="service2_item2"></li>
               <li data-i18n="service2_item3"></li>
               <li data-i18n="service2_item4"></li>
             </ul>
-            <p class="outcome" data-i18n="service2_outcome"></p>
-          </article>
-          <article class="service-card reveal delay-015">
-            <div class="service-head">
-              <h3 data-i18n="service3_title"></h3>
-              <div class="service-icon">
-                <img src="asset/img/icon/13_manage.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <ul>
+            <p class="outcome"><span class="outcome-marker" aria-hidden="true">&#9656;</span><span class="outcome-text" data-i18n="service2_outcome"></span></p>
+            <img src="asset/img/picture/0303_start.png" alt="" aria-hidden="true" />
+          </div>
+          <div class="panel-tile">
+            <h3 data-i18n="service3_title"></h3>
+            <ul class="service-list">
               <li data-i18n="service3_item1"></li>
               <li data-i18n="service3_item2"></li>
               <li data-i18n="service3_item3"></li>
               <li data-i18n="service3_item4"></li>
             </ul>
-            <p class="outcome" data-i18n="service3_outcome"></p>
-          </article>
-          <article class="service-card reveal delay-02">
-            <div class="service-head">
-              <h3 data-i18n="service4_title"></h3>
-              <div class="service-icon">
-                <img src="asset/img/icon/14_data.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <ul>
+            <p class="outcome"><span class="outcome-marker" aria-hidden="true">&#9656;</span><span class="outcome-text" data-i18n="service3_outcome"></span></p>
+            <img src="asset/img/picture/0304_study.png" alt="" aria-hidden="true" />
+          </div>
+          <div class="panel-tile">
+            <h3 data-i18n="service4_title"></h3>
+            <ul class="service-list">
               <li data-i18n="service4_item1"></li>
               <li data-i18n="service4_item2"></li>
               <li data-i18n="service4_item3"></li>
               <li data-i18n="service4_item4"></li>
             </ul>
-            <p class="outcome" data-i18n="service4_outcome"></p>
-          </article>
+            <p class="outcome"><span class="outcome-marker" aria-hidden="true">&#9656;</span><span class="outcome-text" data-i18n="service4_outcome"></span></p>
+            <img src="asset/img/picture/0305_data.png" alt="" aria-hidden="true" />
+          </div>
+        </div>
+      </section>
+<div class="hero-visual roadmap-hero-visual" data-route="services">
+        <img src="asset/img/picture/0504_roadmap.png" alt="" aria-hidden="true" />
+        <div class="hero-visual-copy">
+          <span class="hero-visual-title" data-i18n="roadmap_eyebrow"></span>
+          <p data-i18n="roadmap_title"></p>
+        </div>
+      </div>
+      <section class="section roadmap" data-route="services">
+        
+                <div class="roadmap-track">
+            <div class="roadmap-card panel-tile reveal">
+              <div class="roadmap-title-row">
+                <span class="roadmap-index">01</span>
+                <h3 data-i18n="roadmap_step1_title"></h3>
+              </div>
+              <div class="panel-image-wrap">
+                <img class="about-panel-image" src="asset/img/picture/050401_consult.png" alt="" aria-hidden="true" />
+              </div>
+            </div>
+            <div class="roadmap-card panel-tile reveal">
+              <div class="roadmap-title-row">
+                <span class="roadmap-index">02</span>
+                <h3 data-i18n="roadmap_step2_title"></h3>
+              </div>
+              <div class="panel-image-wrap">
+                <img class="about-panel-image" src="asset/img/picture/050402_design.png" alt="" aria-hidden="true" />
+              </div>
+            </div>
+            <div class="roadmap-card panel-tile reveal">
+              <div class="roadmap-title-row">
+                <span class="roadmap-index">03</span>
+                <h3 data-i18n="roadmap_step3_title"></h3>
+              </div>
+              <div class="panel-image-wrap">
+                <img class="about-panel-image" src="asset/img/picture/050403_excute.png" alt="" aria-hidden="true" />
+              </div>
+            </div>
+            <div class="roadmap-card panel-tile reveal">
+              <div class="roadmap-title-row">
+                <span class="roadmap-index">04</span>
+                <h3 data-i18n="roadmap_step4_title"></h3>
+              </div>
+              <div class="panel-image-wrap">
+                <img class="about-panel-image" src="asset/img/picture/050404_report.png" alt="" aria-hidden="true" />
+              </div>
+            </div>
         </div>
       </section>
 
+      
+
       <section class="section approach" id="approach" data-route="approach">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="approach_eyebrow"></p>
-          <h2 data-i18n="approach_title"></h2>
-        </div>
-        <div class="approach-grid">
-          <div class="approach-card reveal delay-006">
+        <div class="panel-grid approach-panels">
+          <div class="panel-tile reveal delay-006">
             <h3 data-i18n="approach_card1_title"></h3>
             <p data-i18n="approach_card1_text"></p>
           </div>
-          <div class="approach-card reveal delay-012">
+          <div class="panel-tile reveal delay-012">
             <h3 data-i18n="approach_card2_title"></h3>
             <p data-i18n="approach_card2_text"></p>
           </div>
-          <div class="approach-card reveal delay-018">
+          <div class="panel-tile reveal delay-018">
             <h3 data-i18n="approach_card3_title"></h3>
             <p data-i18n="approach_card3_text"></p>
           </div>
         </div>
       </section>
 
-      <section class="section work" data-route="approach">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="work_eyebrow"></p>
-          <h2 data-i18n="work_title"></h2>
+      <section class="section work has-hero-visual" data-route="approach">
+        <div class="hero-visual work-hero-visual">
+          <img src="asset/img/picture/0402_how.png" alt="" aria-hidden="true" />
+          <div class="hero-visual-copy">
+            <span class="hero-visual-title" data-i18n="work_eyebrow"></span>
+            <p data-i18n="work_title"></p>
+          </div>
         </div>
-        <div class="work-grid">
-          <div class="work-card reveal delay-005">
+        <div class="panel-grid work-panels">
+          <div class="panel-tile reveal delay-005">
             <h3 data-i18n="work_card1_title"></h3>
             <p data-i18n="work_card1_text"></p>
           </div>
-          <div class="work-card reveal delay-01">
+          <div class="panel-tile reveal delay-01">
             <h3 data-i18n="work_card2_title"></h3>
             <p data-i18n="work_card2_text"></p>
+          </div>
+          <div class="panel-tile reveal delay-015">
+            <h3 data-i18n="work_card3_title"></h3>
+            <p data-i18n="work_card3_text"></p>
           </div>
         </div>
       </section>
 
-      <section class="section clients" data-route="approach">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="clients_eyebrow"></p>
-          <h2 data-i18n="clients_title"></h2>
+      <section class="section clients has-hero-visual" data-route="approach">
+        <div class="hero-visual clients-hero-visual">
+          <img src="asset/img/picture/0403_who.png" alt="" aria-hidden="true" />
+          <div class="hero-visual-copy">
+            <span class="hero-visual-title" data-i18n="clients_eyebrow"></span>
+            <p data-i18n="clients_title"></p>
+          </div>
         </div>
-        <div class="tag-grid reveal delay-008">
-          <span data-i18n="client_tag1"></span>
-          <span data-i18n="client_tag2"></span>
-          <span data-i18n="client_tag3"></span>
-          <span data-i18n="client_tag4"></span>
-        </div>
-      </section>
-
-      <section class="section why" data-route="approach">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="why_eyebrow"></p>
-          <h2 data-i18n="why_title"></h2>
-        </div>
-        <div class="why-grid">
-          <div class="why-card reveal delay-006" data-i18n="why_card1"></div>
-          <div class="why-card reveal delay-012" data-i18n="why_card2"></div>
-          <div class="why-card reveal delay-018" data-i18n="why_card3"></div>
-          <div class="why-card reveal delay-024" data-i18n="why_card4"></div>
-          <div class="why-card reveal delay-03" data-i18n="why_card5"></div>
+        <div class="panel-grid why-panels clients-panels reveal delay-008">
+          <div class="panel-tile">
+            <p data-i18n="client_tag1"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="client_tag2"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="client_tag3"></p>
+          </div>
+          <div class="panel-tile">
+            <p data-i18n="client_tag4"></p>
+          </div>
         </div>
       </section>
 
+      <div class="hero-visual contact-hero-visual" data-route="contact">
+        <img src="asset/img/picture/0501_career.png" alt="" aria-hidden="true" />
+        <div class="hero-visual-copy">
+          <span class="hero-visual-title" data-i18n="cta_eyebrow"></span>
+          <p data-i18n="cta_title"></p>
+          <p class="hero-visual-typing" data-typing data-i18n="cta_body"></p>
+        </div>
+      </div>
       <section class="section cta" id="contact" data-route="contact">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="cta_eyebrow"></p>
-          <h2 data-i18n="cta_title"></h2>
-          <p data-i18n="cta_body"></p>
-        </div>
-        <div class="cta-footer reveal delay-008">
-          <div class="cta-contact cta-panel">
+        <div class="panel-grid contact-panels">
+          <div class="cta-contact panel-tile reveal">
             <div class="cta-contact-top">
   <h3 class="cta-company-name">Clinisch &amp; Co., LLC.</h3>
   <p class="cta-contact-name" data-i18n="cta_role_line1"></p>
@@ -274,83 +377,29 @@
     </p>
   </div>
 </div>
+            <div class="panel-image-wrap">
+              <img class="about-panel-image" src="asset/img/picture/0502_contact.png" alt="" aria-hidden="true" />
+            </div>
           </div>
-          <div class="cta-experience cta-panel">
-            <div class="cta-exp">
-              <img class="cta-exp-icon" src="asset/img/icon/language.png" alt="" aria-hidden="true" />
-              <div class="cta-exp-body">
+          <div class="cta-experience panel-tile reveal">
+            <div class="cta-exp-stack">
+              <div class="cta-exp-group">
                 <p class="cta-exp-number">20+</p>
                 <p class="cta-exp-text" data-i18n="cta_exp1"></p>
               </div>
-            </div>
-            <div class="cta-exp">
-              <img class="cta-exp-icon" src="asset/img/icon/document.png" alt="" aria-hidden="true" />
-              <div class="cta-exp-body">
+              <div class="cta-exp-group">
                 <p class="cta-exp-number">6+</p>
                 <p class="cta-exp-text" data-i18n="cta_exp2"></p>
+              </div>
+              <div class="panel-image-wrap">
+                <img class="about-panel-image" src="asset/img/picture/0503_exp.png" alt="" aria-hidden="true" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section roadmap" data-route="contact">
-        <div class="section-header reveal delay-0">
-          <p class="eyebrow" data-i18n="roadmap_eyebrow"></p>
-          <h2 data-i18n="roadmap_title"></h2>
-          <p data-i18n="roadmap_body"></p>
-        </div>
-        <div class="roadmap-track">
-          <div class="roadmap-card reveal">
-            <div class="roadmap-head">
-              <span class="roadmap-index">01</span>
-              <div class="roadmap-icon" aria-hidden="true">
-                <img src="asset/img/icon/01_consulting.png" alt="" />
-              </div>
-            </div>
-            <div class="roadmap-body">
-              <h3 data-i18n="roadmap_step1_title"></h3>
-              <p class="roadmap-desc" data-i18n="roadmap_step1_desc"></p>
-            </div>
-          </div>
-          <div class="roadmap-card reveal">
-            <div class="roadmap-head">
-              <span class="roadmap-index">02</span>
-              <div class="roadmap-icon" aria-hidden="true">
-                <img src="asset/img/icon/02_design.png" alt="" />
-              </div>
-            </div>
-            <div class="roadmap-body">
-              <h3 data-i18n="roadmap_step2_title"></h3>
-              <p class="roadmap-desc" data-i18n="roadmap_step2_desc"></p>
-            </div>
-          </div>
-          <div class="roadmap-card reveal">
-            <div class="roadmap-head">
-              <span class="roadmap-index">03</span>
-              <div class="roadmap-icon" aria-hidden="true">
-                <img src="asset/img/icon/03_operation.png" alt="" />
-              </div>
-            </div>
-            <div class="roadmap-body">
-              <h3 data-i18n="roadmap_step3_title"></h3>
-              <p class="roadmap-desc" data-i18n="roadmap_step3_desc"></p>
-            </div>
-          </div>
-          <div class="roadmap-card reveal">
-            <div class="roadmap-head">
-              <span class="roadmap-index">04</span>
-              <div class="roadmap-icon" aria-hidden="true">
-                <img src="asset/img/icon/04_report.png" alt="" />
-              </div>
-            </div>
-            <div class="roadmap-body">
-              <h3 data-i18n="roadmap_step4_title"></h3>
-              <p class="roadmap-desc" data-i18n="roadmap_step4_desc"></p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </main>
 
     <div id="site-footer"></div>
@@ -362,7 +411,20 @@
   <script src="asset/js/modules/footer.js"></script>
   <script src="asset/js/modules/bg-shapes.js"></script>
   <script src="asset/js/modules/ui.js"></script>
+  <script src="asset/js/modules/work-hero.js"></script>
   <script src="asset/js/init.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

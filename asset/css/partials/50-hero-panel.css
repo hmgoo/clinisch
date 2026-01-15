@@ -1,39 +1,6 @@
 ﻿
 
 
-.hero-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.hero-badges span {
-  background-color: var(--cloud);
-  color: var(--ink-soft);
-  padding: 8px 14px;
-  border-radius: 999px;
-  min-width: 160px;
-  font-size: 14px;
-  font-weight: 500;
-  border: 1px solid rgba(94, 84, 72, 0.12);
-}
-
-
-.hero-panel {
-  background-color: var(--cloud);
-  max-width: var(--max-width);
-  margin: 0 auto;
-  border-radius: var(--radius-lg);
-  padding: 32px;
-  box-shadow: 0 18px 36px var(--shadow);
-  border: 1px solid rgba(94, 84, 72, 0.12);
-}
-
-.hero-panel p {
-  font-size: var(--body-text-size);
-}
-
 
 .panel-card {
   background-color: var(--sand);
@@ -59,6 +26,59 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.hero-placeholder-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.approach-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.work-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact-panels {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.services-panels {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.services-panels .panel-tile {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-panels .panel-tile img {
+  margin-top: 12px;
+}
+
+.services-panels .outcome {
+  margin-top: auto;
+}
+
+.why-panels,
+.clients-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.why-panels .panel-tile,
+.clients-panels .panel-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  text-align: center;
+}
+
+.why-panels .panel-tile p,
+.clients-panels .panel-tile p {
+  margin-bottom: 0;
+  white-space: pre-line;
+}
+
 
 .panel-tile {
   padding: 18px 20px;
@@ -68,12 +88,52 @@
 }
 
 .panel-tile h3 {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 
 .panel-tile p {
   color: inherit;
   line-height: inherit;
+  margin-bottom: 12px;
+}
+
+.work .panel-tile p {
+  margin-bottom: 0;
+}
+
+.skills-page .approach .panel-tile p {
+  margin-bottom: 0;
+}
+
+.panel-tile img {
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+  transform: translateY(0);
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+.panel-tile:hover img {
+  transform: translateY(-2px);
+}
+
+.about-panels .panel-tile {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-image-wrap {
+  margin-top: auto;
+  padding-top: 12px;
+}
+.hero-placeholder-media img {
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+.hero-placeholder-media:hover img {
+  transform: translateY(-2px);
 }
 
 

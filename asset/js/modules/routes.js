@@ -238,6 +238,7 @@ const showPanel = (panel, direction) => {
 
   panel.style.display = "block";
   panel.setAttribute("aria-hidden", "false");
+  panel.dataset.enterDirection = direction;
   panel.classList.remove("exit-to-left", "exit-to-right");
   panel.classList.remove("enter-active");
   panel.classList.remove("enter-from-left", "enter-from-right");
@@ -279,6 +280,9 @@ const changeRoute = (nextRoute, pushHistory = false) => {
     setStageHeight(nextPanel);
     scheduleHeightReset();
     currentRouteKey = nextRoute.key;
+    if (typeof setupTypingEffect === "function") {
+      setupTypingEffect();
+    }
     return;
   }
 
@@ -321,6 +325,9 @@ const changeRoute = (nextRoute, pushHistory = false) => {
   currentRouteKey = nextRoute.key;
   updateNavState(currentRouteKey);
   updateBgState(currentRouteKey);
+  if (typeof setupTypingEffect === "function") {
+    setupTypingEffect();
+  }
 };
 
 const initRouteFromPath = () => {
@@ -369,6 +376,7 @@ const setupRouteLinks = () => {
 
 const setupMobileNav = () => {
   const toggle = document.querySelector("[data-nav-toggle]");
+  const panel = document.querySelector("[data-mobile-panel]");
 
   if (!toggle) {
     return;
@@ -394,6 +402,15 @@ const setupMobileNav = () => {
       closeMobileNav();
     }
   });
+
+  if (panel) {
+    panel.addEventListener("click", (event) => {
+      const langToggle = event.target.closest("[data-lang-toggle]");
+      if (langToggle) {
+        closeMobileNav();
+      }
+    });
+  }
 };
 
 const setupRouter = () => {
