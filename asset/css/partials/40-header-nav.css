@@ -24,6 +24,7 @@
   backdrop-filter: blur(10px);
   width: 100%;
   left: 0;
+  transition: background-color 240ms ease, backdrop-filter 240ms ease;
 }
 
 
@@ -240,8 +241,8 @@ body.nav-open .mobile-overlay {
 }
 
 body.nav-open .site-header {
-  background-color: var(--white);
-  backdrop-filter: none;
+  background-color: var(--cream);
+  backdrop-filter: blur(10px);
 }
 
 

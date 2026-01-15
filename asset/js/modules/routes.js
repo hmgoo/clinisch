@@ -376,6 +376,7 @@ const setupRouteLinks = () => {
 
 const setupMobileNav = () => {
   const toggle = document.querySelector("[data-nav-toggle]");
+  const panel = document.querySelector("[data-mobile-panel]");
 
   if (!toggle) {
     return;
@@ -401,6 +402,15 @@ const setupMobileNav = () => {
       closeMobileNav();
     }
   });
+
+  if (panel) {
+    panel.addEventListener("click", (event) => {
+      const langToggle = event.target.closest("[data-lang-toggle]");
+      if (langToggle) {
+        closeMobileNav();
+      }
+    });
+  }
 };
 
 const setupRouter = () => {
