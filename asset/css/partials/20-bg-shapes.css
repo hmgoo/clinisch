@@ -1,6 +1,8 @@
 ﻿
 
 
+/* 배경 도형 컨테이너.
+   사용: 모든 페이지 상단 배경(.bg-shapes) */
 .bg-shapes {
   position: fixed;
   inset: 0;
@@ -11,6 +13,8 @@
 }
 
 
+/* 배경 도형 기본 스타일.
+   사용: .shape-wrap 내부 .shape */
 .bg-shapes .shape {
   position: absolute;
   
@@ -25,6 +29,8 @@
 }
 
 
+/* 배경 도형 도착 상태.
+   사용: init.js에서 .arrived 추가 */
 .bg-shapes .shape.arrived {
   
   animation: float 16s ease-in-out infinite;
@@ -35,6 +41,8 @@
 }
 
 
+/* 배경 도형 래퍼.
+   사용: 각 도형 위치/크기 전환 */
 .shape-wrap {
   position: absolute;
   display: block;
@@ -47,14 +55,20 @@
     transform 3000ms var(--motion-ease) var(--shape-delay, 0ms);
 }
 
+/* 배경 도형 초기 위치(좌측).
+   사용: 진입 애니메이션 시작 위치 */
 .shape-wrap-left {
   transform: translateX(-60vw);
 }
 
+/* 배경 도형 초기 위치(우측).
+   사용: 진입 애니메이션 시작 위치 */
 .shape-wrap-right {
   transform: translateX(60vw);
 }
 
+/* 배경 도형 애니메이션 시작 상태.
+   사용: init.js에서 .animate 추가 */
 .bg-shapes.animate .shape-wrap {
   transform: translateX(0);
   
@@ -66,6 +80,8 @@
     transform 3000ms cubic-bezier(.2, .9, .2, 1) var(--shape-delay, 0ms);
 }
 
+/* 배경 도형 흔들림 트리거.
+   사용: bg-shapes.js가 상태 전환 시 부여 */
 .bg-shapes.animate-shapes {
   animation: shapeMove 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
@@ -84,6 +100,8 @@
 }
 
 
+/* 배경 도형 래퍼: 태양.
+   사용: 모든 페이지 상단 배경 */
 .shape-wrap-sun {
   --shape-delay: 200ms;
   width: 420px;
@@ -92,6 +110,8 @@
   top: 120px;
 }
 
+/* 배경 도형: 태양 그래픽.
+   사용: .shape-wrap-sun 내부 */
 .shape-sun {
   inset: 0;
   width: 100%;
@@ -107,6 +127,8 @@
   background-blend-mode: screen, normal;
 }
 
+/* 배경 도형 래퍼: 하늘.
+   사용: 모든 페이지 상단 배경 */
 .shape-wrap-sky {
   --shape-delay: 300ms;
   width: 360px;
@@ -115,6 +137,8 @@
   top: 70px;
 }
 
+/* 배경 도형: 하늘 그래픽.
+   사용: .shape-wrap-sky 내부 */
 .shape-sky {
   inset: 0;
   width: 100%;
@@ -130,6 +154,8 @@
   background-blend-mode: screen, normal;
 }
 
+/* 배경 도형 래퍼: 모래.
+   사용: 모든 페이지 상단 배경 */
 .shape-wrap-sand {
   --shape-delay: 400ms;
   width: 420px;
@@ -138,6 +164,8 @@
   top: 360px;
 }
 
+/* 배경 도형: 모래 그래픽.
+   사용: .shape-wrap-sand 내부 */
 .shape-sand {
   inset: 0;
   width: 100%;
@@ -153,6 +181,8 @@
   background-blend-mode: screen, normal;
 }
 
+/* 배경 도형 래퍼: 슬레이트.
+   사용: 모든 페이지 상단 배경 */
 .shape-wrap-slate {
   --shape-delay: 500ms;
   width: 460px;
@@ -162,6 +192,8 @@
   top: 500px;
 }
 
+/* 배경 도형: 슬레이트 그래픽.
+   사용: .shape-wrap-slate 내부 */
 .shape-slate {
   inset: 0;
   width: 100%;
@@ -178,6 +210,8 @@
 }
 
 
+/* 라우트별 배경 위치: 홈.
+   사용: bg-shapes.js에서 data-bg-state="home" */
 .bg-shapes[data-bg-state="home"] .shape-wrap-sun {
   width: 420px;
   height: 320px;
@@ -206,6 +240,7 @@
   top: 500px;
 }
 
+/* 라우트별 배경 위치: 소개(about). */
 .bg-shapes[data-bg-state="about"] .shape-wrap-sun {
   width: 390px;
   height: 300px;
@@ -234,6 +269,7 @@
   top: 510px;
 }
 
+/* 라우트별 배경 위치: 서비스(services). */
 .bg-shapes[data-bg-state="services"] .shape-wrap-sun {
   width: 340px;
   height: 240px;
@@ -262,6 +298,7 @@
   top: 520px;
 }
 
+/* 라우트별 배경 위치: 접근(approach). */
 .bg-shapes[data-bg-state="approach"] .shape-wrap-sun {
   width: 320px;
   height: 230px;
@@ -290,6 +327,7 @@
   top: 490px;
 }
 
+/* 라우트별 배경 위치: 문의(contact). */
 .bg-shapes[data-bg-state="contact"] .shape-wrap-sun {
   width: 300px;
   height: 220px;
@@ -319,6 +357,7 @@
 }
 
 
+/* 라우트별 배경 라운드 값: 홈. */
 .bg-shapes[data-bg-state="home"] {
   --shape-radius-sun: 56% 44% 54% 46% / 54% 46% 54% 46%;
   --shape-radius-sky: 46% 54% 52% 48% / 58% 42% 54% 46%;
@@ -326,6 +365,7 @@
   --shape-radius-slate: 48% 52% 56% 44% / 52% 48% 58% 42%;
 }
 
+/* 라우트별 배경 라운드 값: 소개(about). */
 .bg-shapes[data-bg-state="about"] {
   --shape-radius-sun: 48% 52% 52% 48% / 56% 44% 52% 48%;
   --shape-radius-sky: 50% 50% 54% 46% / 46% 54% 50% 50%;
@@ -333,6 +373,7 @@
   --shape-radius-slate: 46% 54% 52% 48% / 56% 44% 50% 50%;
 }
 
+/* 라우트별 배경 라운드 값: 서비스(services). */
 .bg-shapes[data-bg-state="services"] {
   --shape-radius-sun: 50% 50% 46% 54% / 48% 52% 44% 56%;
   --shape-radius-sky: 54% 46% 56% 44% / 48% 52% 46% 54%;
@@ -340,6 +381,7 @@
   --shape-radius-slate: 58% 42% 48% 52% / 52% 48% 50% 50%;
 }
 
+/* 라우트별 배경 라운드 값: 접근(approach). */
 .bg-shapes[data-bg-state="approach"] {
   --shape-radius-sun: 44% 56% 50% 50% / 52% 48% 56% 44%;
   --shape-radius-sky: 52% 48% 56% 44% / 46% 54% 50% 50%;
@@ -347,6 +389,7 @@
   --shape-radius-slate: 56% 44% 48% 52% / 46% 54% 56% 44%;
 }
 
+/* 라우트별 배경 라운드 값: 문의(contact). */
 .bg-shapes[data-bg-state="contact"] {
   --shape-radius-sun: 52% 48% 54% 46% / 50% 50% 46% 54%;
   --shape-radius-sky: 48% 52% 52% 48% / 56% 44% 52% 48%;

@@ -1,6 +1,8 @@
 ﻿
 
 
+/* 전체 페이지 레이아웃 래퍼.
+   사용: 모든 페이지의 최상위 컨테이너(.page) */
 .page {
   position: relative;
   overflow: visible;
@@ -17,6 +19,8 @@
 }
 
 
+/* 라우트 전환 스테이지 컨테이너.
+   사용: main[data-route-stage], routes.js가 전환 높이를 제어 */
 [data-route-stage] {
   position: relative;
   overflow: hidden;
@@ -25,6 +29,8 @@
 }
 
 
+/* 라우트 패널 기본 상태.
+   사용: routes.js가 각 섹션을 감싼 패널 요소 */
 [data-route-stage] .route-panel {
   position: absolute;
   inset: 0;
@@ -36,6 +42,8 @@
     opacity 520ms var(--motion-ease);
 }
 
+/* 라우트 패널 활성 상태.
+   사용: 현재 라우트 표시 */
 [data-route-stage] .route-panel.is-active {
   position: relative;
   opacity: 1;
@@ -43,26 +51,36 @@
   transform: translateX(0);
 }
 
+/* 라우트 진입 시작(오른쪽).
+   사용: routes.js 전환 애니메이션 */
 [data-route-stage] .route-panel.enter-from-right {
   opacity: 0;
   transform: translateX(14%);
 }
 
+/* 라우트 진입 시작(왼쪽).
+   사용: routes.js 전환 애니메이션 */
 [data-route-stage] .route-panel.enter-from-left {
   opacity: 0;
   transform: translateX(-14%);
 }
 
+/* 라우트 진입 활성.
+   사용: routes.js 전환 애니메이션 */
 [data-route-stage] .route-panel.enter-active {
   opacity: 1;
   transform: translateX(0);
 }
 
+/* 라우트 퇴장(왼쪽).
+   사용: routes.js 전환 애니메이션 */
 [data-route-stage] .route-panel.exit-to-left {
   opacity: 0;
   transform: translateX(-10%);
 }
 
+/* 라우트 퇴장(오른쪽).
+   사용: routes.js 전환 애니메이션 */
 [data-route-stage] .route-panel.exit-to-right {
   opacity: 0;
   transform: translateX(10%);

@@ -4,56 +4,70 @@
 
 
 
+/* 리빌 애니메이션 지연(0s). */
 .delay-0 {
   --delay: 0s;
 }
 
+/* 리빌 애니메이션 지연(0.05s). */
 .delay-005 {
   --delay: 0.05s;
 }
 
+/* 리빌 애니메이션 지연(0.06s). */
 .delay-006 {
   --delay: 0.06s;
 }
 
+/* 리빌 애니메이션 지연(0.08s). */
 .delay-008 {
   --delay: 0.08s;
 }
 
+/* 리빌 애니메이션 지연(0.1s). */
 .delay-01 {
   --delay: 0.1s;
 }
 
+/* 리빌 애니메이션 지연(0.12s). */
 .delay-012 {
   --delay: 0.12s;
 }
 
+/* 리빌 애니메이션 지연(0.15s). */
 .delay-015 {
   --delay: 0.15s;
 }
 
+/* 리빌 애니메이션 지연(0.18s). */
 .delay-018 {
   --delay: 0.18s;
 }
 
+/* 리빌 애니메이션 지연(0.2s). */
 .delay-02 {
   --delay: 0.2s;
 }
 
+/* 리빌 애니메이션 지연(0.24s). */
 .delay-024 {
   --delay: 0.24s;
 }
 
+/* 리빌 애니메이션 지연(0.3s). */
 .delay-03 {
   --delay: 0.3s;
 }
 
+/* 서비스 카드 리빌 애니메이션.
+   사용: services 섹션 카드 */
 .service-card {
   animation: reveal calc(var(--motion-duration-medium) * 1.3) var(--motion-ease-out) both;
   animation-delay: var(--delay, 0s);
 }
 
 
+/* 확인 필요: -visible 클래스(현재 사용처 미확인). */
 -visible {
   outline: none;
   box-shadow: 0 0 0 4px rgba(242, 194, 48, 0.18);
@@ -61,6 +75,7 @@
 }
 
 
+/* 리빌 애니메이션 공통 클래스. */
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -69,6 +84,8 @@
   animation-delay: var(--delay, 0s);
 }
 
+/* 섹션 리빌 애니메이션.
+   사용: section.section-reveal */
 .section-reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -76,6 +93,7 @@
   animation-delay: var(--delay, 0s);
 }
 
+/* 라우트 전환 중 리빌 비활성화. */
 [data-route-stage].route-transition .reveal,
 [data-route-stage][data-route-reveal="off"] .reveal {
   opacity: 1;
@@ -83,6 +101,7 @@
   animation: none;
 }
 
+/* 라우트 전환 중 서비스 카드 애니메이션 중지. */
 [data-route-stage].route-transition .service-card,
 [data-route-stage][data-route-reveal="off"] .service-card {
   animation: none;

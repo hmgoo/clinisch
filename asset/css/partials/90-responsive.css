@@ -1,28 +1,34 @@
 ﻿@media (max-width: 1000px) {
+  /* 반응형 조정: 배경 도형(태양, 전 페이지). */
   .shape-wrap-sun {
     width: 320px;
     height: 240px;
   }
 
+  /* 반응형 조정: 배경 도형(하늘, 전 페이지). */
   .shape-wrap-sky {
     width: 280px;
     height: 220px;
   }
 
+  /* 반응형 조정: 배경 도형(모래, 전 페이지). */
   .shape-wrap-sand {
     width: 320px;
     height: 240px;
   }
 
+  /* 반응형 조정: 배경 도형(슬레이트, 전 페이지). */
   .shape-wrap-slate {
     width: 340px;
     height: 240px;
   }
 
+  /* 반응형 조정: 로드맵 그리드(services 섹션). */
   .roadmap-track {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* 반응형 조정: 로드맵 카드(services 섹션). */
   .roadmap-card {
     max-width: none;
     width: 100%;
@@ -30,31 +36,38 @@
 }
 
 @media (max-width: 1000px) {
+  /* 반응형 조정: 접근 패널 그리드(approach 섹션). */
   .approach-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* 반응형 조정: 태그 그리드(skills 페이지). */
   .tag-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* 반응형 조정: why 패널(about 섹션). */
   .why-panels,
+  /* 반응형 조정: 클라이언트 패널(approach 섹션). */
   .clients-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 1023px) {
+  /* 반응형 조정: 워크 패널(approach 섹션). */
   .work-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* 반응형 조정: 문의 패널(contact 섹션). */
   .contact-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 1023px) {
+  /* 반응형 조정: 헤더 레이아웃(전 페이지). */
   .header {
     grid-template-columns: 1fr auto;
     justify-items: stretch;
@@ -62,24 +75,29 @@
     gap: 12px;
   }
 
+  /* 반응형 조정: 로고 정렬(헤더). */
   .logo {
     justify-self: start;
   }
 
+  /* 반응형 조정: 로고 정렬(헤더). */
   .logo {
     justify-self: start;
   }
 
+  /* 반응형 조정: 데스크톱 네비 숨김. */
   .nav {
     display: none;
   }
 
+  /* 반응형 조정: 모바일 토글 표시. */
   .nav-toggle {
     display: inline-flex;
     align-items: center;
     justify-self: end;
   }
 
+  /* 반응형 조정: 섹션 헤더 타이틀. */
   .section-header h2 {
     font-size: 30px;
   }
@@ -88,6 +106,7 @@
     padding: 72px 20px;
   }
 
+  /* 반응형 조정: 푸터 내부 그리드. */
   .footer-inner {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -97,18 +116,22 @@
     padding: 0 20px;
   }
 
+  /* 반응형 조정: 푸터 로고 크기. */
   .footer-logo {
     width: 180px;
   }
 
+  /* 반응형 조정: CTA 카드 레이아웃(contact). */
   .cta-card {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: CTA 하단 그리드. */
   .cta-footer {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: 연락처 정보 그리드. */
   .cta-contact-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -119,30 +142,36 @@
       "detail3";
   }
 
+  /* 반응형 조정: 서비스 그리드(services 섹션). */
   .service-grid {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: 로드맵 그리드(services 섹션). */
   .roadmap-track {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 767px) {
+  /* 반응형 조정: 접근 패널 그리드(approach 섹션). */
   .approach-panels {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: 태그 그리드(skills 페이지). */
   .tag-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 767px) {
+  /* 반응형 조정: 문의 패널(contact 섹션). */
   .contact-panels {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: 경험 수치 스택(contact). */
   .cta-exp-stack {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -151,24 +180,29 @@
     align-items: center;
   }
 
+  /* 반응형 조정: 경험 수치 묶음(contact). */
   .cta-exp-group {
     display: contents;
   }
 
+  /* 반응형 조정: 경험 텍스트(contact). */
   .cta-experience .cta-exp-text {
     margin-top: 0;
     margin-bottom: 0;
   }
 
+  /* 반응형 조정: 경험 이미지 래퍼(contact). */
   .cta-experience .panel-image-wrap {
     grid-column: 1 / -1;
   }
 
+  /* 반응형 조정: 경험 수치 타이포(contact). */
   .cta-exp-number {
     align-self: center;
     justify-self: end;
   }
 
+  /* 반응형 조정: 경험 설명 타이포(contact). */
   .cta-exp-text {
     align-self: center;
     justify-self: start;
@@ -176,17 +210,20 @@
 }
 
 @media (max-width: 767px) {
+  /* 반응형 조정: 워크 패널(approach 섹션). */
   .work-panels {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
+  /* 반응형 조정: 로드맵 그리드(services 섹션). */
   .roadmap-track {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
+  /* 반응형 조정: 로드맵 카드(services 섹션). */
   .roadmap-card {
     width: 100%;
     max-width: none;
@@ -194,6 +231,7 @@
 }
 
 @media (max-width: 1023px) {
+  /* 반응형 조정: 연락처 정보 그리드. */
   .cta-contact-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -208,20 +246,25 @@
 
 
 @media (prefers-reduced-motion: reduce) {
+  /* 반응형 조정: 리빌 애니메이션 비활성. */
   .reveal {
     animation: none;
     opacity: 1;
     transform: none;
   }
 
+  /* 반응형 조정: 섹션 리빌 비활성. */
   .section-reveal {
     animation: none;
     opacity: 1;
     transform: none;
   }
 
+  /* 반응형 조정: 배경 도형(전 페이지). */
   .bg-shapes .shape,
+  /* 반응형 조정: 배경 도형 래퍼. */
   .shape-wrap,
+  /* 반응형 조정: 배경 도형 애니메이션. */
   .bg-shapes.animate .shape-wrap {
     animation: none;
     transition: none !important;
@@ -229,18 +272,22 @@
   }
 
 
+  /* 반응형 조정: 패널 카드 공통. */
   .panel-card,
+  /* 반응형 조정: 서비스 카드 애니메이션. */
   .service-card {
     animation: none !important;
     transition: none !important;
   }
 
+  /* 반응형 조정: 로드맵 카드(services 섹션). */
   .roadmap-card {
     opacity: 1;
     transform: none;
     transition: none !important;
   }
 
+  /* 반응형 조정: 히어로 타이핑 텍스트. */
   .hero-visual-typing {
     animation: none;
     width: auto;
@@ -248,11 +295,17 @@
     border-right: 0;
   }
 
+  /* 반응형 조정: 워크 히어로(approach 섹션). */
   .work-hero-visual,
+  /* 반응형 조정: 워크 히어로 오버레이. */
   .work-hero-visual::after,
+  /* 반응형 조정: 워크 히어로 카피. */
   .work-hero-visual .hero-visual-copy,
+  /* 반응형 조정: 클라이언트 히어로(approach). */
   .clients-hero-visual,
+  /* 반응형 조정: 클라이언트 히어로 오버레이. */
   .clients-hero-visual::after,
+  /* 반응형 조정: 클라이언트 히어로 카피. */
   .clients-hero-visual .hero-visual-copy {
     animation: none !important;
     opacity: 1;
@@ -265,26 +318,32 @@
 }
 
 @media (max-width: 1023px) {
+  /* 반응형 조정: 히어로 타이틀. */
   .hero-visual-title {
     font-size: 42px;
   }
 
+  /* 반응형 조정: 히어로 서브텍스트. */
   .hero-visual-copy p {
     font-size: 16px;
   }
 
+  /* 반응형 조정: 히어로 타이핑 문구. */
   .hero-visual-copy .hero-visual-typing {
     font-size: 14px;
   }
 
+  /* 반응형 조정: 히어로 카피 영역. */
   .hero-visual-copy {
     max-width: 400px;
   }
 
+  /* 반응형 조정: 플레이스홀더 그리드(home/about/why). */
   .hero-placeholder-grid {
     gap: 16px 16px;
   }
 
+  /* 반응형 조정: 푸터 내부 그리드. */
   .footer-inner {
     grid-template-columns: minmax(0, 6fr) minmax(0, 4fr);
     grid-template-areas:
@@ -294,26 +353,31 @@
     column-gap: 24px;
   }
 
+  /* 반응형 조정: 홈 패널 그리드. */
   .hero-placeholder-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
+  /* 반응형 조정: 히어로 이미지 정렬. */
   .hero-visual img {
     object-position: 50% 50%;
   }
 
+  /* 반응형 조정: 히어로 태그. */
   .hero-visual-tag {
     font-size: 16px;
   }
 
+  /* 반응형 조정: 히어로 타이핑 텍스트. */
   .hero-visual-typing {
     font-size: 16px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  /* 반응형 조정: 히어로 이미지 정렬. */
   .hero-visual img {
     object-position: 50% 50%;
   }
@@ -323,15 +387,18 @@
     padding-right: 20px;
   }
 
+  /* 반응형 조정: 푸터 패딩. */
   .footer {
     padding-left: 20px;
     padding-right: 20px;
   }
 
+  /* 반응형 조정: 서비스 패널 그리드. */
   .services-panels {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: 서비스 패널 타일. */
   .services-panels .panel-tile {
     display: grid;
     grid-template-columns: 1fr minmax(140px, 0.7fr);
@@ -340,10 +407,12 @@
     align-items: start;
   }
 
+  /* 반응형 조정: 서비스 타일 내부 배치. */
   .services-panels .panel-tile > * {
     grid-column: 1;
   }
 
+  /* 반응형 조정: 서비스 타일 이미지. */
   .services-panels .panel-tile img {
     grid-column: 2;
     grid-row: 1 / 5;
@@ -355,45 +424,55 @@
     object-position: center;
   }
 
+  /* 반응형 조정: 서비스 결과 문구. */
   .services-panels .outcome {
     margin-top: 0;
   }
 
+  /* 반응형 조정: 경험 패널 레이아웃. */
   .cta-experience {
     gap: clamp(10px, 1.8vh, 16px);
     align-self: start;
   }
 
+  /* 반응형 조정: 경험 이미지 래퍼(contact). */
   .cta-experience .panel-image-wrap {
     margin-top: 0;
     padding-top: clamp(8px, 1.6vh, 12px);
   }
 
+  /* 반응형 조정: 문의 패널(contact 섹션). */
   .contact-panels {
     align-items: stretch;
   }
 
+  /* 반응형 조정: 문의 패널 타일. */
   .contact-panels .panel-tile {
     height: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  /* 반응형 조정: 히어로 높이. */
   .hero-visual {
     height: 70vh;
     max-height: none;
   }
 
+  /* 반응형 조정: 워크 히어로(approach 섹션). */
   .work-hero-visual,
+  /* 반응형 조정: 클라이언트 히어로 높이. */
   .clients-hero-visual {
     height: 50vh;
     min-height: 240px;
   }
 
+  /* 반응형 조정: 히어로 이미지 정렬. */
   .hero-visual img {
     object-position: 50% 50%;
   }
 
+  /* 반응형 조정: 히어로 카피 영역. */
   .hero-visual-copy {
     right: 6%;
     width: 100%;
@@ -401,53 +480,83 @@
     min-width: 0;
   }
 
+  /* 반응형 조정: 히어로 타이틀. */
   .hero-visual-title {
     font-size: 30px;
   }
 
+  /* 반응형 조정: 히어로 서브텍스트. */
   .hero-visual-copy p {
     font-size: 12px;
   }
 
+  /* 반응형 조정: 히어로 타이핑 문구. */
   .hero-visual-copy .hero-visual-typing {
     font-size: 12px;
   }
 
+  /* 반응형 조정: 플레이스홀더 그리드(home/about/why). */
   .hero-placeholder-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
   }
 
+  /* 반응형 조정: 플레이스홀더 카드 오버플로우 방지. */
+  .hero-placeholder-card {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  /* 반응형 조정: 플레이스홀더 타이틀. */
   .hero-placeholder-title {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
   }
 
+  /* 반응형 조정: 플레이스홀더 본문. */
   .hero-placeholder-text {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
   }
 
+  /* 반응형 조정: 플레이스홀더 이미지. */
   .hero-placeholder-media {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    height: auto;
+    min-width: 0;
   }
 
+  /* 반응형 조정: 플레이스홀더 이미지 비율 유지. */
+  .hero-placeholder-media img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 반응형 조정: why 타이틀 배치. */
   .why .hero-placeholder-title {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
   }
 
+  /* 반응형 조정: why 본문 배치. */
   .why .hero-placeholder-text {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
   }
 
+  /* 반응형 조정: why 이미지 배치. */
   .why .hero-placeholder-media {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
   }
 
+  /* 반응형 조정: 푸터 내부 그리드. */
   .footer-inner {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -456,32 +565,40 @@
       "links";
   }
 
+  /* 반응형 조정: 소개 패널 그리드. */
   .about-panels {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: 서비스 패널 그리드. */
   .services-panels {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: why 패널(about 섹션). */
   .why-panels,
+  /* 반응형 조정: 클라이언트 패널(approach 섹션). */
   .clients-panels {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: 홈 패널 그리드. */
   .hero-placeholder-panels {
     grid-template-columns: 1fr;
   }
 
+  /* 반응형 조정: 서비스 패널 타일. */
   .services-panels .panel-tile {
     display: flex;
     flex-direction: column;
   }
 
+  /* 반응형 조정: 서비스 타일 이미지. */
   .services-panels .panel-tile img {
     margin-top: 12px;
   }
 
+  /* 반응형 조정: 서비스 결과 문구. */
   .services-panels .outcome {
     margin-top: auto;
   }
@@ -489,6 +606,7 @@
 }
 
 @media (max-width: 360px) {
+  /* 반응형 조정: 히어로 카피 영역. */
   .hero-visual-copy {
     min-width: 0;
   }

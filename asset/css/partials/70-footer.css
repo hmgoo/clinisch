@@ -1,6 +1,8 @@
 ﻿
 
 
+/* 푸터 전체 래퍼.
+   사용: footer.js에서 렌더링 */
 .footer {
   max-width: var(--max-width);
   width: 100%;
@@ -18,6 +20,7 @@
 
 
 
+/* 푸터 내부 그리드. */
 .footer-inner {
   display: grid;
   gap: 12px;
@@ -29,12 +32,14 @@
   margin: 0 auto;
 }
 
+/* 푸터 브랜드 영역. */
 .footer-brand {
   grid-area: brand;
   display: grid;
   gap: 0;
 }
 
+/* 푸터 브랜드 상단 행. */
 .footer-brand-row {
   display: flex;
   align-items: center;
@@ -47,17 +52,20 @@
   margin-bottom: 0;
 }
 
+/* 푸터 로고 이미지. */
 .footer-logo {
   width: 200px;
   max-width: 100%;
   transform: translate(-5px, -3px);
 }
 
+/* 푸터 태그라인. */
 .footer-tagline {
   color: var(--ink-soft);
   line-height: 1.6;
 }
 
+/* 푸터 메타 정보 영역. */
 .footer-meta {
   grid-area: meta;
   display: grid;
@@ -65,12 +73,14 @@
   font-size: 16px;
 }
 
+/* 푸터 회사 정보 텍스트. */
 .footer-company {
   font-weight: 500;
   color: var(--ink-soft);
 }
 
 
+/* 푸터 링크 그룹. */
 .footer-links {
   grid-area: links;
   display: grid;
@@ -78,6 +88,7 @@
   justify-items: start;
 }
 
+/* 푸터 링크 타이틀. */
 .footer-links-title {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -87,6 +98,7 @@
   margin-bottom: 6px;
 }
 
+/* 푸터 링크 버튼. */
 .footer-link {
   border: none;
   background: transparent;
@@ -106,12 +118,14 @@
   color: var(--footer-muted);
 }
 
+/* 푸터 구분선. */
 .footer-divider {
   height: 1px;
   width: 100%;
   background-color: rgba(94, 84, 72, 0.15);
 }
 
+/* 푸터 하단 카피라이트. */
 .footer-bottom {
   font-size: 12px;
   color: var(--footer-muted);
@@ -126,6 +140,7 @@
 }
 
 
+/* 푸터 모달 공통 래퍼. */
 .footer-modal {
   position: fixed;
   inset: 0;
@@ -137,11 +152,13 @@
   z-index: 50;
 }
 
+/* 푸터 모달 열림 상태. */
 .footer-modal.is-open {
   opacity: 1;
   pointer-events: auto;
 }
 
+/* 푸터 모달 배경. */
 .footer-modal-backdrop {
   position: absolute;
   inset: 0;
@@ -149,6 +166,7 @@
 }
 
 
+/* 푸터 모달 카드. */
 .footer-modal-card {
   position: relative;
   background: var(--cloud);
@@ -172,11 +190,13 @@
   font-size: 16px;
 }
 
+/* 푸터 모달 게시일. */
 .footer-modal-date {
   color: var(--slate);
   font-size: 16px;
 }
 
+/* 푸터 모달 닫기 버튼. */
 .footer-modal-close {
   position: absolute;
   top: 16px;

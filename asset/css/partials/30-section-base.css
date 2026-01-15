@@ -35,10 +35,14 @@ section {
   margin: 0 auto;
 }
 
+/* 섹션 상단 히어로 포함 상태.
+   사용: approach/work/clients 섹션 */
 section.has-hero-visual {
   padding-top: 0;
 }
 
+/* 히어로 비주얼 영역.
+   사용: 모든 페이지의 상단 배너/섹션 히어로 */
 .hero-visual {
   width: 100%;
   position: relative;
@@ -48,6 +52,8 @@ section.has-hero-visual {
   animation: heroVisualSlideIn 1.8s var(--motion-ease) both;
 }
 
+/* 라우트 역방향 전환 시 히어로 진입 방향.
+   사용: routes.js에서 data-enter-direction 설정 */
 [data-route-stage] .route-panel[data-enter-direction="backward"] .hero-visual {
   animation-name: heroVisualSlideInLeft;
 }
@@ -62,6 +68,8 @@ section.has-hero-visual {
   z-index: 0;
 }
 
+/* 히어로 카피 영역.
+   사용: hero-visual 내 텍스트 블록 */
 .hero-visual-copy {
   position: absolute;
   top: 50%;
@@ -81,6 +89,8 @@ section.has-hero-visual {
   justify-items: end;
 }
 
+/* 히어로 제목.
+   사용: hero-visual-copy 내부 타이틀 */
 .hero-visual-title {
   font-size: 60px;
   line-height: 1.15;
@@ -109,6 +119,8 @@ section.has-hero-visual {
 }
 
 
+/* 히어로 배지 그룹.
+   사용: 홈 히어로 배지 */
 .hero-visual-tags {
   display: grid;
   gap: 8px;
@@ -117,6 +129,8 @@ section.has-hero-visual {
   justify-content: end;
 }
 
+/* 히어로 배지 단위.
+   사용: 홈 히어로 배지 */
 .hero-visual-tag {
   width: 100%;
   padding: 6px 12px;
@@ -129,6 +143,8 @@ section.has-hero-visual {
   white-space: nowrap;
 }
 
+/* 히어로 타이핑 문구.
+   사용: 홈/서비스/문의 히어로 */
 .hero-visual-copy .hero-visual-typing {
   margin: 0;
   font-size: 16px;
@@ -159,6 +175,8 @@ section.has-hero-visual {
   -webkit-mask-image: linear-gradient(to left, #000 50%, transparent);
 }
 
+/* 워크/클라이언트 히어로 확장형.
+   사용: approach 라우트의 work/clients 섹션 */
 .work-hero-visual,
 .clients-hero-visual {
   width: 100vw;
@@ -173,6 +191,8 @@ section.has-hero-visual {
   opacity: 0;
 }
 
+/* 로드맵 히어로 전용.
+   사용: services 라우트 로드맵 상단 */
 .roadmap-hero-visual {
   animation: none;
   opacity: 0;
@@ -191,6 +211,8 @@ section.has-hero-visual {
   transform: translateY(-50%) translateX(6%);
 }
 
+/* 로드맵 히어로 노출 상태.
+   사용: work-hero.js에서 .is-visible 추가 */
 .roadmap-hero-visual.is-visible {
   animation: heroVisualSlideIn 1.8s var(--motion-ease) both;
 }
@@ -225,6 +247,8 @@ section.has-hero-visual {
   transform: translateY(-50%) translateX(6%);
 }
 
+/* 워크/클라이언트 히어로 노출 상태.
+   사용: work-hero.js에서 .is-visible 추가 */
 .work-hero-visual.is-visible,
 .clients-hero-visual.is-visible {
   animation: heroVisualSlideIn 1.8s var(--motion-ease) both;
@@ -302,21 +326,29 @@ section.has-hero-visual {
   }
 }
 
+/* 타이핑 완료 상태.
+   사용: ui.js에서 .is-done 추가 */
 .hero-visual-typing.is-done {
   border-right: 0;
 }
 
 
+/* 섹션 전환 퇴장 상태.
+   사용: ui.js 해시 이동 애니메이션 */
 section.section-exit {
   opacity: 0;
   pointer-events: none;
 }
 
 
+/* 섹션 전환 진입 상태.
+   사용: ui.js 해시 이동 애니메이션 */
 section.section-enter {
   animation: sectionEnter 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
+/* 히어로 플레이스홀더 카드.
+   사용: home/about/why 섹션 카드 래퍼 */
 .hero-placeholder-card {
   text-align: left;
   width: 100%;
@@ -324,6 +356,8 @@ section.section-enter {
   margin: 0;
 }
 
+/* 히어로 플레이스홀더 그리드.
+   사용: home/about/why 섹션 상단 카드 레이아웃 */
 .hero-placeholder-grid {
   display: grid;
   grid-template-columns: minmax(0, 4fr) minmax(320px, 6fr);
@@ -332,10 +366,14 @@ section.section-enter {
   align-items: center;
 }
 
+/* why 섹션 레이아웃 변형.
+   사용: about 라우트 why 섹션 */
 .why .hero-placeholder-grid {
   grid-template-columns: minmax(320px, 6fr) minmax(0, 4fr);
 }
 
+/* 히어로 플레이스홀더 미디어.
+   사용: home/about/why 섹션 이미지 영역 */
 .hero-placeholder-media {
   grid-row: 1 / 3;
   grid-column: 1 / 2;
@@ -347,6 +385,8 @@ section.section-enter {
   border-radius: 20px;
 }
 
+/* why 섹션 미디어 위치.
+   사용: about 라우트 why 섹션 */
 .why .hero-placeholder-media {
   grid-column: 2 / 3;
 }
@@ -360,6 +400,8 @@ section.section-enter {
   object-position: center;
 }
 
+/* 히어로 플레이스홀더 타이틀.
+   사용: home/about/why 섹션 카드 */
 .hero-placeholder-title {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
@@ -371,6 +413,8 @@ section.section-enter {
   min-width: 0;
 }
 
+/* why 섹션 타이틀 위치.
+   사용: about 라우트 why 섹션 */
 .why .hero-placeholder-title {
   grid-column: 1 / 2;
 }
@@ -379,6 +423,8 @@ html[lang="ko"] .hero-placeholder-title {
   white-space: nowrap;
 }
 
+/* 히어로 플레이스홀더 본문.
+   사용: home/about/why 섹션 카드 */
 .hero-placeholder-text {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
@@ -390,6 +436,8 @@ html[lang="ko"] .hero-placeholder-title {
   min-width: 0;
 }
 
+/* why 섹션 본문 위치.
+   사용: about 라우트 why 섹션 */
 .why .hero-placeholder-text {
   grid-column: 1 / 2;
 }
@@ -408,6 +456,8 @@ html[lang="ko"] .hero-placeholder-title {
 }
 
 
+/* 섹션 헤더 공통.
+   사용: 섹션 상단 타이틀 블록 */
 .section-header {
   max-width: var(--max-width);
   margin: 0 auto 80px;
@@ -428,6 +478,8 @@ html[lang="ko"] .hero-placeholder-title {
 }
 
 
+/* 섹션 아이브로 텍스트.
+   사용: 섹션/카드 서브 타이틀 */
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.28em;
@@ -437,10 +489,14 @@ html[lang="ko"] .hero-placeholder-title {
   line-height: 1.2;
 }
 
+/* 히어로 플레이스홀더 타이틀 변형(eyebrow).
+   사용: home/about/why 섹션 */
 .hero-placeholder-title.eyebrow {
   font-size: 23px;
 }
 
+/* 히어로 플레이스홀더 타이틀 변형(panel-title).
+   사용: home/about/why 섹션 */
 .hero-placeholder-title.panel-title {
   margin-bottom: 0;
 }

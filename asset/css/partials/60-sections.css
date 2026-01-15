@@ -1,4 +1,6 @@
-﻿.service-grid,
+/* 섹션 그리드 공통 폭 제한.
+   사용: 서비스/접근/워크/태그/클라이언트/문의 섹션 */
+.service-grid,
 .approach-panels,
 .work-panels,
 .work-grid,
@@ -12,6 +14,8 @@
 
 
 
+/* 소개 섹션 카드.
+   사용: about 섹션 */
 .about-card {
   background-color: var(--cloud);
   border-radius: 24px;
@@ -32,10 +36,14 @@
 }
 
 
+/* 서비스 섹션 배경 초기화.
+   사용: services 섹션 */
 .services {
   background-color: transparent;
 }
 
+/* 카드형 그리드 공통.
+   사용: 소개/서비스/접근/워크/CTA */
 .about-card,
 .service-card,
 .approach-card,
@@ -52,6 +60,8 @@
 
 
 
+/* 서비스 카드.
+   사용: services 섹션 */
 .service-card {
   background-color: var(--cloud);
   border-radius: 24px;
@@ -64,6 +74,7 @@
   align-items: start;
 }
 
+/* 서비스 카드 헤더 행. */
 .service-head {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -73,6 +84,7 @@
 }
 
 
+/* 서비스 아이콘 박스. */
 .service-icon {
   width: 60px;
   height: 60px;
@@ -91,6 +103,7 @@
   margin: 0;
 }
 
+/* 서비스 카드 목록. */
 .service-card ul {
   list-style: none;
   display: grid;
@@ -99,6 +112,7 @@
   margin-bottom: 0;
 }
 
+/* 서비스 항목 리스트(패널형). */
 .service-list {
   list-style: none;
   display: grid;
@@ -108,18 +122,22 @@
   padding-left: 0;
 }
 
+/* 서비스 목록 공통 불릿 설정. */
 .service-card ul,
+/* 서비스 항목 리스트(패널형). */
 .service-list {
   list-style-position: outside;
   list-style-type: "\2022  ";
   padding-left: 1.1em;
 }
 
+/* 서비스 목록 항목. */
 .service-card li,
 .service-list li {
   line-height: 1.6;
 }
 
+/* 서비스 결과 문구(삼각형 마커 포함). */
 .outcome {
   font-weight: 600;
   color: var(--ink);
@@ -135,28 +153,35 @@
   content: none;
 }
 
+/* 결과 마커(삼각형). */
 .outcome-marker {
   display: inline-block;
   line-height: 1.6;
   justify-self: end;
 }
 
+/* 결과 텍스트. */
 .outcome-text {
   line-height: 1.6;
 }
 
 
+/* 접근 섹션 여백 조정.
+   사용: approach 섹션 */
 .approach {
   padding-top: 96px;
 }
 
 
+/* 접근 섹션 그리드. */
 .approach-grid {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+/* 접근 카드.
+   사용: approach 섹션 */
 .approach-card {
   padding: 24px;
   border-radius: 20px;
@@ -171,12 +196,15 @@
 }
 
 
+/* 워크 섹션 그리드. */
 .work-grid {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+/* 워크 카드.
+   사용: approach 라우트 work 섹션 */
 .work-card {
   background-color: var(--cloud);
   border-radius: 22px;
@@ -189,12 +217,15 @@
 }
 
 
+/* 태그 그리드.
+   사용: skills 페이지 */
 .tag-grid {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+/* 태그 아이템. */
 .tag-grid span {
   background-color: var(--cloud);
   border-radius: 18px;
@@ -211,10 +242,13 @@
 
 
 
+/* 문의(CTA) 섹션 여백.
+   사용: contact 섹션 */
 .cta {
   padding-bottom: 96px;
 }
 
+/* CTA 설명 문단 래퍼. */
 .cta-body {
   max-width: var(--max-width);
   margin: 24px auto 40px;
@@ -222,6 +256,8 @@
 }
 
 
+/* CTA 카드 래퍼.
+   사용: contact 섹션 */
 .cta-card {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -254,6 +290,7 @@
   text-align: center;
 }
 
+/* contact 라우트 CTA 카드 변형(배경 제거). */
 .cta[data-route="contact"] .cta-card {
   padding: 0;
   background: none;
@@ -263,6 +300,7 @@
 }
 
 
+/* CTA 하단 패널 그리드. */
 .cta-footer {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -272,6 +310,7 @@
   align-items: stretch;
 }
 
+/* CTA 패널 카드 공통. */
 .cta-panel {
   background-color: var(--cloud);
   border-radius: 24px;
@@ -282,12 +321,14 @@
   min-width: 0;
 }
 
+/* CTA 연락처 패널. */
 .cta-contact.panel-tile {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
+/* 연락처 상단 정보 묶음. */
 .cta-contact-top {
   display: flex;
   flex-direction: column;
@@ -297,6 +338,7 @@
   justify-content: space-between;
 }
 
+/* 회사명 타이포. */
 .cta-company-name {
   margin: 0;
 }
@@ -306,12 +348,14 @@
   margin-bottom: 0;
 }
 
+/* 담당자/직함 라인. */
 .cta-contact-name {
   margin: 0;
   font-size: 20px;
   color: var(--ink-soft);
 }
 
+/* 연락처 정보 그리드. */
 .cta-contact-grid {
   display: grid;
   grid-template-columns: minmax(130px, 4fr) minmax(230px, 6fr);
@@ -323,6 +367,7 @@
   align-items: start;
 }
 
+/* 연락처 역할/상세 텍스트. */
 .cta-contact-role,
 .cta-contact-detail {
   color: var(--ink-soft);
@@ -342,6 +387,7 @@
 }
 
 
+/* 연락처 항목 불릿(점). */
 .cta-contact-role::before,
 .cta-contact-detail::before {
   content: "\00B7 ";
@@ -353,26 +399,32 @@
   font-weight: 500;
 }
 
+/* 연락처 역할: 대표. */
 .cta-contact-role-ceo {
   grid-area: role1;
 }
 
+/* 연락처 이메일. */
 .cta-contact-email {
   grid-area: detail1;
 }
 
+/* 연락처 역할: 매니저. */
 .cta-contact-role-manager {
   grid-area: role2;
 }
 
+/* 연락처 지원 메일. */
 .cta-contact-support {
   grid-area: detail2;
 }
 
+/* 연락처 전화번호. */
 .cta-contact-tel {
   grid-area: detail3;
 }
 
+/* CTA 경험 요약 패널. */
 .cta-experience {
   display: flex;
   flex-direction: column;
@@ -380,6 +432,7 @@
   height: 100%;
 }
 
+/* 경험 수치 스택 레이아웃. */
 .cta-exp-stack {
   display: grid;
   grid-template-rows: auto auto auto;
@@ -389,12 +442,14 @@
   height: 100%;
 }
 
+/* 경험 수치/라벨 묶음. */
 .cta-exp-group {
   display: grid;
   grid-template-rows: auto auto;
   row-gap: 12px;
 }
 
+/* 경험 패널 하단 이미지 정렬. */
 .cta-experience .panel-image-wrap {
   margin-top: 0;
   display: flex;
@@ -403,6 +458,7 @@
   align-self: stretch;
 }
 
+/* 경험 수치 텍스트. */
 .cta-exp-number {
   font-size: 2rem;
   font-weight: 700;
@@ -415,6 +471,7 @@
   color: var(--clinisch-purple);
 }
 
+/* 경험 설명 텍스트. */
 .cta-exp-text {
   color: inherit;
   line-height: 1.4;
@@ -428,10 +485,13 @@
 }
 
 
+/* 로드맵 섹션 여백.
+   사용: services 라우트 */
 .roadmap {
   padding-bottom: 96px;
 }
 
+/* 로드맵 카드 그리드. */
 .roadmap-track {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -440,6 +500,7 @@
   gap: 24px;
 }
 
+/* 로드맵 카드. */
 .roadmap-card {
   display: flex;
   flex-direction: column;
@@ -448,12 +509,14 @@
   text-align: left;
 }
 
+/* 로드맵 타이틀 행. */
 .roadmap-title-row {
   display: flex;
   align-items: baseline;
   gap: 12px;
 }
 
+/* 로드맵 단계 번호. */
 .roadmap-index {
   font-size: 2rem;
   font-weight: 700;
@@ -467,6 +530,8 @@
   font-weight: 700;
   color: var(--ink);
 }
+
+
 
 
 
