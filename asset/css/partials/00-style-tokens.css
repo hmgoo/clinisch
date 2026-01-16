@@ -122,14 +122,14 @@ html {
 
 
 body {
-  font-family: var(--family-font);
-  background-color: var(--cream);
-  color: var(--ink);
-  min-height: 100vh;
-  min-width: 340px;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  min-width: 340px;
   padding-top: var(--header-offset, 0px);
+  font-family: var(--family-font);
+  color: var(--ink);
+  background-color: var(--cream);
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;

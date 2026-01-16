@@ -19,7 +19,7 @@ const BG_SHAPE_RADII = {
     sand: "50% 50% 58% 42% / 42% 58% 46% 54%",
     slate: "62% 38% 46% 54% / 54% 46% 52% 48%"
   },
-  approach: {
+  skills: {
     sun: "42% 58% 50% 50% / 54% 46% 58% 42%",
     sky: "54% 46% 62% 38% / 46% 54% 50% 50%",
     sand: "48% 52% 44% 56% / 60% 40% 52% 48%",
@@ -64,6 +64,7 @@ const updateBgState = (routeKey) => {
 
   applyBgRadii(bg, radii);
 };
+
 
 
 

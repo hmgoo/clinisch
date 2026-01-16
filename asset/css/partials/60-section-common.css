@@ -36,7 +36,7 @@ section {
 }
 
 /* 섹션 상단 히어로 포함 상태.
-   사용: approach/work/clients 섹션 */
+   사용: skills/work/clients 섹션 */
 section.has-hero-visual {
   padding-top: 0;
 }
@@ -50,12 +50,6 @@ section.has-hero-visual {
   height: 80vh;
   max-height: 900px;
   animation: heroVisualSlideIn 1.8s var(--motion-ease) both;
-}
-
-/* 라우트 역방향 전환 시 히어로 진입 방향.
-   사용: routes.js에서 data-enter-direction 설정 */
-[data-route-stage] .route-panel[data-enter-direction="backward"] .hero-visual {
-  animation-name: heroVisualSlideInLeft;
 }
 
 .hero-visual img {
@@ -110,7 +104,7 @@ section.has-hero-visual {
   line-height: 1.5;
 }
 
-.hero-visual-copy p[data-i18n="approach_title"] {
+.hero-visual-copy p[data-i18n="skills_title"] {
   white-space: pre-line;
 }
 
@@ -176,7 +170,7 @@ section.has-hero-visual {
 }
 
 /* 워크/클라이언트 히어로 확장형.
-   사용: approach 라우트의 work/clients 섹션 */
+   사용: skills 라우트의 work/clients 섹션 */
 .work-hero-visual,
 .clients-hero-visual {
   width: 100vw;
@@ -350,10 +344,10 @@ section.section-enter {
 /* 히어로 플레이스홀더 카드.
    사용: home/about/why 섹션 카드 래퍼 */
 .hero-placeholder-card {
-  text-align: left;
   width: 100%;
   max-width: 100%;
-  margin: 0;
+  margin: 0 0 24px;
+  text-align: center;
 }
 
 /* 히어로 플레이스홀더 그리드.
@@ -442,6 +436,12 @@ html[lang="ko"] .hero-placeholder-title {
   grid-column: 1 / 2;
 }
 
+/* 라우트 역방향 전환 시 히어로 진입 방향.
+   사용: routes.js에서 data-enter-direction 설정 */
+[data-route-stage] .route-panel[data-enter-direction="backward"] .hero-visual {
+  animation-name: heroVisualSlideInLeft;
+}
+
 
 @keyframes sectionEnter {
   from {
@@ -500,3 +500,4 @@ html[lang="ko"] .hero-placeholder-title {
 .hero-placeholder-title.panel-title {
   margin-bottom: 0;
 }
+

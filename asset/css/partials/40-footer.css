@@ -4,18 +4,18 @@
 /* 푸터 전체 래퍼.
    사용: footer.js에서 렌더링 */
 .footer {
-  max-width: var(--max-width);
   width: 100%;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 12px 20px 12px;
-  font-size: 16px;
   display: grid;
   gap: 12px;
   text-align: left;
-  font-weight: 500;
-  color: var(--ink-soft);
   position: relative;
   z-index: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink-soft);
 }
 
 
@@ -27,8 +27,8 @@
   grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr) minmax(0, 1.2fr);
   grid-template-areas: "brand meta links";
   align-items: start;
-  max-width: var(--max-width);
   width: 100%;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
@@ -93,16 +93,15 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 16px;
-  color: var(--slate);
   font-weight: 600;
   margin-bottom: 6px;
+  color: var(--slate);
 }
 
 /* 푸터 링크 버튼. */
 .footer-link {
   border: none;
   background: transparent;
-  color: var(--footer-muted);
   font-size: 16px;
   cursor: pointer;
   padding: 0;
@@ -111,6 +110,7 @@
   justify-content: flex-start;
   gap: 8px;
   text-align: left;
+  color: var(--footer-muted);
 }
 
 .footer-link:hover,
@@ -127,11 +127,11 @@
 
 /* 푸터 하단 카피라이트. */
 .footer-bottom {
-  font-size: 12px;
-  color: var(--footer-muted);
-  font-weight: 400;
   text-align: right;
   justify-self: end;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--footer-muted);
 }
 
 .footer-bottom p {
@@ -169,10 +169,10 @@
 /* 푸터 모달 카드. */
 .footer-modal-card {
   position: relative;
+  width: min(520px, 90vw);
   background: var(--cloud);
   border-radius: 26px;
   padding: 28px 32px;
-  width: min(520px, 90vw);
   box-shadow: 0 18px 36px rgba(50, 40, 30, 0.2);
   display: grid;
   gap: 14px;
@@ -185,9 +185,9 @@
 }
 
 .footer-modal-card p {
+  font-size: 16px;
   color: var(--ink-soft);
   line-height: 1.7;
-  font-size: 16px;
 }
 
 /* 푸터 모달 게시일. */

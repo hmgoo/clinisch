@@ -1,8 +1,4 @@
-﻿
-
-
-
-/* 섹션 상단 카드 공통.
+﻿/* 섹션 상단 카드 공통.
    사용: home/about/why 섹션 카드 래퍼 */
 .panel-card {
   background-color: var(--sand);
@@ -32,75 +28,6 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-/* 홈 섹션 패널 그리드.
-   사용: data-route="home" */
-.hero-placeholder-panels {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* 접근 섹션 패널 그리드.
-   사용: data-route="approach" */
-.approach-panels {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* 워크 섹션 패널 그리드.
-   사용: approach 라우트 work 섹션 */
-.work-panels {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* 문의 섹션 패널 그리드.
-   사용: data-route="contact" */
-.contact-panels {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-/* 서비스 섹션 패널 그리드.
-   사용: data-route="services" */
-.services-panels {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-/* 서비스 패널 내 배치.
-   사용: services 섹션 카드 */
-.services-panels .panel-tile {
-  display: flex;
-  flex-direction: column;
-}
-
-.services-panels .panel-tile img {
-  margin-top: 12px;
-}
-
-.services-panels .outcome {
-  margin-top: auto;
-}
-
-/* why/clients 패널 그리드.
-   사용: about/approach 라우트 */
-.why-panels,
-.clients-panels {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* why/clients 패널 카드 정렬. */
-.why-panels .panel-tile,
-.clients-panels .panel-tile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 90px;
-  text-align: center;
-}
-
-/* why/clients 패널 텍스트. */
-.why-panels .panel-tile p,
-.clients-panels .panel-tile p {
-  margin-bottom: 0;
-  white-space: pre-line;
-}
-
 
 /* 패널 타일 공통.
    사용: 각 섹션 카드 기본 */
@@ -123,16 +50,6 @@
   margin-bottom: 12px;
 }
 
-/* 워크 섹션 카드 문단 여백 제거. */
-.work .panel-tile p {
-  margin-bottom: 0;
-}
-
-/* 스킬 페이지 접근 섹션 문단 여백 제거. */
-.skills-page .approach .panel-tile p {
-  margin-bottom: 0;
-}
-
 /* 패널 타일 이미지 기본. */
 .panel-tile img {
   width: 100%;
@@ -148,19 +65,13 @@
   transform: translateY(-2px);
 }
 
-/* 소개 섹션 패널 레이아웃.
-   사용: about 섹션 */
-.about-panels .panel-tile {
-  display: flex;
-  flex-direction: column;
-}
-
 /* 패널 이미지 래퍼.
    사용: 카드 하단 이미지 정렬 */
 .panel-image-wrap {
   margin-top: auto;
   padding-top: 12px;
 }
+
 /* 히어로 플레이스홀더 이미지 호버. */
 .hero-placeholder-media img {
   transition: transform 0.2s ease-out;
@@ -173,4 +84,90 @@
 }
 
 
+/* 서비스 패널 내 배치.
+   사용: services 섹션 카드 */
+.services-panels .panel-tile {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-panels .panel-tile img {
+  margin-top: 12px;
+}
+
+.services-panels .outcome {
+  margin-top: auto;
+}
+
+/* why/clients 패널 카드 정렬. */
+.why-panels .panel-tile,
+.clients-panels .panel-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  text-align: center;
+}
+
+/* why/clients 패널 텍스트. */
+.why-panels .panel-tile p,
+.clients-panels .panel-tile p {
+  margin-bottom: 0;
+  white-space: pre-line;
+}
+
+/* 워크 섹션 카드 문단 여백 제거. */
+.work .panel-tile p {
+  margin-bottom: 0;
+}
+
+/* 스킬 페이지 접근 섹션 문단 여백 제거. */
+.skills-page .skills .panel-tile p {
+  margin-bottom: 0;
+}
+
+/* 소개 섹션 패널 레이아웃.
+   사용: about 섹션 */
+.about-panels .panel-tile {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* 홈 섹션 패널 그리드.
+   사용: data-route="home" */
+.hero-placeholder-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* 접근 섹션 패널 그리드.
+   사용: data-route="skills" */
+.skills-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* 워크 섹션 패널 그리드.
+   사용: skills 라우트 work 섹션 */
+.work-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* 문의 섹션 패널 그리드.
+   사용: data-route="contact" */
+.contact-panels {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* 서비스 섹션 패널 그리드.
+   사용: data-route="services" */
+.services-panels {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* why/clients 패널 그리드.
+   사용: about/skills 라우트 */
+.why-panels,
+.clients-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 

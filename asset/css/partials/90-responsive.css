@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+﻿@media (max-width: 1000px) {
   /* 반응형 조정: 배경 도형(태양, 전 페이지). */
   .shape-wrap-sun {
     width: 320px;
@@ -23,8 +23,8 @@
     height: 240px;
   }
 
-  /* 반응형 조정: 접근 패널 그리드(approach 섹션). */
-  .approach-panels {
+  /* 반응형 조정: 접근 패널 그리드(skills 섹션). */
+  .skills-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -35,14 +35,14 @@
 
   /* 반응형 조정: why 패널(about 섹션). */
   .why-panels,
-  /* 반응형 조정: 클라이언트 패널(approach 섹션). */
+  /* 반응형 조정: 클라이언트 패널(skills 섹션). */
   .clients-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 1023px) {
-  /* 반응형 조정: 워크 패널(approach 섹션). */
+  /* 반응형 조정: 워크 패널(skills 섹션). */
   .work-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -181,8 +181,8 @@
 }
 
 @media (max-width: 767px) {
-  /* 반응형 조정: 접근 패널 그리드(approach 섹션). */
-  .approach-panels {
+  /* 반응형 조정: 접근 패널 그리드(skills 섹션). */
+  .skills-panels {
     grid-template-columns: 1fr;
   }
 
@@ -233,7 +233,7 @@
     justify-self: start;
   }
 
-  /* 반응형 조정: 워크 패널(approach 섹션). */
+  /* 반응형 조정: 워크 패널(skills 섹션). */
   .work-panels {
     grid-template-columns: 1fr;
   }
@@ -288,13 +288,13 @@
     border-right: 0;
   }
 
-  /* 반응형 조정: 워크 히어로(approach 섹션). */
+  /* 반응형 조정: 워크 히어로(skills 섹션). */
   .work-hero-visual,
   /* 반응형 조정: 워크 히어로 오버레이. */
   .work-hero-visual::after,
   /* 반응형 조정: 워크 히어로 카피. */
   .work-hero-visual .hero-visual-copy,
-  /* 반응형 조정: 클라이언트 히어로(approach). */
+  /* 반응형 조정: 클라이언트 히어로(skills). */
   .clients-hero-visual,
   /* 반응형 조정: 클라이언트 히어로 오버레이. */
   .clients-hero-visual::after,
@@ -304,10 +304,6 @@
     opacity: 1;
     transform: none;
   }
-}
-
-[data-route-stage] {
-  min-height: 0;
 }
 
 @media (min-width: 1024px) {
@@ -422,7 +418,7 @@
     max-height: none;
   }
 
-  /* 반응형 조정: 워크 히어로(approach 섹션). */
+  /* 반응형 조정: 워크 히어로(skills 섹션). */
   .work-hero-visual,
   /* 반응형 조정: 클라이언트 히어로 높이. */
   .clients-hero-visual {
@@ -483,21 +479,22 @@
   /* 반응형 조정: 플레이스홀더 타이틀. */
   .hero-placeholder-title {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
   }
 
   /* 반응형 조정: 플레이스홀더 본문. */
   .hero-placeholder-text {
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
   }
 
   /* 반응형 조정: 플레이스홀더 이미지. */
   .hero-placeholder-media {
     grid-column: 1 / -1;
-    grid-row: 1 / 2;
+    grid-row: 3 / 4;
     height: auto;
     min-width: 0;
+    align-self: end;
   }
 
   /* 반응형 조정: 플레이스홀더 이미지 비율 유지. */
@@ -510,19 +507,20 @@
   /* 반응형 조정: why 타이틀 배치. */
   .why .hero-placeholder-title {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
   }
 
   /* 반응형 조정: why 본문 배치. */
   .why .hero-placeholder-text {
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
   }
 
   /* 반응형 조정: why 이미지 배치. */
   .why .hero-placeholder-media {
     grid-column: 1 / -1;
-    grid-row: 1 / 2;
+    grid-row: 3 / 4;
+    align-self: end;
   }
 
   /* 반응형 조정: 푸터 내부 그리드. */
@@ -546,7 +544,7 @@
 
   /* 반응형 조정: why 패널(about 섹션). */
   .why-panels,
-  /* 반응형 조정: 클라이언트 패널(approach 섹션). */
+  /* 반응형 조정: 클라이언트 패널(skills 섹션). */
   .clients-panels {
     grid-template-columns: 1fr;
   }
@@ -579,3 +577,8 @@
     min-width: 0;
   }
 }
+
+[data-route-stage] {
+  min-height: 0;
+}
+

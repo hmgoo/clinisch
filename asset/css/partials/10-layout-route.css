@@ -4,14 +4,14 @@
 /* 전체 페이지 레이아웃 래퍼.
    사용: 모든 페이지의 최상위 컨테이너(.page) */
 .page {
-  position: relative;
-  overflow: visible;
-  isolation: isolate;
-  width: 100%;
-  min-height: 0;
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: 100%;
+  min-height: 0;
+  position: relative;
+  overflow: visible;
+  isolation: isolate;
 }
 
 .page > main {
@@ -22,9 +22,9 @@
 /* 라우트 전환 스테이지 컨테이너.
    사용: main[data-route-stage], routes.js가 전환 높이를 제어 */
 [data-route-stage] {
+  min-height: 0;
   position: relative;
   overflow: hidden;
-  min-height: 0;
   transition: height 420ms var(--motion-ease);
 }
 
@@ -35,9 +35,9 @@
   position: absolute;
   inset: 0;
   width: 100%;
+  transform: translateX(0);
   opacity: 0;
   pointer-events: none;
-  transform: translateX(0);
   transition: transform 520ms var(--motion-ease),
     opacity 520ms var(--motion-ease);
 }
@@ -48,7 +48,6 @@
   position: relative;
   opacity: 1;
   pointer-events: auto;
-  transform: translateX(0);
 }
 
 /* 라우트 진입 시작(오른쪽).

@@ -19,7 +19,7 @@ const renderHeader = () => {
         <a href="/" data-route-link data-route-key="home" data-i18n-text="Top">Top</a>
         <a href="/about/" data-route-link data-route-key="about" data-i18n="nav_about">소개</a>
         <a href="/services/" data-route-link data-route-key="services" data-i18n="nav_services">서비스</a>
-        <a href="/skills/" data-route-link data-route-key="approach" data-i18n="nav_approach">핵심역량</a>
+        <a href="/skills/" data-route-link data-route-key="skills" data-i18n="nav_skills">핵심역량</a>
         <a href="/contact/" data-route-link data-route-key="contact" class="nav-link-underline" data-i18n="nav_contact">문의하기</a>
         <button
           type="button"
@@ -54,7 +54,7 @@ const renderHeader = () => {
           <a href="/" data-route-link data-route-key="home" data-i18n-text="Top">Top</a>
           <a href="/about/" data-route-link data-route-key="about" data-i18n="nav_about">소개</a>
           <a href="/services/" data-route-link data-route-key="services" data-i18n="nav_services">서비스</a>
-          <a href="/skills/" data-route-link data-route-key="approach" data-i18n="nav_approach">핵심역량</a>
+          <a href="/skills/" data-route-link data-route-key="skills" data-i18n="nav_skills">핵심역량</a>
           <a href="/contact/" data-route-link data-route-key="contact" data-i18n="nav_contact">문의하기</a>
           <button
             type="button"
@@ -70,6 +70,7 @@ const renderHeader = () => {
     </aside>
   `;
 };
+
 
 
 

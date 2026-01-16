@@ -24,11 +24,11 @@
   position: fixed;
   top: 0;
   z-index: 20;
-  background-color: var(--cream);
-  backdrop-filter: blur(10px);
   width: 100%;
   left: 0;
   transition: background-color 240ms ease, backdrop-filter 240ms ease;
+  background-color: var(--cream);
+  backdrop-filter: blur(10px);
 }
 
 
@@ -47,11 +47,11 @@
 /* 로고 링크.
    사용: 헤더 좌측 브랜드 */
 .logo {
+  position: relative;
+  z-index: 21;
   font-family: var(--family-font);
   font-size: 1.55rem;
   font-weight: 600;
-  position: relative;
-  z-index: 21;
 }
 
 /* 로고 이미지.
@@ -68,8 +68,8 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  font-size: 16px;
   justify-self: end;
+  font-size: 16px;
 }
 
 
@@ -78,7 +78,6 @@
 .nav-toggle {
   display: none;
   border: none;
-  background: transparent;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -90,6 +89,7 @@
   gap: 4px;
   position: relative;
   z-index: 5;
+  background: transparent;
 }
 
 /* 모바일 메뉴 토글 바.
@@ -98,9 +98,9 @@
   display: block;
   width: 22px;
   height: 2px;
-  background-color: var(--ink);
   border-radius: 999px;
   transition: transform 280ms ease, opacity 280ms ease;
+  background-color: var(--ink);
 }
 
 /* 토글 열림 상태(1번째 바).
@@ -125,11 +125,11 @@
 .mobile-overlay {
   position: fixed;
   inset: 0;
-  background: transparent;
   opacity: 0;
   pointer-events: none;
   transition: opacity 280ms ease;
   z-index: 18;
+  background: transparent;
 }
 
 
@@ -141,7 +141,6 @@
   right: 0;
   height: 100vh;
   width: 100vw;
-  background-color: var(--white);
   transform: translateX(100%);
   transition: transform 540ms cubic-bezier(0.65, 0, 0.35, 1);
   z-index: 19;
@@ -149,6 +148,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  background-color: var(--white);
   box-shadow: -18px 0 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -164,6 +164,9 @@
 
 /* 모바일 패널 닫기 버튼. */
 .mobile-panel-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   border: none;
   background: transparent;
   font-size: 32px;
@@ -174,9 +177,6 @@
   place-items: center;
   cursor: pointer;
   color: var(--ink);
-  position: absolute;
-  top: 8px;
-  right: 8px;
 }
 
 /* 모바일 패널 본문 영역. */
@@ -203,8 +203,6 @@
 /* 모바일 네비게이션 링크/버튼. */
 .mobile-nav a,
 .mobile-nav button {
-  font-size: 1.6rem;
-  font-weight: 700;
   width: 100%;
   position: relative;
   padding-bottom: 6px;
@@ -212,6 +210,8 @@
   border: none;
   background: transparent;
   color: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 /* 모바일 네비게이션 활성 표시. */
@@ -284,7 +284,6 @@ body.nav-open .site-header {
 .lang-toggle {
   border: none;
   background-color: transparent;
-  color: var(--ink);
   padding: 8px 0;
   border-radius: 0;
   font-weight: 600;
@@ -296,6 +295,7 @@ body.nav-open .site-header {
   position: relative;
   overflow: hidden;
   line-height: 1;
+  color: var(--ink);
 }
 
 .lang-toggle:hover {
@@ -388,10 +388,10 @@ body.nav-open .site-header {
   justify-content: center;
   padding: 12px 22px;
   border-radius: 999px;
-  background-color: var(--accent);
-  color: var(--ink);
   font-weight: 600;
   box-shadow: 0 12px 22px rgba(242, 194, 48, 0.35);
+  color: var(--ink);
+  background-color: var(--accent);
 }
 
 

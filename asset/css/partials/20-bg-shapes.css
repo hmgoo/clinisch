@@ -1,15 +1,12 @@
-﻿
-
-
-/* 배경 도형 컨테이너.
+﻿/* 배경 도형 컨테이너.
    사용: 모든 페이지 상단 배경(.bg-shapes) */
 .bg-shapes {
   position: fixed;
   inset: 0;
   z-index: 0;
-  pointer-events: none;
   transform: translateY(60px);
   --shape-radius: 8px;
+  pointer-events: none;
 }
 
 
@@ -26,6 +23,21 @@
 }
 
 
+/* 배경 도형 래퍼.
+   사용: 각 도형 위치/크기 전환 */
+.shape-wrap {
+  position: absolute;
+  display: block;
+  transition:
+    left 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    top 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    width 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    height 3000ms var(--motion-ease) var(--shape-delay, 0ms),
+    transform 3000ms var(--motion-ease) var(--shape-delay, 0ms);
+  will-change: transform;
+}
+
+
 /* 배경 도형 도착 상태.
    사용: init.js에서 .arrived 추가 */
 .bg-shapes .shape.arrived {
@@ -34,37 +46,10 @@
 }
 
 
-/* 배경 도형 래퍼.
-   사용: 각 도형 위치/크기 전환 */
-.shape-wrap {
-  position: absolute;
-  display: block;
-  will-change: transform;
-  transition:
-    left 3000ms var(--motion-ease) var(--shape-delay, 0ms),
-    top 3000ms var(--motion-ease) var(--shape-delay, 0ms),
-    width 3000ms var(--motion-ease) var(--shape-delay, 0ms),
-    height 3000ms var(--motion-ease) var(--shape-delay, 0ms),
-    transform 3000ms var(--motion-ease) var(--shape-delay, 0ms);
-}
-
-/* 배경 도형 초기 위치(좌측).
-   사용: 진입 애니메이션 시작 위치 */
-.shape-wrap-left {
-  transform: translateX(-60vw);
-}
-
-/* 배경 도형 초기 위치(우측).
-   사용: 진입 애니메이션 시작 위치 */
-.shape-wrap-right {
-  transform: translateX(60vw);
-}
-
 /* 배경 도형 애니메이션 시작 상태.
    사용: init.js에서 .animate 추가 */
 .bg-shapes.animate .shape-wrap {
   transform: translateX(0);
-  
   transition:
     left 3000ms var(--motion-ease) var(--shape-delay, 0ms),
     top 3000ms var(--motion-ease) var(--shape-delay, 0ms),
@@ -90,6 +75,19 @@
     opacity: 0.5;
     transform: translateY(-30px) scale(0.95);
   }
+}
+
+
+/* 배경 도형 초기 위치(좌측).
+   사용: 진입 애니메이션 시작 위치 */
+.shape-wrap-left {
+  transform: translateX(-60vw);
+}
+
+/* 배경 도형 초기 위치(우측).
+   사용: 진입 애니메이션 시작 위치 */
+.shape-wrap-right {
+  transform: translateX(60vw);
 }
 
 
@@ -290,29 +288,29 @@
   top: 520px;
 }
 
-/* 라우트별 배경 위치: 접근(approach). */
-.bg-shapes[data-bg-state="approach"] .shape-wrap-sun {
+/* 라우트별 배경 위치: 접근(skills). */
+.bg-shapes[data-bg-state="skills"] .shape-wrap-sun {
   width: 320px;
   height: 230px;
   left: -130px;
   top: 100px;
 }
 
-.bg-shapes[data-bg-state="approach"] .shape-wrap-sky {
+.bg-shapes[data-bg-state="skills"] .shape-wrap-sky {
   width: 340px;
   height: 240px;
   right: -110px;
   top: 80px;
 }
 
-.bg-shapes[data-bg-state="approach"] .shape-wrap-sand {
+.bg-shapes[data-bg-state="skills"] .shape-wrap-sand {
   width: 400px;
   height: 280px;
   right: -155px;
   top: 370px;
 }
 
-.bg-shapes[data-bg-state="approach"] .shape-wrap-slate {
+.bg-shapes[data-bg-state="skills"] .shape-wrap-slate {
   width: 480px;
   height: 360px;
   left: -160px;
@@ -373,8 +371,8 @@
   --shape-radius-slate: 58% 42% 48% 52% / 52% 48% 50% 50%;
 }
 
-/* 라우트별 배경 라운드 값: 접근(approach). */
-.bg-shapes[data-bg-state="approach"] {
+/* 라우트별 배경 라운드 값: 접근(skills). */
+.bg-shapes[data-bg-state="skills"] {
   --shape-radius-sun: 44% 56% 50% 50% / 52% 48% 56% 44%;
   --shape-radius-sky: 52% 48% 56% 44% / 46% 54% 50% 50%;
   --shape-radius-sand: 50% 50% 46% 54% / 56% 44% 52% 48%;
@@ -388,7 +386,4 @@
   --shape-radius-sand: 56% 44% 50% 50% / 48% 52% 56% 44%;
   --shape-radius-slate: 50% 50% 58% 42% / 50% 50% 46% 54%;
 }
-
-
-
 
