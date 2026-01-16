@@ -79,7 +79,6 @@
 .reveal {
   opacity: 0;
   transform: translateY(20px);
-  
   animation: reveal calc(var(--motion-duration-medium) * 1.3) var(--motion-ease-out) forwards;
   animation-delay: var(--delay, 0s);
 }
@@ -167,14 +166,6 @@
 
   100% {
     transform: scale(1);
-  }
-}
-
-
-@keyframes reveal {
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 

@@ -44,16 +44,6 @@
 }
 
 
-/* 페이지 래퍼 보정(헤더 파일에서 재정의).
-   사용: 모든 페이지 .page */
-.page {
-  position: relative;
-  overflow: visible;
-  isolation: isolate;
-  width: 100%;
-}
-
-
 /* 로고 링크.
    사용: 헤더 좌측 브랜드 */
 .logo {
@@ -260,12 +250,6 @@
   display: none;
 }
 
-.mobile-lang-toggle .lang-text {
-  opacity: 1;
-  transform: translateY(2px) scale(1);
-}
-
-
 /* 네비게이션 열림 상태.
    사용: routes.js에서 body.nav-open 토글 */
 body.nav-open .mobile-panel {
@@ -393,28 +377,6 @@ body.nav-open .site-header {
 }
 
 .nav a.is-active::after {
-  width: 100%;
-}
-
-
-/* 네비 링크 밑줄 강조(중복 정의). */
-.nav-link-underline {
-  padding: 8px 0;
-  position: relative;
-}
-
-.nav-link-underline::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: var(--accent);
-  transition: width 0.3s ease;
-}
-
-.nav-link-underline:hover::after {
   width: 100%;
 }
 

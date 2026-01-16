@@ -1,4 +1,4 @@
-﻿@media (max-width: 1000px) {
+@media (max-width: 1000px) {
   /* 반응형 조정: 배경 도형(태양, 전 페이지). */
   .shape-wrap-sun {
     width: 320px;
@@ -23,19 +23,6 @@
     height: 240px;
   }
 
-  /* 반응형 조정: 로드맵 그리드(services 섹션). */
-  .roadmap-track {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  /* 반응형 조정: 로드맵 카드(services 섹션). */
-  .roadmap-card {
-    max-width: none;
-    width: 100%;
-  }
-}
-
-@media (max-width: 1000px) {
   /* 반응형 조정: 접근 패널 그리드(approach 섹션). */
   .approach-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -64,20 +51,13 @@
   .contact-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
 
-@media (max-width: 1023px) {
   /* 반응형 조정: 헤더 레이아웃(전 페이지). */
   .header {
     grid-template-columns: 1fr auto;
     justify-items: stretch;
     padding: 8px 24px 8px 16px;
     gap: 12px;
-  }
-
-  /* 반응형 조정: 로고 정렬(헤더). */
-  .logo {
-    justify-self: start;
   }
 
   /* 반응형 조정: 로고 정렬(헤더). */
@@ -140,6 +120,7 @@
       "detail1"
       "detail2"
       "detail3";
+    min-width: 225px;
   }
 
   /* 반응형 조정: 서비스 그리드(services 섹션). */
@@ -149,6 +130,52 @@
 
   /* 반응형 조정: 로드맵 그리드(services 섹션). */
   .roadmap-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* 반응형 조정: 로드맵 카드(services 섹션). */
+  .roadmap-card {
+    max-width: none;
+    width: 100%;
+  }
+
+  /* 반응형 조정: 히어로 타이틀. */
+  .hero-visual-title {
+    font-size: 42px;
+  }
+
+  /* 반응형 조정: 히어로 서브텍스트. */
+  .hero-visual-copy p {
+    font-size: 16px;
+  }
+
+  /* 반응형 조정: 히어로 타이핑 문구. */
+  .hero-visual-copy .hero-visual-typing {
+    font-size: 14px;
+  }
+
+  /* 반응형 조정: 히어로 카피 영역. */
+  .hero-visual-copy {
+    max-width: 400px;
+  }
+
+  /* 반응형 조정: 플레이스홀더 그리드(home/about/why). */
+  .hero-placeholder-grid {
+    gap: 16px 16px;
+  }
+
+  /* 반응형 조정: 푸터 내부 그리드. */
+  .footer-inner {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 4fr);
+    grid-template-areas:
+      "brand meta"
+      "brand links";
+    row-gap: 8px;
+    column-gap: 24px;
+  }
+
+  /* 반응형 조정: 홈 패널 그리드. */
+  .hero-placeholder-panels {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -163,9 +190,7 @@
   .tag-grid {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 767px) {
   /* 반응형 조정: 문의 패널(contact 섹션). */
   .contact-panels {
     grid-template-columns: 1fr;
@@ -207,43 +232,12 @@
     align-self: center;
     justify-self: start;
   }
-}
 
-@media (max-width: 767px) {
   /* 반응형 조정: 워크 패널(approach 섹션). */
   .work-panels {
     grid-template-columns: 1fr;
   }
 }
-
-@media (max-width: 768px) {
-  /* 반응형 조정: 로드맵 그리드(services 섹션). */
-  .roadmap-track {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  /* 반응형 조정: 로드맵 카드(services 섹션). */
-  .roadmap-card {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-@media (max-width: 1023px) {
-  /* 반응형 조정: 연락처 정보 그리드. */
-  .cta-contact-grid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "role1"
-      "role2"
-      "detail1"
-      "detail2"
-      "detail3";
-    min-width: 225px;
-  }
-}
-
 
 @media (prefers-reduced-motion: reduce) {
   /* 반응형 조정: 리빌 애니메이션 비활성. */
@@ -270,7 +264,6 @@
     transition: none !important;
     transform: none !important;
   }
-
 
   /* 반응형 조정: 패널 카드 공통. */
   .panel-card,
@@ -315,48 +308,6 @@
 
 [data-route-stage] {
   min-height: 0;
-}
-
-@media (max-width: 1023px) {
-  /* 반응형 조정: 히어로 타이틀. */
-  .hero-visual-title {
-    font-size: 42px;
-  }
-
-  /* 반응형 조정: 히어로 서브텍스트. */
-  .hero-visual-copy p {
-    font-size: 16px;
-  }
-
-  /* 반응형 조정: 히어로 타이핑 문구. */
-  .hero-visual-copy .hero-visual-typing {
-    font-size: 14px;
-  }
-
-  /* 반응형 조정: 히어로 카피 영역. */
-  .hero-visual-copy {
-    max-width: 400px;
-  }
-
-  /* 반응형 조정: 플레이스홀더 그리드(home/about/why). */
-  .hero-placeholder-grid {
-    gap: 16px 16px;
-  }
-
-  /* 반응형 조정: 푸터 내부 그리드. */
-  .footer-inner {
-    grid-template-columns: minmax(0, 6fr) minmax(0, 4fr);
-    grid-template-areas:
-      "brand meta"
-      "brand links";
-    row-gap: 8px;
-    column-gap: 24px;
-  }
-
-  /* 반응형 조정: 홈 패널 그리드. */
-  .hero-placeholder-panels {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (min-width: 1024px) {
@@ -453,6 +404,18 @@
 }
 
 @media (max-width: 768px) {
+  /* 반응형 조정: 로드맵 그리드(services 섹션). */
+  .roadmap-track {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* 반응형 조정: 로드맵 카드(services 섹션). */
+  .roadmap-card {
+    width: 100%;
+    max-width: none;
+  }
+
   /* 반응형 조정: 히어로 높이. */
   .hero-visual {
     height: 70vh;
@@ -608,7 +571,6 @@
   .services-panels .outcome {
     margin-top: auto;
   }
-
 }
 
 @media (max-width: 360px) {

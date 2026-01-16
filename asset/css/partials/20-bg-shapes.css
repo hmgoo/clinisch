@@ -17,13 +17,10 @@
    사용: .shape-wrap 내부 .shape */
 .bg-shapes .shape {
   position: absolute;
-  
   border-radius: var(--shape-radius, 10px);
   opacity: 0.95;
   animation: none;
   transition:
-    
-    
     border-radius 3000ms var(--motion-ease-out) var(--shape-delay, 0ms),
     transform 3000ms linear var(--shape-delay, 0ms);
 }
@@ -32,10 +29,6 @@
 /* 배경 도형 도착 상태.
    사용: init.js에서 .arrived 추가 */
 .bg-shapes .shape.arrived {
-  
-  animation: float 16s ease-in-out infinite;
-  animation-delay: 1.3s;
-  
   animation: float 16s ease-in-out infinite;
   animation-delay: 1.3s;
 }
@@ -187,7 +180,6 @@
   --shape-delay: 500ms;
   width: 460px;
   height: 320px;
-  
   left: -140px;
   top: 500px;
 }
