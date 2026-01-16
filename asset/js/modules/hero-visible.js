@@ -1,4 +1,4 @@
-const setupWorkHero = () => {
+const setupHeroVisible = () => {
   const heroes = document.querySelectorAll(
     ".work-hero-visual, .clients-hero-visual, .contact-hero-visual, .roadmap-hero-visual"
   );

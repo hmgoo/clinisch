@@ -1,13 +1,6 @@
 ﻿
 
-const renderHeader = () => {
-  const target = document.getElementById("site-header");
-
-  if (!target) {
-    return;
-  }
-
-  target.innerHTML = `
+const headerMarkup = `
     <header class="header">
       <a href="/" class="logo" data-route-link data-route-key="home">
         <img
@@ -16,11 +9,37 @@ const renderHeader = () => {
         />
       </a>
       <nav class="nav">
-        <a href="/" data-route-link data-route-key="home" data-i18n-text="Top">Top</a>
-        <a href="/about/" data-route-link data-route-key="about" data-i18n="nav_about">소개</a>
-        <a href="/services/" data-route-link data-route-key="services" data-i18n="nav_services">서비스</a>
-        <a href="/skills/" data-route-link data-route-key="skills" data-i18n="nav_skills">핵심역량</a>
-        <a href="/contact/" data-route-link data-route-key="contact" class="nav-link-underline" data-i18n="nav_contact">문의하기</a>
+        <a
+          href="/"
+          data-route-link
+          data-route-key="home"
+          data-i18n-text="Top"
+        >Top</a>
+        <a
+          href="/about/"
+          data-route-link
+          data-route-key="about"
+          data-i18n="nav_about"
+        >소개</a>
+        <a
+          href="/services/"
+          data-route-link
+          data-route-key="services"
+          data-i18n="nav_services"
+        >서비스</a>
+        <a
+          href="/skills/"
+          data-route-link
+          data-route-key="skills"
+          data-i18n="nav_skills"
+        >핵심역량</a>
+        <a
+          href="/contact/"
+          data-route-link
+          data-route-key="contact"
+          class="nav-link-underline"
+          data-i18n="nav_contact"
+        >문의하기</a>
         <button
           type="button"
           class="lang-toggle"
@@ -51,11 +70,36 @@ const renderHeader = () => {
       <div class="mobile-panel-header"></div>
       <div class="mobile-panel-body">
         <nav class="mobile-nav">
-          <a href="/" data-route-link data-route-key="home" data-i18n-text="Top">Top</a>
-          <a href="/about/" data-route-link data-route-key="about" data-i18n="nav_about">소개</a>
-          <a href="/services/" data-route-link data-route-key="services" data-i18n="nav_services">서비스</a>
-          <a href="/skills/" data-route-link data-route-key="skills" data-i18n="nav_skills">핵심역량</a>
-          <a href="/contact/" data-route-link data-route-key="contact" data-i18n="nav_contact">문의하기</a>
+          <a
+            href="/"
+            data-route-link
+            data-route-key="home"
+            data-i18n-text="Top"
+          >Top</a>
+          <a
+            href="/about/"
+            data-route-link
+            data-route-key="about"
+            data-i18n="nav_about"
+          >소개</a>
+          <a
+            href="/services/"
+            data-route-link
+            data-route-key="services"
+            data-i18n="nav_services"
+          >서비스</a>
+          <a
+            href="/skills/"
+            data-route-link
+            data-route-key="skills"
+            data-i18n="nav_skills"
+          >핵심역량</a>
+          <a
+            href="/contact/"
+            data-route-link
+            data-route-key="contact"
+            data-i18n="nav_contact"
+          >문의하기</a>
           <button
             type="button"
             class="mobile-lang-toggle"
@@ -69,6 +113,15 @@ const renderHeader = () => {
       </div>
     </aside>
   `;
+
+const renderHeader = () => {
+  const target = document.getElementById("site-header");
+
+  if (!target) {
+    return;
+  }
+
+  target.innerHTML = headerMarkup;
 };
 
 
