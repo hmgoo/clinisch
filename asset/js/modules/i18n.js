@@ -304,7 +304,7 @@ const translations = {
     label_support: "Support",
     label_tel: "Tel",
     label_mobile: "Mobile",
-    footer_company_name: "Clinisch & Co., LLC.",
+    footer_company_name: "Clinisch & Co. LLC.",
     footer_company: "Business Reg. No.: 696-86-03587",
     footer_address_line1:
       "323 Incheon Tower-daero, Yeonsu-gu, Incheon, 22007",
