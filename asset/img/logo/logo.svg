@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="200" height="43" viewBox="0 0 300 64"
-     xmlns="http://www.w3.org/2000/svg">
-  <text x="51%" y="50%" font-size="42" font-family="Serif" dy="0.12em"
-        text-anchor="middle" dominant-baseline="middle" fill="#333">
-    Clinisch &amp; Co.
-  </text>
-</svg>
+<svg width="862" height="121" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden"><defs><clipPath id="clip0"><rect x="171" y="141" width="862" height="121"/></clipPath></defs><g clip-path="url(#clip0)" transform="translate(-171 -141)"><text fill="#595959" font-family="Georgia,Georgia_MSFontService,sans-serif" font-weight="700" font-size="119" transform="matrix(1.00021 0 0 1.00034 175.035 247)">Clinisch</text><text fill="#595959" font-family="Georgia,Georgia_MSFontService,sans-serif" font-weight="700" font-size="119" transform="matrix(1.00021 0 0 1.00034 705.089 247)">&amp; </text><text fill="#595959" font-family="Georgia,Georgia_MSFontService,sans-serif" font-weight="700" font-size="119" transform="matrix(1.00021 0 0 1.00034 830.448 247)">Co</text><text fill="#595959" font-family="Georgia,Georgia_MSFontService,sans-serif" font-weight="700" font-size="119" transform="matrix(1.00021 0 0 1.00034 991.259 247)">. </text></g></svg>

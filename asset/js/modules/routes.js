@@ -1,10 +1,9 @@
-﻿
 
 const ROUTES = [
   { key: "home", path: "/", order: 0 },
-  { key: "about", path: "/about/", order: 1 },
-  { key: "services", path: "/services/", order: 2 },
-  { key: "skills", path: "/skills/", order: 3 },
+  { key: "services", path: "/services/", order: 1 },
+  { key: "approach", path: "/approach/", order: 2 },
+  { key: "about", path: "/about/", order: 3 },
   { key: "contact", path: "/contact/", order: 4 }
 ];
 
@@ -81,7 +80,7 @@ const getDirection = (currentKey, nextKey) => {
   const current = getRouteByKey(currentKey);
   const next = getRouteByKey(nextKey);
 
-  if (!current) {
+  if (!current || !next) {
     return "forward";
   }
 
@@ -190,6 +189,12 @@ const buildRoutePanels = () => {
   }
 
   const sections = Array.from(stage.querySelectorAll("[data-route]"));
+
+  // 정적 페이지(MPA)인 경우: [data-route] 섹션이 없으면 라우터 작동 중지
+  if (!sections.length) {
+    routeStage = stage;
+    return;
+  }
   const bucket = {};
 
   sections.forEach((section) => {
@@ -276,7 +281,6 @@ const changeRoute = (nextRoute, pushHistory = false) => {
 
     window.scrollTo(0, 0);
     updateNavState(nextRoute.key);
-    updateBgState(nextRoute.key);
     setStageHeight(nextPanel);
     scheduleHeightReset();
     currentRouteKey = nextRoute.key;
@@ -324,7 +328,6 @@ const changeRoute = (nextRoute, pushHistory = false) => {
   window.scrollTo(0, 0);
   currentRouteKey = nextRoute.key;
   updateNavState(currentRouteKey);
-  updateBgState(currentRouteKey);
   if (typeof setupTypingEffect === "function") {
     setupTypingEffect();
   }
@@ -344,7 +347,6 @@ const initRouteFromPath = () => {
 
   currentRouteKey = initialRoute.key;
   updateNavState(currentRouteKey);
-  updateBgState(currentRouteKey);
 };
 
 const setupRouteLinks = () => {
@@ -356,21 +358,24 @@ const setupRouteLinks = () => {
         link.setAttribute("href", getRouteUrl(route));
       }
     }
+  });
 
-    link.addEventListener("click", (event) => {
-      const href = link.getAttribute("href");
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest("[data-route-link]");
+    if (link) {
+      const key = link.dataset.routeKey;
+      const route = ROUTES.find((r) => r.key === key);
 
-      if (!href) {
-        return;
+      // SPA 모드로 처리 가능할 때만 preventDefault (패널이 존재하고 라우터가 초기화된 경우)
+      if (route && routePanels.has(route.key)) {
+        e.preventDefault();
+        changeRoute(route, true);
+        if (document.body.classList.contains("nav-open")) {
+          closeMobileNav();
+        }
       }
-
-      const route = getRouteFromPath(href);
-      event.preventDefault();
-      changeRoute(route, true);
-      if (document.body.classList.contains("nav-open")) {
-        closeMobileNav();
-      }
-    });
+      // 그 외의 경우(정적 페이지에서 메인으로 돌아가는 등) 브라우저 기본 이동(href) 허용
+    }
   });
 };
 
@@ -411,6 +416,13 @@ const setupMobileNav = () => {
       }
     });
   }
+
+  const overlay = document.querySelector("[data-mobile-overlay]");
+  if (overlay) {
+    overlay.addEventListener("click", () => {
+      closeMobileNav();
+    });
+  }
 };
 
 const setupRouter = () => {
@@ -418,10 +430,6 @@ const setupRouter = () => {
   buildRoutePanels();
   if (routeStage) {
     routeStage.dataset.routeReveal = "on";
-  }
-  const bg = document.querySelector(".bg-shapes");
-  if (bg) {
-    bg.dataset.bgReady = "0";
   }
   initRouteFromPath();
   setupRouteLinks();
@@ -451,6 +459,10 @@ const getNextRoute = (currentKey, direction) => {
   return ROUTES.find((route) => route.order === nextIndex) || null;
 };
 
-
-
-
+// Export globals
+window.setupRouter = setupRouter;
+window.setupMobileNav = setupMobileNav;
+window.changeRoute = changeRoute;
+window.getNextRoute = getNextRoute;
+window.syncHeaderOffset = syncHeaderOffset;
+window.setStageHeight = setStageHeight;

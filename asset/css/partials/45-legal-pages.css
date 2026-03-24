@@ -1,0 +1,84 @@
+
+/* 법적 고지 페이지 공통 컨테이너 */
+.legal-container {
+  padding: 100px 24px 120px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* 법적 고지 페이지 메인 제목 */
+.legal-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 48px;
+  border-bottom: 1px solid var(--slate-light);
+  padding-bottom: 24px;
+}
+
+/* 법적 고지 본문 영역 - 1024px 컨테이너에 가득 차도록 설정 */
+.legal-content {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--ink-soft);
+  width: 100%;
+  max-width: 100%;
+}
+
+/* 영문 텍스트 줄바꿈 최적화 */
+.legal-content p,
+.legal-content li,
+.legal-content div {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* 국문 텍스트 단어 깨짐 방지 */
+html[lang="ko"] .legal-content p,
+html[lang="ko"] .legal-content li,
+html[lang="ko"] .legal-content div {
+  word-break: keep-all;
+}
+
+/* 조항별 섹션 스타일 */
+.legal-content .article {
+  margin-bottom: 40px;
+}
+
+.legal-content .article h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+/* 리스트 스타일 */
+.legal-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 16px 0 24px;
+}
+
+.legal-content li {
+  margin-bottom: 8px;
+}
+
+/* 강조 텍스트 */
+.legal-content strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* 내부 하이퍼링크 (이메일 등) */
+.contact-link {
+  color: var(--brand);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* 게시일/업데이트일 텍스트 */
+.legal-date {
+  margin-top: 80px;
+  color: var(--slate);
+  font-size: 14px;
+}
