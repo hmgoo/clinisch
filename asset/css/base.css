@@ -1,7 +1,6 @@
-
 @import url("partials/00-style-tokens.css");
 @import url("partials/10-layout-route.css");
-@import url("partials/20-bg-shapes.css");
+
 @import url("partials/30-header.css");
 @import url("partials/40-footer.css");
 @import url("partials/45-legal-pages.css");
