@@ -10,18 +10,18 @@ const headerMarkup = `
       <nav class="nav">
         <!-- 네비게이션이 푸터로 이동했습니다 -->
       </nav>
-      <button
-        type="button"
-        class="nav-toggle"
-        data-nav-toggle
-        aria-label="메뉴 열기"
-        aria-expanded="false"
-      >
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
     </header>
+    <button
+      type="button"
+      class="nav-toggle"
+      data-nav-toggle
+      aria-label="메뉴 열기"
+      aria-expanded="false"
+    >
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
     <div class="mobile-overlay" data-mobile-overlay aria-hidden="true"></div>
     <aside class="mobile-panel" data-mobile-panel aria-hidden="true">
       <div class="mobile-panel-header">

@@ -292,7 +292,7 @@ const translations = {
     privacy_art4_body: "This Site may contain links to third-party websites. Clinisch & Co. is not responsible for the privacy practices of such external sites. We encourage you to review the privacy policies of any third-party site you visit.",
     privacy_art5_title: "Article 5 (Contact Information)",
     privacy_art5_body_intro: "If you have any questions regarding this Privacy Policy or our Site, please contact us at:",
-    footer_link_accessibility: "Accessibility",
+    footer_link_accessibility: "Accessibility Statement",
     accessibility_title: "Accessibility Statement",
     accessibility_intro: "Clinisch & Co. is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards, aiming for WCAG 2.2 Level AA.",
     accessibility_conformance_status: "This website is currently <strong>partially conformant</strong> with WCAG 2.2 Level AA.",

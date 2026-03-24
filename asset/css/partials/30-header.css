@@ -50,13 +50,14 @@
   height: 40px;
   padding: 0;
   cursor: pointer;
-  justify-self: end;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 4px;
-  position: relative;
-  z-index: 112; 
+  position: absolute;
+  top: 10px;
+  right: 24px;
+  z-index: 210; 
   background: transparent;
 }
 
@@ -91,7 +92,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 280ms ease;
-  z-index: 90;
+  z-index: 190;
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -104,7 +105,7 @@
   width: 300px;
   transform: translateX(100%);
   transition: transform 540ms cubic-bezier(0.65, 0, 0.35, 1);
-  z-index: 100;
+  z-index: 200;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -184,4 +185,13 @@ body.nav-open .mobile-panel {
 body.nav-open .mobile-overlay {
   opacity: 1;
   pointer-events: auto;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 8px 16px;
+  }
+  
+  .nav-toggle {
+    right: 16px;
+  }
 }
